@@ -86,57 +86,62 @@ Use the template from `template.md`. For each slide:
 - Add bottom "Por que isso importa?" panels
 - Use `.content-center-wrap` pattern to keep bottom panels close to content (not pushed to viewport bottom by margin-top:auto)
 
-### Step 4: Self-Validate (MANDATORY — every check must pass)
+### Step 4: Signal Completion
 
-**Layout validation:**
-- [ ] Every slide fills 90%+ of viewport (no large empty gaps)
-- [ ] Bottom bars use INLINE flex pattern with `margin-top:auto; border-top:1px solid var(--border)` — NOT `.bottom-panel` class or `.content-center-wrap`
-- [ ] Bottom bars have 3+ tags on the right side, 2+ sentence editorial text on left
-- [ ] Cards use `onmouseenter`/`onmouseleave` inline JS hover — NOT CSS-only `:hover` or `onmouseover`/`onmouseout`
-- [ ] No duplicate `style=""` attributes on same element
-- [ ] Heading color highlights use `<span style="color:">` NOT `<em>` tags
-- [ ] SVG diagrams use `width:100%` and viewBox width 900+ for 4+ node diagrams
-- [ ] Stage cards use 2-column grid layout (LEFT: content, RIGHT: evidence)
-- [ ] No card or container has restrictive max-width below 90vw
+**Do NOT validate your own output.** The **aide-slide-reviewer** agent handles independent quality validation. Your job ends at generation.
 
-**Typography validation:**
-- [ ] HTML headings use Instrument Serif italic — NEVER DM Sans
-- [ ] Heading color highlights use `<span>` NOT `<em>` tags
-- [ ] Stat card numbers use Instrument Serif italic at `clamp(42px,7vw,72px)` — NOT `.stat-val` class
-- [ ] Stat cards have 4 lines: number + label + trend + description
-- [ ] Bullet point text in cards uses `var(--font-editorial)` italic — NOT `var(--font-body)` (DM Sans)
-- [ ] Minimum font sizes: 0.88rem body, 0.78rem detail (HTML)
-- [ ] SVG text: minimum 10px for any text, 14px+ for node titles, 11px+ for descriptions
-- [ ] SVG font-family uses inline strings (`'Instrument Serif',serif`) — NEVER CSS variables (`var(--font-display)`)
-- [ ] SVG description text uses `#c8d8e8` (bright) or `#e8edf5` (white) — NOT `#6b7fa0` (dim)
-- [ ] All sizing uses clamp() — no hardcoded px in HTML
-- [ ] Portuguese text uses UTF-8 characters (ã, ç, é) — NOT HTML entities (&amp;atilde;)
+When you finish generating HTML, signal completion:
+- State which slides were generated (e.g., "slides 1-6 complete")
+- Note any decisions you made that deviate from the slide-map (if in chunk mode)
+- The reviewer will run all 8 validation categories independently
 
-**SVG positioning validation:**
-- [ ] No SVG nodes overlapping — minimum 50 viewBox units between edges
-- [ ] Text fits inside circles (width < diameter × 0.7, or split into 2 lines)
-- [ ] Step badges positioned AWAY from flow ribbons (opposite corner)
-- [ ] Description tags have 25+ unit clearance from circle edges
-- [ ] Flow ribbons start from circle EDGE (offset by radius), not center
-- [ ] ViewBox expanded with negative values if elements extend beyond origin
+---
 
-**Portuguese accent validation (SEARCH AND REPLACE before finishing):**
-- [ ] Search for: voce→você, esta→está, sao→são, nao→não, nivel→nível
-- [ ] Search for: ESTAGIO→ESTÁGIO, NIVEL→NÍVEL, FORMACAO→FORMAÇÃO, DECISAO→DECISÃO
-- [ ] Search for: equacao→equação, presenca→presença, especifico→específico, codigo→código
-- [ ] Search for merged words: vocêestá→você está, maioriaestá→maioria está
-- [ ] Check SVG `<text>` elements explicitly — accents must be UTF-8
+## Chunk Mode Protocol
 
-**Component validation:**
-- [ ] Every card has practical examples ("Na prática:" sections)
-- [ ] Bottom "Por que isso importa?" panels on every content slide
-- [ ] Numbered flow steps with SVG arrows
-- [ ] Correct palette: AIDE navy/cyan/gold for Formacao decks, OR Semana black/silver/blue for Semana decks
-- [ ] Tags use `.tag` class only — NO inline style overrides, Fira Code mono font
-- [ ] Luan Moreno image on title slide
-- [ ] AIDE branding bar present
-- [ ] SlideEngine JS at bottom
-- [ ] Film grain overlay in CSS
+When invoked by `/build-slides`, you receive a **slide-map** and a **chunk range** (e.g., "slides 1-6"). In chunk mode:
+
+1. **Read ONLY the KB files relevant to your chunk's visual types:**
+
+| Visual types in chunk | KB files to load |
+|----------------------|-----------------|
+| title, divider, quote | `design-system.md`, `component-library.md`, `template.md` |
+| SVG pipeline/architecture | `advanced-visuals.md`, `quality-rules.md` (SVG sections) |
+| stat cards, tier cards | `component-library.md`, `quality-rules.md` (stat/card sections) |
+| Any chunk | `quality-rules.md` (Portuguese + typography sections), palette file |
+| Chunk 1 only | `template.md` (for `<head>`) + `slide-engine.md` (for JS) |
+
+2. **Generate ONLY the slides in your range** — not the full deck
+3. **For chunk 1:** Include `<!DOCTYPE html>`, `<head>`, CSS, branding bar, `<div class="deck">`
+4. **For middle chunks:** Generate only `<section class="slide">` elements
+5. **For last chunk:** Include closing `</div>`, SlideEngine JS, closing `</html>`
+6. **Follow the slide-map exactly** — types, visual patterns, and accent words are pre-decided
+
+---
+
+## Typography Contract (Memorize This)
+
+These 5 rules cover 90% of typography errors. Apply them to EVERY element you write:
+
+1. **Every heading** → `font-family:var(--font-display); font-style:italic` (Instrument Serif)
+2. **Every description/bullet** → `font-family:var(--font-editorial); font-style:italic` (Newsreader)
+3. **Every tag/label/code** → `font-family:var(--font-mono)` (Fira Code)
+4. **Every SVG text** → `font-family="'Instrument Serif',serif"` or `'Fira Code',monospace` (INLINE strings, never CSS vars)
+5. **NEVER** use `var(--font-body)` (DM Sans) for any visual content — it's for UI chrome only
+
+---
+
+## Portuguese First-Pass Protocol
+
+Write accented Portuguese **as you generate**, not as a post-process. Before writing ANY Portuguese word, mentally check:
+
+- Formação (not Formacao), código (not codigo), prática (not pratica)
+- você (not voce), está (not esta), não (not nao), são (not sao)
+- nível (not nivel), específico (not especifico), decisão (not decisao)
+- construção, produção, equação, presença, diferença, começa
+
+The full 24-word checklist is in `quality-rules.md > Portuguese Accent Validation Checklist`.
+Write it right the first time — the reviewer will catch anything you miss.
 
 ---
 

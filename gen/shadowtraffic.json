@@ -79,6 +79,7 @@
         "created_at": { "_gen": "now" }
       },
       "localConfigs": {
+        "maxEvents": 5000,
         "throttle": 100
       }
     },
@@ -97,7 +98,41 @@
           "choices": [1, 2, 3, 4, 5],
           "weights": [0.05, 0.10, 0.20, 0.30, 0.35]
         },
-        "comment": { "_gen": "string", "expr": "#{Lorem.paragraph}" },
+        "comment": {
+          "_gen": "oneOf",
+          "choices": [
+            "Produto chegou antes do prazo, estou muito satisfeito com a compra.",
+            "Entrega atrasou mais de 10 dias, nao recebi nenhuma notificacao.",
+            "O produto e exatamente como descrito na foto, otima qualidade.",
+            "Frete absurdamente caro, quase o dobro do valor do produto.",
+            "Ate hoje nao recebi meu pedido, faz 20 dias que comprei.",
+            "Superou todas as minhas expectativas, recomendo muito.",
+            "Produto chegou danificado, a embalagem estava completamente amassada.",
+            "Atendimento ao cliente pessimo, ninguem resolve o problema.",
+            "Entrega rapida e produto de otima qualidade, voltarei a comprar.",
+            "O produto veio diferente da foto, cor totalmente errada.",
+            "Demorou 15 dias para chegar, mas o produto e bom.",
+            "Excelente custo-beneficio, produto de qualidade por um preco justo.",
+            "Nao recebi o produto e o suporte nao responde meus chamados.",
+            "Produto danificado na entrega, pedi reembolso mas nao obtive resposta.",
+            "Chegou no prazo, embalagem bem protegida, produto perfeito.",
+            "O frete demorou mais do que o esperado, porem o produto e bom.",
+            "Comprei ha 3 semanas e ainda esta como pedido em processamento.",
+            "Qualidade excelente, bem melhor do que esperava pelo preco.",
+            "Produto veio com defeito de fabricacao, muito decepcionante.",
+            "Entrega super rapida, recebi em 2 dias uteis. Recomendo o vendedor.",
+            "O material e fraco, nao vale o preco que foi cobrado.",
+            "Otimo produto, ja e minha segunda compra e continua me surpreendendo.",
+            "A entrega estava prevista para sexta e chegou apenas na quarta da semana seguinte.",
+            "Produto identico ao anunciado, funcionando perfeitamente.",
+            "Tive que abrir disputa pois o produto nunca chegou no endereco.",
+            "Muito bom, superou as expectativas em termos de qualidade e acabamento.",
+            "Embalagem chegou aberta e produto com sinais de uso, inaceitavel.",
+            "Rapido, seguro e produto de alta qualidade. Nota maxima.",
+            "O vendedor nao fornece rastreamento atualizado, ficou dias sem movimentacao.",
+            "Produto fantastico, vale cada centavo investido na compra."
+          ]
+        },
         "sentiment": {
           "_gen": "weightedOneOf",
           "choices": ["positive", "neutral", "negative"],
@@ -105,6 +140,7 @@
         }
       },
       "localConfigs": {
+        "maxEvents": 500,
         "throttle": 500
       },
       "fileConfigs": {
@@ -122,7 +158,7 @@
         "username": "shopagent",
         "password": "shopagent"
       },
-      "tablePolicy": "dropAndCreate"
+      "tablePolicy": "truncate"
     },
     "fs": {
       "kind": "fileSystem"

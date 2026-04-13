@@ -55,14 +55,23 @@ gen/                          # Data generation (ShadowTraffic + Docker)
   docker-compose.yml          # Postgres + Qdrant + ShadowTraffic
   shadowtraffic.json          # E-commerce data generators
   init.sql                    # Postgres schema (customers, products, orders)
+  data/reviews/reviews.jsonl  # Pre-generated Portuguese reviews for RAG
   .env.example                # Environment template
 docs/                         # Event documentation
-  AGENDA.md                   # 900-line detailed agenda with code examples
+  agenda.md                   # 900-line detailed agenda with code examples
   semana-ai-data-engineer-shop-agent.md  # Full curriculum spec
+prompts/                      # Sequenced live-coding prompts per day
+  d1-ingest/                  # Day 1: ShadowTraffic + Pydantic (11 prompts)
+  d2-context/                 # Day 2: RAG + Ledger + MCP
+  d3-agent/                   # Day 3: LangChain + Chainlit
+  d4-multi-agent/             # Day 4: CrewAI + DeepEval + Frontend
+src/                          # Python requirements per day
+  requirements.txt            # Master requirements (all days)
+  day1/ day2/ day3/ day4/     # Per-day requirements
 presentation/                 # HTML slide decks (Days 1-4)
 .claude/
   kb/                         # 18 Knowledge Base domains
-  agents/                     # 10 SubAgents (ai-ml/, communication/, exploration/, domain/)
+  agents/                     # SubAgents (ai-ml/, code-quality/, communication/, domain/, exploration/)
   commands/                   # Custom Claude Code commands
 ```
 
@@ -87,20 +96,30 @@ presentation/                 # HTML slide decks (Days 1-4)
 | architecture | kb/architecture/ | System design | 1-4 |
 | exploration | kb/exploration/ | Codebase analysis | 1-4 |
 | communication | kb/communication/ | Stakeholder communication | 1-4 |
+| aide-slides | kb/aide-slides/ | Slide deck design system | 1-4 |
 
 ## SubAgents
 
 | Agent | Category | Domain |
 |-------|----------|--------|
-| shopagent-builder | domain/ | ShopAgent components by day (green, opus) |
-| genai-architect | ai-ml/ | Multi-agent architecture design (purple, opus) |
-| ai-data-engineer | ai-ml/ | Pipeline + cloud optimization (blue) |
-| ai-prompt-specialist | ai-ml/ | Prompt engineering (blue) |
+| genai-architect | ai-ml/ | Multi-agent architecture design |
+| ai-data-engineer | ai-ml/ | Pipeline + cloud optimization |
+| ai-prompt-specialist | ai-ml/ | Prompt engineering |
 | llm-specialist | ai-ml/ | LLM selection + optimization |
-| codebase-explorer | exploration/ | Code analysis + discovery |
-| kb-architect | exploration/ | Knowledge base design |
+| code-reviewer | code-quality/ | Code review specialist |
+| code-cleaner | code-quality/ | Python code cleaning |
+| code-documenter | code-quality/ | Documentation specialist |
+| python-developer | code-quality/ | Python code architect |
+| shell-script-specialist | code-quality/ | Shell scripting |
 | the-planner | communication/ | Project planning |
 | meeting-analyst | communication/ | Meeting notes extraction |
+| shopagent-builder | domain/ | ShopAgent components by day |
+| aide-slide-builder | domain/ | Slide deck builder |
+| aide-slide-reviewer | domain/ | Slide deck reviewer |
+| aide-slide-fixer | domain/ | Slide deck fixer |
+| aide-slide-planner | domain/ | Slide content planner |
+| codebase-explorer | exploration/ | Code analysis + discovery |
+| kb-architect | exploration/ | Knowledge base design |
 
 ## Data Model (4 Entities)
 
@@ -116,7 +135,9 @@ presentation/                 # HTML slide decks (Days 1-4)
 ```bash
 cd gen
 cp .env.example .env
-# Edit .env with your SHADOWTRAFFIC_LICENSE and ANTHROPIC_API_KEY
+cp license.env.example license.env
+# Edit .env with your ANTHROPIC_API_KEY
+# Set your ShadowTraffic license fields in license.env
 docker compose up
 ```
 

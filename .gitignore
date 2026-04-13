@@ -1,0 +1,26 @@
+# Environment and secrets
+.env
+*.env
+!.env.example
+!gen/license.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (generated at runtime)
+*.jsonl
+!gen/data/reviews/reviews.jsonl
