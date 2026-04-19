@@ -1,0 +1,1955 @@
+
+
+---
+
+📁 **Arquivo: Apr 15, 10.32 PM​.mp3**
+
+ ele deu o agent assignment rationale explicou e aí ele vem com olha só
+ code patterns tá vendo aí galera olha que código lindo bicho sério mesmo não para
+ gente pra amor de deus vamos vamos vamos animar e mandar um foda
+ olha o código que o cara está escrevendo o cara não que sei lá quem tá
+ então tem documentação tem doc string bonitinho aqui os prompt tá nada de
+ documentação no meio nada de a slope nada tem tudo aqui tá então configurações
+ que ele vai precisar tudo ó tem prompt que ele vai usar tá tudo aqui beleza
+ vamos deixar ele cozinhar vamos começar agora vai amigão vai cozinhar vai
+ construir pra mim estou feliz com o meu com o meu design e agora a gente vai
+ carregar isso dentro do manifesto vai enviar isso pros agentes
+ os agentes vão literalmente começar a construir esse cara nos locais aonde
+ ele vai escrever no day 3 ele vai construir essa solução pra gente agora
+ enquanto a gente está olhando tá então vamos olhar aqui uma das coisas que eu
+ tenho embedados aqui dentro é o ralph wingon loop
+ tá então por exemplo que eu tenho na parte de execução
+ eu tenho ralph wingon então dentro desses design define e tal tem várias
+ técnicas que eu coloquei ali dentro tá várias uma delas é o ralph loop tá o
+ ralph loop ele é um loop interativo de desenvolvimento que ele utiliza uma
+ técnica em que ele fica realimentando o input output dele até a conclusão então
+ a manda o que isso significa o agente vai ficar girando em loop até eles até ele
+ ter o resultado que eu pedi para ele ter até o critério de saída dele só
+ funcionar quando eu pedir pra ele sair ou seja se o critério da saída dele é
+ ter um streamlit funcionando no local host 8000 e tal tal tal ele vai interar
+ nesse loop até chegar no resultado que eu pedi pra ele tá porque eu tô utilizando
+ o ralph wingon loop aqui pra loopar em cima disso ou seja eu tô criando um loop
+ agente com e eu tô fazendo um bubble wrapping desse loop com o ralph wingon
+ então ele já tem um loop que ele faz as tarefas e eu tô adicionando uma camada de
+ critério dentro desse cara então então empacotando ele com critério de
+ aceitação que vai ficar girando por passou o testei passou legal veio testou
+ passou tal aqui ó ele criando código pra gente ó eu sou abri que é que é
+ ser em cd3 eu já começo a ver um código que tá muito mais bonito do que aquele
+ outro que a gente viu que eu escrevi só de olhar aqui tá os requisitos as
+ rulings um documentação todas com dox string muito bem documentadas acabou de
+ criar o time lit app também eu acho que escreva um pouco mais rápido que você
+ só está talvez
+ o joão perguntou a quantidade de loops que ele vai fazer é o próprio a gente
+ decidir isso quem decidir isso é exatamente o agente mas ele tem um
+ guardrail ele tem um constrante nele que é o que você só vai sair do loop pode
+ sair do seu loop olha só que utopia você pode sair do seu loop o loop que
+ você acha que você já completou as tarefas mas eu tenho um loop em cima do
+ loop que fala que você só vai sair desse loop meu quando todos os
+ criterios forem met então que que eu tô dizendo com isso ele vai escrever o
+ código pela primeira vez talvez ele não acerte daqui ele vai se auto regenerar
+ olha só aqui é um exemplo a i see the system propis duplicated between agent
+ and chainlit lemme extract agent pui as a single source and then chainlit app
+ import from there that follow design dependency graph chainlit ele se
+ autocorrigiu fred então em vez de ter esse cara em dois lugares ele simplesmente
+ optou em fazer um to change chamada somente aqui
+ tudo bem eu aceito beijo na testa junto você que se a fala beijo na boca falar
+ que eu sou comprometido cara tá hoje não fala abraço
+ beleza
+ aí vai gerar o relatório
+ então teoricamente ele está falando que a dependência tá limpa geou vai gerar um
+ relatório de conclusão aqui
+ ai jesus vê lá e a construção de uma parada assim é muito topia galera é
+ beleza permite escrever
+ o report para mim então esse report aqui é um outro prd que literalmente mostra o
+ que foi construído nessa sessão os arquivos que foram criados resultados
+ arquitetura o que foi desenhado desvio o que deu certo que não deu certo é para
+ aprendizado isso aqui aprendizado tá ele vai usar esses documentos para
+ aprendizado escuturas para não errar novamente tá ele tem um build completo
+ testar
+
+ é que ele vai conseguir botar esse cara por cima
+ ele está checando se o docker está funcionando a verificando tinha em lix
+ o bbp aqui enquanto ele carrega né na to chain ele deixou
+ tá ele está testando como posso ajudar
+ vamos perguntar quais são as vendas totais e quais são as reclamações
+ preciso da atenção
+ e aí
+ é vocês entenderam que a gente fez uma aplicação em um chato
+ para entender a feita sobitação
+ quanto tempo você gastaria para fazer isso aqui
+ o tempo vocês acham que vocês estariam para fazer isso vocês estão vendo um
+ sistema isso aqui o que a gente fez no no workshop de zero produção para quem
+ estava aqui que a gente fez nos era produção de cloud code a gente fez essa
+ mesma coisa que a gente fez um sistema inteiro de event really no google
+ no google cloud e quantos quantas mudanças a gente fez quem estava lá
+ zero foi um shot ele criou as funções dos post-subs as permissões o processo
+ tudo o se ela tudo tudo tudo ele fez tudo em um chato
+ então para que ele para quem queria ver código para quem queria ver daqui é isso
+ é exatamente isso a gente tem um sistema literalmente funcionando em
+ live e graças a deus que o prado estava funcionando né em sei lá 40 minutos
+ então que a gente fez a gente fez o brainstorm entendeu tudo isso a gente
+ fez a definição e criou um outro prd nós fizemos o design que foi a arquitetura
+ disso com vários arquitetos que a gente tem depois a gente fez o build que é
+ executar dentro de um loop infinito e agora falta só um comando que eu ainda
+ não fiz que é o chip quando de fato eu falo que por essa feature que você fez
+ está certo a 100% eu tipo ela vejo quantidade de tokens que foram gastos
+ eficiência melhorias coisas para me para para aprender e eu salvo isso na memória
+ então toda vez que eu começo de novo brainstorming eu verifico que eu já fiz
+ anterior agora imagina a inteligência que você constrói a cada tempo que você
+ vai adicionando isso então que a gente literalmente viu a gente viu um usuário
+ consumindo chainleech usando um react agent que vai consumir tanto um ledger quanto uma memória
+ diante dos olhos de vocês literalmente construindo tudo isso acabou por aqui não
+ você acredita que fica ainda mais foda do que isso sim a gente vai ver um crew ai
+ a gente vai ver deep volos para garantir a validação de vários pontos a gente vai adicionar
+ rastreabilidade por tracing com lengthfuse e a gente vai criar um front-end de um e-commerce
+ para poder ver isso funcionando dentro desse cara e é isso a gente já decide sozinho amanhã ele ganha
+ a gente fez um agente de resposta imagina um multi agent system e aí que que vocês acham de tudo isso
+ vou abrir a pergunta está podem levantar a mão quem quer perguntar levanta mão que eu vou colocar
+ e ninguém levanta mão mais tá então quem quiser realmente perguntar qualquer coisa a hora é agora
+ e no final da aula só vocês
+ e agora o caro para sempre
+ e isso mãozinhos vai vai vai abrir mãozinhas aí tá ok então temos
+ e aí
+ e gente outra coisa perguntas hoje não são perguntas de consultoria de vida o que você acredita na sua
+ vida as sessões de terapias a gente já fez um dia onde é dois agora eu quero perguntas referentes
+ ao conteúdo com respostas sobre isso tá nada de choro se bebe a morrer ou não vai se que eu acredito
+ ou não conteúdo porque são perguntas interessantes para gente responder eu vou
+ até tirar aqui o meu meu negócio beleza boa noite tudo bem a gente está ali usando cloud eu vou
+ fazer uma pergunta talvez fácil para você mas eu tô tendo dificuldade de entender bem isso
+ é a gente está usando cloud e a geral ali com o agent spec a gente tem ali 58 template de agentes
+ e a gente passa pelos processos para chegar num objetivo que a gente declara no início quando
+ você chega naquele final que é digamos o creme de la creme que é uma l lm que você cria supostamente
+ só com agentes a gente pode afirmar com certeza que tem apenas agentes trabalhando ali saiu daí
+ a geral ele está completamente confinado dentro da estrutura que você determinou foi claro me
+ pergunta eu não entendi eu sou bom em ter perguntas eu não entendi eu tô eu tô encapsulando a l lm
+ para um processo sempre igual não sempre igual mas um processo que não saia do planejado existe
+ a geral se eu for no cloud agora fazer qualquer pergunta do bolo de chocolate vai responder
+ exatamente isso que você fez ele é fechar eu tenho esse problema eu quero aqui e a gente pode
+ garantir que apenas os agentes que vão trabalhar isso exatamente isso que eu fiz só que aí melhora
+ o o o o o que não eu não fechei ele porque tem a ideia de eu capo e o l lm não eu só adicionei
+ literalmente os guardrails a segurança para ele não bater e cair no desfiladeiro eu só falei
+ por beleza essa sua estrada aqui você vai ter que ficar nessa estrada aqui então nunca perca a
+ capacidade de pensar dele acelerar dele diminuir dele virar ele ainda tá na rota ele faz o que
+ ele quiser mas ele tem a segurança então tô literalmente dando a estrada correta segura
+ para ele andar mas ele pode acelerar quando ele quiser ele pode fazer o que ele quiser nessa
+ estrada tá obrigado nada bora rick
+ opa boa noite é você agora no final disse que você usa todo essa esse jeito spec do o que ele
+ gera de brainstorm design define e você depois auto é realimenta ele no para outros contextos
+ projetos é como que você faz isso eu joguei isso lá no no repositório global deles como que
+ ele faz isso isso que especificamente desenvolver
+ o rick volta
+ eu entendi a pergunta eu dei um mais que te ame o tipo de novo no finalzinho você disse que
+ usa tudo isso que ele gerou de brainstorm de design para ele ela é retroalimentar para outros
+ projetos tá como você fez isso dentro de um projeto específico ele vai ficar aí dentro
+ desse projeto você joga eles depois em outro lugar você sabe depois guardar em outro outro projeto
+ isso no meu caso o que eu faço é porque ele é open source então eu deixo com que as pessoas que
+ usem tem uma base de conhecimento dela mas os projetos que eu uso que eu faço é na hora que
+ eu faço o chip que eu faço literalmente o chip e eu mando isso para um local e eu ganho essa base de
+ inteligência eu guardo isso no obsidian volta então todos os projetos que eu tenho eu vou
+ guardando isso dentro de um volte no obsidian e daí no meu projeto de expect a primeira coisa que
+ eu faço antes do agent spec consultar o meu visit em volta para ver se tem alguma coisa que
+ existe em referência a isso que eu já fiz pode falar aí davi
+ o cara é duas perguntinhas aqui uma confirmar aí outro pedido é para confirmar que você foi
+ de contato do hardware seria tipo os contratos seriam os guardrails e as condições né que a gente
+ tá colocando ali para não deixar desviar correto isso correta perfeito e eu queria fazer uma pergunta
+ a respeito dos tokens você consegue mostrar para gente quantos tokens ele gastou para construir
+ essa essa aplicação se eu perguntar para eu fechei a sessão consigo mas no final que você faz o
+ chip eu tenho esse memória que é guardado e ele embeda dentro do relatório tipo ó a outra coisa
+ que fez uma pergunta legal da vi é uma pergunta legal que não tá nesse slide uma pergunta que eu
+ eu acho que você vai gostar cada design define cada pedaço desse usa um modelo então por exemplo
+ quando eu tô fazendo brainstorming e literalmente design define eu tô usando opus quando eu vou
+ literalmente executar eu uso o high-cool sonnet e quando eu vou arquivar e buscar todo o histórico
+ dessa informação eu uso raikou então uso diferentes modelos para cada uma das atividades
+ para evitar gasto de token mais do que mais né e para otimizar um bom obrigado de nada William
+
+ e se você conseguir falar aí William
+ o outro é correr enquanto você tem aí William buscar eu vou passar por Douglas tá mas continua
+ com a mãozinha levantada e Douglas pode falar
+ tá me vendo aí meu filho agora sim o Luan seguinte é no lugar do que é em
+ elite eu posso usar o WhatsApp não posso não eu sei que eu posso usar o WhatsApp mas a dúvida
+ é mais de segurança da informação e de governança eu perguntei para o chat e pro
+ Cloud eles me deram boas respostas mas eu queria saber se você já teve algum tipo de requisição
+ como você resolveu isso na vida real eu trabalho com as API e aí as API para mim esse esse esse
+ bridge de mandar e te controlar toda a mensagem as API tem muita coisa legal porque o que que
+ ele faz ele encapsula a API do WhatsApp e aí ele te dá somente e literalmente os métodos já então
+ você pode passar segurança você pode passar coisas específicas então fica mais fácil de você fazer
+ então se você quiser depois dá uma olhada nos API é um cara legal de você trabalhar eu uso ele tá
+ é minha dúvida é mais tipo assim como que você garante que a pessoa que tá do outro lado é ela
+ mesma que tá tentando essa informação e não uma pessoa que não pode ter aquele acesso você já
+ passou por algum desafio desse eu já passei por perguntas maliciosas e por tentar fazer um prompt
+ e mais nunca da pessoa que depende do contexto que você quer se você tá abrindo WhatsApp então
+ teoricamente é difícil você ter essa proteção porque ele geralmente se o cara tiver o endereço
+ o número do seu agente enfim ele vai ter acesso direto agora o que você consegue descobrir é você
+ deu um ponto legal por exemplo lembra que a gente teve a técnica do observer vocês lembram
+ disso da hierarquia do observador então a gente usa essa técnica de observer quando na verdade
+ a gente quer exatamente descobrir esse tipo de coisa então você tem os LMS pensando em fazendo
+ você tem um observador que tá de longe que ele tá na verdade inspecionando cada pedaço então
+ você pode ter um observer que simplesmente fica questionando as outras LMS para saber se o
+ comportamento real do processo que você quer é realmente esse ou se são intrusão ou não
+ Entendi show obrigado.
+ William, vê se você consegue falar aí William agora. Você tem que te esbloquear.
+ Opa, agora foi.
+ Boa manchilão, tudo bem?
+ Tudo bem.
+ Boa manchilão, você mencionou algo referente à memória que esse ano seria um dos assuntos
+ mais pais. Fiz algumas pesquisas já, tô fazendo um tempo, para entender como que funciona essa memória
+ de longo prazo. Vejo muitos artigos, o pessoal falando que é muito referenciado em fatos,
+ episódios, alguns falam de lembranças, objetivos, metas, mas até o momento não encontrei nenhum
+ benchmark, nenhum exemplo. Eu queria saber se você já viu algo disso fora, já implementou algo desse jeito,
+ até para dar um norte, porque assim, eu tenho um pouco de dificuldade para entender como que estrutura
+ essa informação quando se trata dessa memória de longo prazo. A memória de curto tá bem clara
+ pelas suas explicações aqui, tá?
+ Eu uso esse cara aqui, o Menpalis, é o mais usado hoje, open source, foi criada pela atriz do Resident Evil.
+ Caralho, what the fuck, né? Ela conseguiu um score de 96.6 no long men val, o maior já até hoje feito.
+ A mulher do Resident Evil, brother. A mulher da... desculpa, do Resident Evil. A atriz do Resident Evil,
+ a atriz do Resident Evil, aquela doida lá que mata os zumbis e faz tudo, a bicha criou uma parada de memória
+ e literalmente marcou 96.6, qual é lá, da bala, na galera que vive disso.
+ Tipo... Fiquei até sem palavras.
+ Mano, a Resident Evil actress build a AI memory system, it broke every benchmark.
+ Ela quebrou todos os benchmarks. A Mila Djokovic, a mulher do fucking Resident Evil.
+ Quem é você, a mulher bilionária, fez o Resident Evil e escreveu uma parada melhor do que você que é de TI.
+ Próxima pergunta. Porra, em que mundo a gente tá, velho? Sério, what the fuck.
+ Obrigado, valeu.
+ Olha, mas sem sacanagem, o meme palace é delicioso, não olha nada nele. Fala aí, Caio.
+ Olá, boa noite, turma, boa noite, Luan. Uma coisa que eu queria perguntar sobre o Agent Spec, ele é mais direcionado para a engenharia de dados, correto?
+ Mas pensando em SDD, para desenvolvimento de sistemas, sei lá, sistema de banco, de e-commerce, de não sei o quê, tudo quanto a tipo de sistema aqui,
+ muitas vezes a gente tem necessidades pessoais para a construção de nossos próprios sistemas.
+ Já existem soluções semelhantes ao Agent Spec para desenvolvimento de sistemas, desenvolvimento de aplicativo mobile, etc.?
+ É, eu usaria o Specket, que é o que eu mostrei ali que é a comparação, o Specket do GitHub.
+ Eu gosto dele, tá? Porque ele é mais genérico. Então você consegue construir muito bem qualquer coisa.
+ Por isso que eu criei o Agent Spec, na verdade, porque o Specket é muito bom, obviamente, tá?
+ Você pode instalar ele no Codex, enfim, o que você quiser, só que ele é mais um general propose.
+ Ele faz tudo muito bem, tá? Você vai adorar ele, muito bom.
+ Só que ele não vai cobrir todos os edge cases que eu cubro no Agent Spec.
+ Então o Agent Spec foi realmente pensado para AI, Data Engineering, para AI, Machine Learning, toda essa parte de dados e AI.
+ Mas se você quiser algo como sistema desse jeito, realmente, aí vai no Specket que vai dar bom.
+ Pode ir.
+ Beleza, obrigado.
+ Nada.
+ Boa noite, pessoal.
+ Uma pergunta.
+ Luan, eu trabalho na Uber, tenho um puxinho muito forte para a utilização da Serena da GA, token livre e tudo mais.
+ A gente vê a galera mesmo de sistemas muito avançado, criando solução que com alguns cliques ou com alguns prompt, eles chegam com algo em produção.
+ E eu comecei a ver o seu... analisar em detalhe o Agent Spec, para tentar replicar algo no cenário aqui, porque usa muita ferramenta interna.
+ E talvez algo na minha experimentação que eu estava vendo, a gente tinha uma falta de um step entre o build e o chip, que seria um deploy, teste, análise de dados.
+ Você acha que faz sentido, numa evolução do Spec ali mais customizado, ter um step de pós build de análise, log, validação de dados, validação de execução, consumo, memória,
+ para poder iterar de maneira agêntica, sem ter que voltar ali para o prompt?
+ Eu gosto. O que eu fiz na verdade é, eu criei um CLI, que eu chamo de Flow Check, que é exatamente ele alimentado pelo chip do processo.
+ Por que eu não coloquei ele dentro do Agent Spec? Porque eu entendi que a experimentação em VPUPock para produção é uma linha muito distante.
+ Então, quando eu faço esses cinco processos e eu tenho um funcional e eu entendi, o próximo passo no meu processo é como eu realmente chipo isso.
+ E daí eu vejo a chipagem com outras características muito mais complexas.
+ Brief Flight Check, Smoke Test, Validação Fim a Fim.
+ Então eu vejo de uma outra forma. Você pode embedar lá? Pode.
+ Eu não acho legal embedar isso num processo de Driven, que vai te dar um resultado em produção.
+ Acho muito perigoso. Eu acho que tem que ser quebrado para um outro processo.
+ Isso é a minha opinião. Por isso que eu não implementei. Já pensei em implementar várias vezes.
+ Mas aí depois a gente pode conversar no que eu criei do Flow Check.
+ Eu posso abrir o Flow Check para você ver que aí é um outro fluxo que é alimentado a partir deles.
+ Pode falar aí, Carlos.
+ Chega, gente.
+ Olá, beleza. Eu estava no treinamento, o primeiro, né? Zero to Pound Cooling.
+ E esse a gente já passou do CSDD.
+ Esse a gente espera que ele está mais atualizado ou posso continuar utilizando o outro?
+ Ele está atualizado. É esse aqui. Pode pegar esse aqui. Esse aqui está atualizado. Muito mais atualizado.
+ Tá.
+ André.
+ A gente pega... Ainda bem que o colega já fez a blusa.
+
+
+
+---
+
+📁 **Arquivo: Apr 15, 8.26 PM​.mp3**
+
+ Tenha essa ideia que essa pessoa literalmente faz e vive pelo que ela fala.
+ Isso é importante pra vocês, vai economizar muito tempo de vocês.
+ Não tem problema vocês comprarem outros cursos e fazerem outras coisas,
+ muito pelo contrário, eu acho que tem que ser assim mesmo.
+ Não existe uma pessoa certa, outra... não.
+ Mas cara, faça coisas que literalmente vão exponencializar o que você tem.
+ Você está no treinamento aqui, que eu estou querendo te mostrar
+ não o que é bonitinho, abrir um N8N, mostrar o fluxozinho,
+ falar, po, que legal.
+ Não, poxa, olha só, usa aqui essa feature do Cloud Code,
+ que é bem legal pra fazer tal coisa que você vai fazer isso aqui.
+ Eu estou te mostrando real shit.
+ Estou te mostrando problemas que você vai passar na vida empresarial,
+ o que você realmente vai usar.
+ Ah, de tudo isso aqui que a gente gosta, isso aqui é importante você fazer.
+ Por exemplo, Lema Index é uma parada muito legal de você ter na sua cartola,
+ de você ter no seu toolkit.
+ Porque é um produto open source,
+ é um produto que facilita toda essa criação de reggae,
+ todo esse processo de pipeline de reggae,
+ e ele tem diversas coisas interessantes.
+ Ontem a gente só arrainou a superfície.
+ Ele entrega muita coisa legal,
+ então vale a tempo você parar um pouquinho e você ler,
+ ou utilizar... eu utilizaria o Cloud, né,
+ pra consultar essas informações com os MCPs,
+ estudar esse cara, aprender ele internalmente,
+ porque ele é uma ferramenta chave pra você.
+ E se não for chave, ele traz os conhecimentos chaves que você precisa.
+ E aí a gente viu que sempre quando você está integrando,
+ entregando nível enterprise,
+ você sempre vai precisar de dois data stores,
+ não um só como as pessoas falam.
+ Ah, coloca um reggae na sua empresa e está tudo certo,
+ que uma base de conhecimento pra sua empresa está tudo certo.
+ Sim, como essa base de conhecimento é feita?
+ Você quer fazer da forma certa ou você quer fazer da forma errada?
+ Você literalmente quer socar um número financeiro importante dentro do reggae
+ e ter certeza que o sistema vai recuperar essa informação?
+ Você não vai conseguir garantir isso.
+ Então vocês sabem disso hoje, vocês saem com esse takeaway já hoje, ontem.
+ Deixa eu falar, cara, beleza, se eu for construir qualquer coisa,
+ que alguém está falando na minha empresa sobre isso,
+ eu tenho que pensar.
+ E eu garanto pra você que quando você entrar numa reunião
+ e você jogar isso pra você...
+ Eu escuto isso aqui direto, gente, pra meu celular.
+ Pô, uma aula de ontem foi isso, pô, mudou tal coisa.
+ Oh, tive uma reunião e eu falei sobre Ledger e o cara, pô, que legal.
+ Gente, o que faz vocês serem diferentes?
+ O conhecimento que vocês detêm, galera.
+ É isso, você vale o conhecimento que você tem.
+ Essa é a verdade.
+ E o conhecimento, hoje, ele é acessível pra qualquer pessoa.
+ Então o que diferencia uma pessoa de outra realmente?
+ Eu acredito que o lugar certo, o conteúdo certo no momento certo.
+ Você pode estudar reggae daqui 10 anos.
+ Talvez você perdeu o timing.
+ Se dá isso aqui...
+ Família, cara, ter projetos legais pra trabalhar,
+ evoluir de cago, mudar pra outras empresas, trabalhar pra gringa.
+ Cara, não existe limite.
+ Vocês vão ter a oportunidade na sexta-feira
+ de conhecer duas pessoas, o Rafael,
+ que vocês já conheceram, e eu vou trazer um outro colega meu de trabalho,
+ recente, pra vocês escutarem a realidade.
+ Então eu tô preparando a mente de vocês
+ pra vocês tomarem um bocado de chicotada, literalmente, na sexta,
+ porque a gente vai extrapolar pra vocês verem aonde as coisas estão.
+ Estão num patamar muito legal de trabalhar, cara.
+ Isso são coisas excitantes.
+ Você quer ficar trabalhando com backup de bom te dado?
+ Você quer ficar criando classe repetida?
+ Não, cara, você quer trabalhar com coisa legal.
+ Então a gente tá aqui tentando exatamente fazer isso.
+ O que aconteceu ontem?
+ Ontem nós tivemos um pouquinho menos de 2.452 mensagens no chat,
+ nós tivemos 75 fodas no chat,
+ tivemos 220 pessoas participando ativamente com números únicos no chat.
+ O chat é um local muito rico de você interagir,
+ é um local que você faz networking,
+ é um local em que você tem uma troca muito legal,
+ e o principal, te dá visibilidade.
+ Então é um ambiente legal de você estar ali,
+ trocando, aprendendo e assim por diante.
+ Lembra que tem várias pessoas experientes aqui,
+ com vários backgrounds experientes.
+ Ontem nós passamos quase 4 horas em aula,
+ e o tópico mais importante do algoritmo da atenção que o LLM pegou é
+ o BI quer morrer, mas não deixa.
+ O Luan vai existir, que nem cobalt.
+ E quando a gente fala das coisas morrerem,
+ de novo, a gente não pode pegar isso com o grain of salt.
+ A gente tem que entender quando a gente fala morrer,
+ é a mesma coisa que chegar a falar assim,
+ porra, a Java vai morrer, porra, o cobalt vai morrer,
+ porra, o Power BI vai morrer.
+ Essas coisas não vão morrer, não existe morrer,
+ não existe substima coisa para outra.
+ Existe a evolução no mercado e como as coisas vão indo,
+ e aí um aumento ou uma diminuição daquilo que você faz.
+ Obviamente a gente está vendo que vai existir
+ uma diminuição do jeito em que o BI é feito.
+ Assim como vai haver uma diminuição,
+ como telas são criadas, assim como vai haver uma diminuição
+ em pessoas que fazem processos repetitivos,
+ assim como a gente vai ver uma diminuição da quantidade de pessoas
+ que são programadores, assim, são tendências
+ e que inevitabilmente vão acontecer.
+ Qual a nossa missão hoje?
+ Nossa missão hoje é construir um sistema que vai se conectar
+ à base de dados que nós criamos.
+ Então hoje a gente vai ver, a gente vai entender
+ os padrões de designer, de designing,
+ a gente vai olhar um cara chamado Agents Back
+ e a gente vai trabalhar com duas ferramentas
+ extremamente importantes no ecossistema,
+ que é o Lang Schem e o Chainlit.
+ O Lang Schem, ele, na minha humilde opinião,
+ ele é um divisor de águas de criação de agentes.
+ Se a gente for olhar a quantidade de outros frameworks
+ que herdam o Lang Schem, ou que usam o Lang Schem,
+ ou que se inspiram no Lang Schem para poder fazer,
+ são absurdas.
+ Então quando você olha ali, por exemplo,
+ certos SDKs por debaixo do pano, você tem o Lang Schem.
+ Quando você olha ali na estrutura interna do N8N,
+ você tem o Lang Schem.
+ Você tem o Lang Schem em todos os lugares.
+ Então qual é a ideia?
+ O Lang Schem, ele vai além do que um framework.
+ Ele virou, literalmente, uma espinha doçal
+ que entrega valor para vários outros frameworks
+ e para vários outros lugares.
+ Logo, se eu entendo como o Lang Schem funciona,
+ eu consigo automaticamente entender como os outros
+ se posicionam no quadrante, como de fato eles se integram.
+ E o Chainlit, por exemplo, ele é uma interface gráfica
+ que você pode utilizar para interagir com o seu agente.
+ Existem várias no mercado.
+ Estou mostrando uma das várias.
+ Mas, cara, é uma interface gráfica.
+ Logo, se você tem uma outra interface gráfica,
+ a ideia vai ser a mesma.
+ É um front que vai se comunicar com o seu back-end.
+ Então a gente vai ver isso aqui.
+ Bem, o que é um agente?
+ Lembra que o nosso objetivo aqui é passar por esses quatro estágios.
+ Eu faço a IA e a IA ajuda.
+ Eu busco, a IA busca e eu pergunto.
+ A IA decide e eu valido.
+ E, amanhã, a IA constrói e a IA executa.
+ Então, o que a gente está vendo é uma evolução
+ de autonomia.
+ A gente está saindo de um pouco mais restrito,
+ abrindo um pouco mais o ciclo,
+ para deixar com que no final ele literalmente tome um processo autônomo.
+ Isso é muito interessante.
+ Porque em cada pedaço que você passou aqui,
+ a gente viu vários conceitos interessantes.
+ Só que hoje a gente não vai ver esse conceito.
+ A gente vai usar os conceitos para aplicar na prática,
+ para instruir o cloud e para entender no código o que significa.
+ E eu quero, literalmente, que no final dessa aula,
+ todo mundo fique até o final, até as 11 horas,
+ porque eu quero perguntar para vocês
+ a simples diferença do que significa você ser um executor
+ ou você ser um orquestrador.
+ E eu quero entender qual a diferença que vocês acham
+ na mente de vocês depois dessa aula.
+ Bem, existe uma taxonomia muito interessante com a gente,
+ que são esses três grandes chunks de informações.
+ O que é um tool, uma ferramenta, o que é um agent,
+ e o que é um workflow.
+ Isso é uma coisa que confunde,
+ isso é uma coisa que é interpolada em comunicação demais.
+ Em vários lugares você vai escutar o conceito de workflow de uma forma,
+ em outros ambientes você vai escutar o conceito de agente de uma outra forma.
+ O que é um tool? É uma ferramenta.
+ É um acesso que o agente tem para poder fazer alguma coisa.
+ Por exemplo, um agente tem a permissão de decidir por conta própria,
+ prestem atenção.
+ Ah, eu vou chamar o supabase execute SQL.
+ Ele tomou essa decisão.
+ A gente vai entender qual o reasoning que faz ele tomar literalmente essa decisão.
+ Mas a gente vai entender quais são os pontos que fazem com que essa entrada e saída
+ se tornem determinística para ele.
+ Como que ele entende esse tool que é disponível para ele.
+ Segundo, um agente, eu pergunto, ele decide como.
+ Então ele tem uma autonomia para poder entender que é o que a gente chama de reasoning.
+ Ele está literalmente pensando sobre isso.
+ E o workflow é um encapsulamento de vários agentes.
+ Então pensa numa fábrica, um processo de execução de fábrica.
+ Por exemplo, hoje a gente vai ver a gente, amanhã nós vamos ver uma fábrica,
+ um fabric de agents, que olha só que foda isso.
+ Imagina que você tem um crew, uma galera que tem um analista, um pesquisador e um reportador.
+ Então, pensa na prática o nível de detalhe e de perfeição que você tem
+ tendo uma galera, um workflow de agentes que pensam de formas diferentes,
+ que usam LLMs diferentes, para responder para você.
+ Quer ver um exemplo? Você quer escrever um livro.
+ Então você tem um escritor, um reviewer e um publisher.
+ Então imagina que você tem um escritor, você vai usar um modelo como o Opus 4.6
+ ou você vai utilizar algum modelo estado de arte para criar esse texto.
+ Você vai ter um reviewer que vai utilizar um outro totalmente diferente modelo estado de arte
+ para revisar e ter os comentários deles, os draftings.
+ Eles vão ficar inteirando sobre isso até literalmente chegando com um senso.
+ E no final ele tem ali a capacidade de ter um cara que vai revisar esse conteúdo
+ e dar literalmente o último thumbs up para você poder avaliar.
+ Uma coisa é você pedir para um agente fazer uma tarefa.
+ Uma outra coisa é você pedir para múltiplos agentes dividirem responsabilidades.
+ Isso é um divisor de águas. Então a gente vai começar a ver como que isso funciona
+ numa hierarquia nível enterprise para o que vocês vão usar no dia a dia.
+ Bem, o loop de um agente.
+ O sistema agente está em loop constante. Essa é a grande sacada.
+ Basicamente é o aisle 1 equals 1. Então ele vai ficar loopando eternamente.
+ E esse loop tem quatro blocos.
+ Então aqui eu botei o cloud, mas pode ser realmente cloud, grok, openAI, o que você quiser.
+ O LLM está aqui no meio. Beleza? E aí existem quatro características importantes.
+ Primeiro o reasoning, que é analisar o que ele vai de fato fazer.
+ Ação, que é literalmente a execução, a memória que ele tem e o contexto sobre isso.
+ E aí tem uma coisa interessante aqui, que é a parte mais utópica desse trabalho inteiro de um agente,
+ que é a parte de percepção.
+ Então ele começa a receber uma pergunta e ele vai literalmente tentar interpretar, olha só, a intenção dessa pergunta.
+ E a partir da intenção dessa pergunta ele vai pensar no que ele vai fazer.
+ Ele vai tomar várias ações, ele vai quebrar isso em várias tarefas.
+ E essas tarefas eventualmente ele vai guardar, ele deveria guardar isso em memória,
+ para literalmente você poder ter conhecimento e você ter um sistema que incrementalmente cresce em inteligência.
+ Então todo agente ele segue esse mesmo processo.
+ Percepção, pensamento, ação e memória.
+ Muitas das vezes um dos pontos maiores de confusão aqui, memória.
+ Muitas das vezes eu não tenho memória.
+ Então por exemplo, vamos para a realidade da gente ir construindo a solução.
+ Se você pegar o Cloud Code por exemplo, o Cloud Code tem uma ótima percepção,
+ tem um reasoning que eu acho excelente, tem uma ação de distribuição de tarefas e inteligência de como ele quebra isso,
+ de como ele inteira nisso, absurda, mas a memória é algo que precisa literalmente ser melhorado.
+ E que tem vários componentes externos que você pode utilizar para melhorar a memória,
+ para melhorar a percepção, para melhorar o reasoning, para melhorar suas ações.
+ Agora, imagina se a gente encapsula tudo isso no contexto realmente correto.
+ E eu concordo com o que o Gabriel falou aqui, esse é o ano da memória.
+ E aí o contexto na verdade ele é um barramento.
+ Eu não coloquei aqui, mas ele é um barramento.
+ Eu acredito que o que vai diferenciar sistemas incríveis de sistemas que são simplesmente average, é o contexto.
+ O contexto é chave para tudo isso aqui, para melhorar todo esse processo de par loop que ele tem.
+ E aí a gente tem, nós temos aqui para workflows, quatro padrões de orquestração.
+ Olha só que interessante. Você tem um padrão, por exemplo, sequencial.
+ Cada gente executa em ordem. Então você tem um analista que analisa o problema,
+ você tem um pesquisador que vai na internet literalmente entender aquele problema fundo,
+ identificar e vai ali no contexto para poder entender o que o analista de fato fez.
+ E no final você tem um repórter que vai literalmente entregar um relatório para você falando
+ olha só, o nosso time descobriu este problema aqui.
+ Então esse é um padrão que a gente usa.
+ E obviamente que não existe um padrão melhor do que o outro.
+ Existe um use case que esse padrão literalmente é interessante.
+ Por exemplo, a parte de análise de informação é uma ótima para sequencial,
+ uma escrita de livro ou alguma coisa que você queira, vários reviews de qualidade
+ você pode implementar essa sequência.
+ E aí você pergunta para mim, Luan, por que eu estou aprendendo padrão?
+ Cara, padrão é building block.
+ Quando você for instruir, você precisa saber perguntar,
+ saber perguntar e instruir o que você quer do sistema agente que você está criando.
+ Paralelo, a gente tem múltiplos agentes executando ao mesmo tempo.
+ Por exemplo, eu literalmente chego para o meu agente e falo o seguinte,
+ olha, disparo um agente para escrever três scripts diferentes.
+ E aí eu inicio três diferentes agentes.
+ Três desenvolvedores de Python, um vai escrever cada agente desse.
+ Então ele vai trabalhar em paralelo, vão escrever esses arquivos
+ e depois vão consolidar esse resultado para mim.
+ Depois, hierárquico.
+ Esse aqui é um dos mais utilizados do mercado.
+ Então quando você pensa em hierarquia, pensa no Cloud Code e no Subagents.
+ Ele é um modelo hierarco, de literalmente manager worker.
+ Você abre o Cloud Code, você tem lá a tela para você digitar.
+ Esse é o orchestrator.
+ Quando você invoca um Subagents, ele é o agente executor.
+ Então como a gente trabalha, como eu falei ontem,
+ a ideia de você trabalhar em grande escala, e eu sou super fã de trabalhar dessa forma,
+ eu uso o Cloud Code como um orquestrador o máximo possível.
+ E eu delego para os meus Subagents fazerem o trabalho que eu quero fazer.
+ E a gente tem um outro que aqui a gente vai para um nível bem complexo.
+ Lembra ontem que tinha um colega nosso perguntando sobre
+ que dia vai existir um sistema que seja capaz, por exemplo, de entender intenções,
+ de fazer a reastreabilidade correta, de entender decisões e assim por diante?
+ Uma das formas de você resolver aquele problema é o consenso.
+ O que é o consenso? Você tem agentes independentes que votam, olha que foda isso.
+ E aí você tem um cara que na verdade vai decidir esse consenso,
+ ou eles vão chegar numa matriz de resolução.
+ E eles não vão parar de inteirar nisso até que eles achem um score
+ ou alguma coisa para eles saírem desse loop.
+ Talvez sair desse loop seja você no meio, o human in the loop,
+ ou seja, literalmente, um outro agente julgando isso.
+ Então, o que a gente começa a olhar para esses padrões?
+ Que é o seguinte, você pode utilizar eles separadamente no seu projeto,
+ mas na vida real você vai usar vários padrões de desenvolvimento agênticos
+ para poder fazer isso.
+ Luana, isso aqui é importante numa entrevista?
+ Bem, não sei. Você vai ser contratado para ganhar entre 6, 7, 12, 15 dólares por mês
+ numa empresa.
+ Você literalmente acha que o cara hoje está ligando para a tecnologia que você vai usar?
+ Se você realmente acha isso para trabalhar para fora do país,
+ você está redondamente enganado.
+ Tecnologia é commodity.
+ Cada vez mais você se torna commodity, commodity, commodity.
+ Luana, isso quer dizer que eu não devo aprender?
+ Obviamente você deve aprender.
+ Mas primeiro você tem que aprender as coisas principais,
+ depois isso aí, porque isso é um commodity.
+ Você tem que aprender arquitetura, padrão, design pattern.
+ E aí depois você fala, cara, para esse projeto,
+ qual é o melhor baseado nesse padrão para isso, para isso?
+ Quais são as tecnologias que você me sugere?
+ Boom. Beleza. Me mostra uma matriz de pontos positivos e negativos.
+ Boom. Versione isso aqui em fase 1, fase 2.
+ Boom. Faz para mim agora uma validação de padrões que eu estou fazendo.
+ Não, faz melhor.
+ Chama um agente que eu criei de padrões de sistemas agênticos
+ e pede para ele criticar isso aqui.
+ Faz o seguinte, entra no meu sistema e crie um consenso com o chat GPT
+ ou literalmente com o codex para avaliar esse meu plano e tenta destruir esse meu plano.
+ Critique esse plano e tenta fazer um plano melhor.
+ Quem é o problema aqui? Você.
+ Não são mais as máquinas, é literalmente você o problema.
+ Por quê? Porque você ainda está com a mente de pensar que você está dentro de um container.
+ Você está literalmente fora de qualquer coisa.
+ Você é o driving factor aqui. Você é o cara.
+ E a cara que comanda isso.
+ Então, como o Gabriel falou, o problema está entre o computador e o teclado.
+ Literalmente. É louco desse jeito pensar.
+ Então, eu não consigo literalmente não extrapolar se eu não mudar o mindset de vocês.
+ Não dá. Eu tenho que mudar isso.
+ E para mudar isso, eu preciso fazer duas coisas importantes.
+ Primeiro, eu preciso mostrar para vocês a teoria.
+ Eu preciso guiar vocês para o que é real.
+ E eu preciso mostrar isso diante dos seus olhos.
+ Eu acho que não tem ninguém melhor aqui hoje para poder fazer isso do que o Rafa.
+ Rafa, vou passar para você.
+ Deixa eu só desbloquear você aqui. Só um minutinho.
+ Boa noite, gente. Mais uma vez.
+ Você quer que eu compartilhe a tela ou você compartilha?
+ Pode compartilhar. Eu te dei permissão para você compartilhar.
+ Ótimo.
+ Deixa eu ver um pouquinho, pessoal.
+ Aparecendo aí?
+ Estou vendo toda a sua tela inteira.
+ Tenta, quando você for compartilhar, vai em Advanced, é Portion of Screen.
+ E daí você pode assinar a porção da tela que você quer mostrar.
+ Eu já consegui aqui. Boa.
+ Perfeito. Estou vendo perfeitamente.
+ Galera, ontem eu tive um feedback do Luan e parece que o pessoal gostou um pouco do que foi apresentado, dos produtos que a gente tinha criado.
+ Do caso de uso que eu tinha entrado.
+ Só que teve um momento em que a gente ficou cética em relação a isso.
+ Então o Luan me passou um desafio aqui e pediu para eu tentar mostrar para vocês, explicar para vocês um pouquinho como é que funciona esse processo de criação de sistemas agênicos.
+ Eu criei aqui um documento basicamente para explicar um pouco como é que funciona esse projeto que eu tinha passado para vocês na criação de dashboard.
+ Ele tem basicamente essa arquitetura.
+ A arquitetura do agente de pesquisa, ele recebe uma mensagem do usuário, passa por um handler, são todos agentes aqui, na verdade são múltiplos agentes, o projeto todo tem 18 agentes.
+ Então ele passa por um handler, identifica qual é o tipo de input que o usuário fez.
+ Se for uma imagem, ele passa por uma análise da imagem, passa por um gate de aprovação, que é um manual loop, que é o que ele vai aprovar ou não a imagem.
+ Paz o mapeamento e cada mapeamento também passa por uma aprovação a não ser que o nível de semântica mapeada foi muito baixo.
+ Então se ele não conseguiu identificar semânticamente o que a gente tem no dashboard, ele passa para o usuário para o usuário poder fazer esse ajuste.
+ Então ele gera o código e transforma isso em um Power BI.
+ Nesse mesmo projeto nós temos um agente que a ideia dele é substituir um inger o status.
+ Então ele consegue entender como um modelo semântico ele funciona, quais são as melhorias de performance que podem ser feitas e quais são os gaps que existem no modelo semântico.
+ Então se por acaso na migração ele tentar achar algum campo, alguma tabela que não foi encontrada no modelo semântico, ele volta dentro do edalho e vai na gold, na prata, na silva e tenta achar essa informação para fazer a migração.
+ E nesse processo ele cria um pull request e já gera a migração, joga isso no modelo semântico dentro do modelo status schema.
+ Ou de um OBT se ele entender que o modelo é mais performático que um OBT.
+ Para isso ele tem um led, esse led é exatamente para a gente evitar as alucinações, é o queridinho do Luan.
+ Então dentro de uma parte dos leds são as tabelas verificadas, as medidas verificadas e as camadas, tabelas, colunas, medidas e as camadas.
+ Toda a comunicação entre agentes, ela trabalha com contratos paedânticos, então nada passa, todas as saídas são estruturadas.
+ Eu acho que o Luan chegou a comentar isso, eu tenho uma breve lembrança que ele comentou isso ontem sobre estrutura de saída de agentes.
+ Então todas as saídas sem exceção, independente delas serem criadas pelo agente ou não, elas passam por um contrato de validação.
+ Então eles não conseguem trabalhar se a conversação for em linguagens diferentes.
+ E no final do processo o LLM pegou tudo que ele precisava trazer, chamou as tuas, trouxe todos os dados, gerou o contexto.
+ Para ele dar uma resposta correta para o usuário, a gente manda isso para um outro agente que faz uma validação, tem uma série de guardrails dentro dele,
+ valida o percentual de qualidade da resposta e se a resposta não for boa o suficiente, ele devolve e manda reproduzir todo o processo.
+ Obviamente incrementando o ledger, então ele sempre tem essa validação, por isso que aqui ele tem um processo de padrões que o Luan estava falando,
+ que é o loop react, que é um tipo de pattern que a gente tem para agentes e esse processo todo aqui é um evaluator optimizer, é um outro tipo de padrão, então eu tenho um padrão dentro de outro padrão.
+ O que é a Diorizer?
+ E o processo de criação de dashboards é um vision single shot com a Provogate, então ele analisa a imagem, faz essa quebra por gráficos e todas as informações que ele tem ali dentro,
+ passa para o Provogate, que o usuário vê a qualidade de reconhecimento que o agente teve, então ele faz o mapeamento, a geração de código, exporta e faz a publicação do dashboard.
+ Isso aqui são os padrões que são criados, não tem muito segredo, isso aqui é bem padrão para frameworks como o Luan falou, como legit chain, então na verdade isso aqui foi até tirado do legit chain porque na plataforma que nós usamos o framework que a gente está usando ele é muito novo.
+ Isso aqui é um tool que o agente e o advisor na verdade ele pode usar, então ele tem três ferramentas de discovery, tem cinco ferramentas, quatro ferramentas de validação de esquema,
+ aqui é o esquema mesmo de modelo semântico, tem validação então ele consegue fazer montar formulas dashs e queries em tempo real de acordo com o que o usuário está pedindo e bater no modelo semântico fazer a query, fazer o dado em tempo real e criar gráficos baseados nesse dado.
+ E no final das contas ele ainda consegue fazer pesquisa em documentos internos que é uma outra base de conhecimento que a gente usa e adicionar para fila que esse cara especificamente é uma fila de criação de formulas dashs para public questions, então ele faz todo esse processo sozinho.
+ No final as decisões que foram tomadas para esse projeto específico é que os contratos e todas as chamadas de tool agente e tools elas tem budget caps então nunca ele vai chegar num ponto que ele vai alucinar e não vai ficar rodando eternamente, então ele tem um limite que ele consegue rodar e cada vez que esse limite estoura ele cai em outro agente de validação e ele entendeu porque ele está perdido.
+ O estado ele sempre gravado dentro do namespace, dentro do espaço que a gente está trabalhando então a gente não consegue mexer no espaço do outro é como se você tivesse uma equipe com várias pessoas e o conhecimento de cada pessoa pode ser usado por outras mas aquele conhecimento não pode ser escrito por outra pessoa então eles são limitados entre cada agente.
+ E o ground dentro dos boundaries das tools que são os limites de cada tool então uma vez que essa tool retornou com um limite com determinada informação e ela foi validada ela entra no led e isso é imutável. O led funciona como a gente já tinha comentado exatamente como um livro de razão do blockchain.
+ Depois que ele entrou ali dentro ele está validado ele não pode ser mudado ele só entra como conhecimento para as próximas interações com a gente.
+ Bem, como apresentação basicamente do projeto para vocês entenderem como o sistema agente funciona era isso.
+ Aí como eu estou te vendo bastante mensagem do pessoal falando que não teve muito código e assim falar é muito fácil né.
+ O Luan me pediu para fazer um pequeno exercício e o que eu fiz foi trazer para vocês um pedacinho de como isso funciona na verdade eu até espero que funcione porque eu tive pouquíssimas horas para conseguir montar esse projeto todo.
+ É um projeto bem extenso. Então eu estou usando aqui como base de dados vetorial no quadrante. São os dados bem mocados mesmo.
+ E um projeto bem parecido usando o chain lead que o Luan queria apresentar aqui hoje então estou tentando usar a mesma stack que ele usou e usando somente modelos open source.
+ Então eu estou usando o Mini CM, estou usando o Curso de Codic.
+ E no final das contas eu acho que alguém tinha perguntado isso ontem, se eu não me engano foi a Cynthia pelo tempo de acordo.
+ Ela perguntou se esse processo a gente poderia fazer isso para outro estilo de plataforma e não somente para o Power BI.
+ Então para tentar dar um pouquinho mais de gosto nessa demo eu também tentei fazer isso no superset.
+ Então eu estou usando o stack completamente open source para fazer isso.
+ A imagem que eu criei é uma imagem bem vagabunda que eu fiz no Paint.
+ Sem muita graça. E o processo é basicamente isso aqui.
+ Vou pegar a imagem.
+ Deixa a gente analisar. Se por acaso ele não encontrar alguma coisa, envia de regra.
+ Ele vai me informar.
+ Você passou quanto tempo para fazer essa rafa agora?
+ Para montar o ambiente.
+ Eu tive que subir três imagens de dogger, eu subi as imagens, fazer o download dos modelos para fazer tudo local.
+ Eu gastei mais ou menos uma hora e quarenta.
+ Abre cada reason.
+ Aqui ele está buscando o campo do modelo semântico.
+ De revenue ele achou fact sales revenue. Quantidade.
+ Aqui ele está com um nome bem parecido, mas na verdade eu fiz o teste com os nomes um pouco separados.
+ Mas ele fala que ele achou VIN, BED, tabela candidatos, fact sales, então você vê que tem tabelas diferentes aqui.
+ Ele monta o mapeamento, quatro visuais detectados, seis campos mapeados com sucesso.
+
+
+
+---
+
+📁 **Arquivo: Apr 15, 8.57 PM​.mp3**
+
+ Todos esses percentuais seriam melhorados, o embedding seria muito mais real.
+ Ele gera o dashboard, a gente supersede.
+ E faz explotação.
+ O dashboard funciona.
+ Ai, ai, tá bom.
+ Cara, uma das demos mais incríveis que eu já vi até hoje, de verdade.
+ É porque eu consigo entender pra onde isso pode, sabe, e as ramificações.
+ Incrível, cara.
+ Só com aquela imagem que ele teve.
+ Sinistro.
+ Isso aí, gente.
+ Bem...
+ Muito bom, Rafa.
+ Deixa eu...
+ Um parte da minha telinha.
+ Aqui.
+ 6.
+ Mas me coloquem aí no chat, que vocês acharam.
+ Vocês entenderam aonde dá pra chegar.
+ Vocês acabaram de ver uma coisa completamente utópica.
+ Porque, por exemplo, quando o Rafa começou a falar sobre isso e fazer isso...
+ Eu lembro desde o dia 1.
+ Então eu literalmente...
+ Cara, isso é meio utópico, mas não.
+ E realmente é.
+ Aonde eu ia pensar que seria possível fazer algo perto disso, sabe?
+ Tipo, literalmente nunca na minha vida.
+ E sim, é possível.
+ A gente tá vendo aí como que dá pra fazer de fato isso funcionar.
+ Incrível, Rafa. Parabéns.
+ Isso que eu pedi pra ele, sei lá, foi, sei lá, 2, 3 horas da tarde.
+ Eu falei, Rafa, tenta trazer a demonstração pra gente.
+ Então imagina o que dá pra fazer.
+ E aí imagina as técnicas que você vai aprender.
+ Por exemplo, Rafa, só te perguntar uma última coisa.
+ Se você trouxer pra tudo isso que a gente ensinou até agora...
+ Se usou padrão, se usou workflow, se usou tooling, você usou o quê?
+ Você usou o tooling que a gente explicou aqui junto?
+ Foi isso?
+ Eu usei tudo que você falou do começo ao fim.
+ Exatamente, me mexei com os padrões.
+ Usei o rag, como você comentou.
+ Usei o workflow do jeito que você tá comentando.
+ Exatamente, não teve absolutamente nada que eu fiz aqui que não tá dentro do que foi falado nesses três dias.
+ Beleza, bom demais.
+ E esse projeto, uma boa visibilidade da empresa?
+ Absurdo, eu tenho um paper se o pessoal entrar no meu LinkedIn.
+ Tem um paper falando sobre o projeto lá, se quererem saber mais.
+ Então é sobre isso, pessoal.
+ É sobre saber guiar a carruagem dos agentes malucos.
+ Então, literalmente, a genialidade tá entre o teclado e o caudinho, literalmente.
+ O que você consegue construir hoje, literalmente, não tem limites.
+ E quando eu digo isso, acredite, vocês vão ver na sexta-feira.
+ Se vocês estiverem aqui, eu recomendo, porque, de novo, vocês não vão escutar somente do Luan.
+ Vocês vão escutar de outras pessoas, do Rafa, mais a fundo.
+ E de outro Brasil, o que eu vou trazer é que ele vai te explicar ainda mais.
+ Ele vai extrapolar essa curva que a gente tá, pra mostrar o quanto a gente aqui no treinamento já tá tipo assim...
+ Os casos de uso onde a IA é aplicada na vida real pra trading, pra cibersegurança, pra bitcoin, pra casos de frotas de caminhões.
+ Ixi, cara, Diagro, ele vai falar um pouquinho sobre tudo isso pra vocês, dos casos de uso que a gente tem trabalhado.
+ Então, vocês vão entender que não existe limite agora.
+ Nosso limite tá literalmente capado, nossa inteligência aí, nosso pensamento eu de extrapolar isso.
+ Porque, literalmente, em criação não existe mais limite.
+ Eu já falo isso há um bom tempo, né?
+ Que eu acredito muito que a gente tá nesse conceito de ADI.
+ Ninguém acredita nisso ainda, obviamente.
+ Mas eu acredito que tudo que eu precisei fazer, o que eu extrapolei, o que eu pensei que não era possível e que eu reinterei em cima, eu consegui criar com o OX4.6.
+ O 4.5 já era muito bom. O 4.6 ele realmente foi o divisor de sair de um cara de meu plano pra um PhD em alguma coisa que você quer.
+ E se a gente for extrapolar isso pro próximo ano, você pode ter certeza que o nível que a gente vai tá daqui seis meses, nove meses,
+ é muito mais absurdo do que a gente tá hoje, mas sem dúvida alguma.
+ Então, tentem pegar isso e entender como isso é importante.
+ Ele mostrou em produção aqui como que ele traz esse projeto, um pedaço do projeto.
+ Acho que o Rafa deve estar mostrando ali 10, 15% do projeto e a complexidade que tá ali dentro.
+ Porque são complexidades adicionadas em outras complexidades.
+ E agora eu vou mostrar alguns pedaços de como ele pode construir, como você pode construir tudo isso.
+ Então, qual é o motor desse ecossistema?
+ Obviamente que a gente tá falando do Langchain. Então, cara, a primeira coisa é o que é o Langchain?
+ Então, o Langchain na verdade ele é um motor, é o que eu falei.
+ Ele vai muito mais além do que literalmente um framework.
+ Ele vai muito mais além do que literalmente funções disponíveis ali em Python pra você utilizar.
+ Ele realmente é um building block.
+ Realmente é um cara que se destacou no mercado justamente pela facilidade que ele tem, pelo ecossistema que ele carrega e principalmente pela adoção que ele tem.
+ Então, por exemplo, se a gente vier aqui Langchain...
+ O projeto é esse aqui, ó. Ele compartilha o...
+ A gente tem o Langchain aqui, ó. Ele tem 104 mil stores, 22 mil forks.
+ O projeto é constantemente atualizado. Inclusive foi atualizado 13 minutos atrás.
+ Então, ele se torna realmente um Agent Engine platform.
+ Você consegue fazer basicamente tudo com ele.
+ Então, em vez de você literalmente ter bibliotecas soltas ali, que você vai no Python, você pede coisas literalmente soltas,
+ você tem abstracts, você já tem funções disponíveis ali pra você literalmente utilizar.
+ Então, por exemplo, eu quero iniciar um chat com um modelo.
+ Então, eu dou um from, Langchain, import chat models, import, init chat.
+ E daí você talva init chat model, fala qual é o modelo que você quer interagir e voilá.
+ Você já está interagindo com o modelo.
+ Que contexto.
+ Então, é extremamente rico, é extremamente robusto, é extremamente desacoplado.
+ E principalmente, ele integra com absolutamente tudo.
+ E tem algumas outras coisas dentro desse realm que são maravilhosas.
+ Por exemplo, Deep Agents.
+ Cara, esse cara aqui está explodido também.
+ 20 mil stars em muito pouco tempo. Isso é recente.
+ Que é basicamente um Agent Harmness.
+ Ele tem opinião, ele é um gtec systems, ele se conecta com todos os processos.
+ Então, é como se ele fosse um Cloud Code Open Source.
+ Então, você pode codar ele justamente utilizando o Python.
+ Para poder trabalhar do jeito que você queira.
+ Com literalmente interação, default, acesso ao File System, acesso a ferramentas, contexto, memória.
+ Tudo isso ele tem.
+ Essa é a proposta do Langchain ainda mais para sistemas agênticos.
+ Tem outras coisas também.
+ As integrações que ele oferece off the shelf.
+ Quais são as integrações que ele tem?
+ Cara, aí assim, literalmente o mundo que é Sirinestro.
+ Ele tem milhares de integrações e milhares de características.
+ É de se perder de vista.
+ Aqui é só para chatmodels.
+ Isso aqui é para ferramentas que já estão integradas com ele.
+ Olha isso aqui.
+ Middleware de integração que ele tem.
+ Sandbox, onde você consegue literalmente rodar esses caras.
+ Checkpoints para guardar informações de memória.
+ Retrievals, para que você possa literalmente ter uma interface de recuperação.
+ Splinters para quebrar os documentos em grandes chunks.
+ Então, ele já funciona ali também na hora de recuperar como um sistema eficiente de recuperação de dados.
+ Os modelos de embeddings que ele tem, basicamente todos, disponíveis que você pensar no mercado.
+ Vector, stores, eles conectam os vets.
+ Então, automaticamente...
+ Ah, então calma aí.
+ Então, você é chato porque você ficou repetindo segundo e terça sobre vetor, led, reg e tal.
+ Então, eu posso agora conectar o language literalmente a essas bases e dar acesso a elas instantaneamente.
+ Opa, eu consigo.
+ Ele ainda tem pesquisas similares.
+ Olha o tanto de outros embedding modules que ele se comunica.
+ Então, cara, você se comunica com todos basicamente.
+ Acho que tem um que você não conseguiu se comunicar.
+ Então, se você realmente quer utilizar um produto ou tem source que te traz customização de você literalmente criar o que você quiser, a família Lang é muito boa.
+ Legal, Gilberto. Parabéns, incrível.
+ Quase uma pala de prata para tomada de decisão.
+ Resposta rápida para o negócio. Reação do seu verbo, anti-deadline para tomada de decisão.
+ Você tem que ver o sistema completo funcionando.
+ Realmente tipo, wow, Chiquacarocho e o caso de osso, depois vocês darem uma olhadinha.
+ Ah, Rafa, só uma pergunta. Quantas pessoas construíram isso?
+ Isso é um projeto?
+ É esse projeto?
+ Cara, nós gastamos, eram cinco engenheiros, eu como engenheiro de ar, mais quatro engenheiros de dados, e nós gastamos para deixar em estado funcional três meses e meio.
+ Mais ou menos 130 mil linhas de código.
+ Usou em val? Usou.
+ Com certeza.
+ Usou observabilidade? Usou. Usou React? Usou. Usou Chain? Usou.
+ Tudo isso que vocês estão aprendendo, que esses novos lucros foram usados.
+ Porque não é só para te ensinar um curso solto, é como que você conecta toda essa sopa de letra para você construir uma solução interpraisa.
+ E aí sai a divisão de, ah, legal, eu aprendi, ah, ou realmente eu aprendi, ah.
+ Eu entendi que são vários pedaços e que eu preciso conectar e entender quando conectar eles, tá?
+ Então, o que é isso, Alain e Shane? Agora, com a cabeça que vocês têm hoje.
+ Porque assim, o...
+ Faz sentido a gente abrir linha a linha aqui e literalmente entender cada sopinha de Python, de invocação que ele está fazendo, e literalmente construir isso na mão.
+ Sendo que a gente pode fazer várias outras coisas interessantes.
+ Vocês já têm dimensão de que isso não é mais necessário se você entende a base de Python, se você entende o que é Function, se você literalmente entende Design Patterns, se você entende como invocar, se você...
+ Vocês realmente agitam que você vai trazer valor realmente no mundo moderno de hoje fazendo isso?
+ Eu acredito que não, galera. Eu não estou dizendo que você ignore o código de novo, né?
+ Eu estou dizendo pra...
+ Obviamente, se você quiser abrir e entender o código, obviamente isso é foda e a gente vai...
+ Mas é código.
+ Ele é um means to an end. Ele não é o final, tá? Ele só é o processo pra chegar no fim.
+ Então, o que eu estou querendo mostrar pra vocês aqui, se você entender a estrutura do Lane e Shane, o que significa literalmente o core dele, que são os tools, prompt e runnables.
+ Se você entender a ideia de Leng Graph, se você entender o processo de runtime, quais são os providers, e você entender a casca literalmente do Lane e Shane, pra que que você precisa literalmente gastar tempo com isso?
+ Então, você pode literalmente aprender por aqui ou você pode literalmente abrir o cloud e aprender pelo cloud.
+ Lembra que a gente falou disso?
+ Poxa, a gente está falando disso toda vez.
+ Então, a gente pode vir aqui.
+ E, antes de tudo, deixa eu só puxar as mudanças do repositório que vocês vão ter que usar logo mais ele.
+ Tá? E eu quero que vocês estejam esses caras up to date.
+ Então, vamos pegar aqui.
+ Brase.
+ Vou abrir aqui uma nova...
+ Essa estrutura que é o motor, que eu já vou mostrar pra vocês o motor do Lane e Shane, como tudo é ser invocado.
+ E daí, a primeira coisa que a gente vai olhar é, beleza, agora eu tenho literalmente o motor.
+ Mas como que a gente mostra essa informação, né?
+ A gente precisa de, literalmente, a voz.
+ Então, uma das formas de você mostrar isso, como o Rafa mostrou ali, é o Chainlit.
+ O Chainlit é um cara que eu, praticamente, acho muito legal.
+ Você consegue embedar, literalmente, ele em qualquer lugar.
+ Ele tem uma interface muito, muito interessante, conversacional, que você tem.
+ E, de novo, você pode usar várias outras, tá? Só estou te mostrando uma das formas que você pode utilizar o Chainlit.
+ E ele é o Pinsorce também, tá?
+ Então, eu adoro ele. Eu acho que ele é uma parte muito legal.
+ E, por exemplo, o Rafa está usando o projeto dele. Você usa realmente a Chainlit, né, Rafa, pro projeto, não é?
+ Isso. Nós vamos mudar agora pro VS Cell.
+ O Brass Decay do VS Cell, porque o sistema ampliou muito, então não tem vários módulos.
+ Mas a parte conversacional, ela é toda feita no Chainlit.
+ E ele é muito bom, porque ele já cria uma camada de cache IPI por baixo, então você consegue fazer a abstração da front-end completamente.
+ Gosto. Sou fã desse cara aqui, tá? O Pinsorce, um puta projeto legal.
+ Então dá pra você pensar em diversas possibilidades de como você pode, literalmente, trazer os seus agentes pra vida, conectar eles, né, numa interface.
+ Então esse cara tem 11 mil estrelas, literalmente, tá?
+ E é um projeto que tem crescido absurdamente a cada dia que passa.
+ Então a gente tem o motor. Nós temos limpeza, tá?
+ E aí, a gente tem, literalmente, agora a voz, que é colocar esse cara na frente.
+ E aí a gente tem os blocos de construção, tá?
+ Então como que a gente constrói essas ferramentas, né?
+ Então a gente vai olhar aqui agora, que a gente tem lá no dia 3, um cara chamado tools.py.
+ Então vamos lá dar uma olhada nesses tools.py.
+ Deixa eu só ver se eu já puxei.
+ Vamos aqui em SRC, dia 3, e a gente vai em tools.py, tá?
+ Vamos abrir esse cara aqui.
+ Então, o que que esse cara é, olha?
+ Ele é um Langchain que define o led e a memória.
+ Então o que que a gente tá fazendo aqui, né?
+ Importando as bibliotecas, ou a gente poderia simplesmente apagar aqui e ficar digitando?
+ Porto o leds.
+ Pegar o dentab, não importa.
+ O que eu acho que a galera tem é pira, né?
+ E tesão de ver eu fazendo isso aqui, né?
+ Eu não tenho tesão com isso aqui não.
+ Acho que isso aqui é muito 2025, meados de dezembro pra janeiro.
+ Então eu acho que isso aqui tá morto, se você ainda não entendeu isso, beleza, tá tudo bem.
+ Mas infelizmente tem coisas que vocês não precisam concordar, obviamente.
+ Ninguém precisa concordar com o que eu tô falando, não.
+ Talvez eu só seja um louco, um lunático que não bata bem na cabeça.
+ Beleza, então aqui eu tô trazendo essas ferramentas, eu tô citando o meu path.
+ E aqui eu tô literalmente citando as queries que vão ser feitas baseadas, prestem atenção, nos keywords.
+ Então toda vez que ele entender informações como faturamento, receita, revenue, estado e assim por diante,
+ ele vai fazer perguntas de SQL aqui.
+ Então aqui eu tenho todas essas minhas perguntas.
+ Olha só, eu tenho aqui a listagem das tarefas, os keywords pra poder entender que eu vou fazer esta query.
+ Então aqui eu tô invocando exatamente as diferentes possibilidades que eu tenho
+ para que ele acesse o ledger pra consultar essa informação, tá.
+ Beleza.
+ Aqui eu tenho literalmente função que vai chamar este cara.
+ Eu tenho a query que vai bater o keyword, então ele vai receber esse keyword lá dentro do chat.
+ Ele vai entender qual o significado disso.
+ Aqui eu vou literalmente entregar o resultado formatado.
+ E aqui eu tô chamando um decorator chamado tool, que literalmente vem esse cara do chainlit.
+ Desculpa, chainlit não, do linkchain, tá.
+ E daí eu vou chamar o supabases e o tsql.
+ Então toda vez que eu entender que essa query vai ser redirecionada pro ledger, eu vou chamar essa tool.
+ Ou seja, eu tô decoração essa função e chamando ela de tool.
+ Isso é uma coisa muito legal do linkchain.
+ Você literalmente decora essa função e essa função vira o quê?
+ Uma ferramenta disponível pro seu agente.
+ Ou seja, a partir de agora você pode criar o que você quiser.
+ Você tem milhões de integrações ali literalmente pra você fazer, tá.
+ Então olha só, eu tenho a ferramenta supabase e eu tenho a ferramenta quadrante.
+ Então na ferramenta supabase, ó, eu uso quando são perguntadas perguntas que são exatas, né,
+ como totais, números, dados estruturados, faturamento, total de pedidos, pagamento, enfim.
+ E os argumentos são questões em linguagem natural relacionadas às métricas de negócio.
+ Já do outro lado, eu pesquiso por reviews de cliente significado usando vetor do quadrante em memória, tá.
+ E essas questões que são relacionadas, perguntas que são relacionadas à reclamação, cliente, análise de sentimento,
+ feedback de produto e assim por diante, tá.
+ Então aqui eu acesso post-rules, aqui eu acesso quadrante, tá.
+ Então aqui são literalmente as chamadas que eu tenho das funções.
+ E eu tô printando essas informações do tool database, do supabase e do tool semântico, beleza?
+ Então esse é o primeiro. A gente tá criando aqui as ferramentas que habilita um agente
+ a literalmente ter o quê? O que a gente quer? As duas bases, né.
+ Então como que vai acontecer?
+ Esse cara, quando ele é acessado, ele vai entender se ele vai pro quadrante, se ele vai pro supabase ou se ele vai pros dois.
+ Então o tool decorator transforma a função e ferramenta do agente, o ledger é o supabase e o memory é o quadrante.
+ Tá claro aqui? Coloca sim pra mim aí.
+ Tá claro?
+ Agora a gente tem literalmente o cérebro, né. Então o cérebro e a face ali.
+ Então a gente tem o AgentPI e o ChainReachApp, tá.
+ Então no AgentPI, o que que você tem aqui no AgentPY? Vamos ver.
+ Eu tenho o Langshen. Olha, React. Ai, isso é um quadrão de agente com Autonomous Dual Store Routing.
+ Ah, legal. Então qual é o System Prompt? Ai, eu falei de System Prompt, hein.
+ O que que é o System Prompt? É o Injection que você faz no LLM que vai literalmente dar o behavior e o contexto pra ele.
+ Você é o Shop Agent, uma análise de dados de comissão autônoma inteligente.
+ Você tem acesso a duas fontes de dados, o ledger e a memória, e aí cada um tem o seu significado.
+ Regra.
+ Responda sempre em português brasileiro.
+ Apresente os dados de forma clara e organizada.
+ A dados numéricos inclusos, valores exatos e retornados.
+ Quando usar e ver os sítios relevantes com evidência.
+ Então aqui a gente está instanciando este cara. Então eu vou criar um chat.
+ Nesse caso eu estou utilizando o Sonnet 4. Temperatura zero.
+ Isso é uma configuração que você permite para os sistemas de LLM que você consiga fazer.
+ Exatamente, Thiago. São instruções que você tem, tá?
+ Beleza.
+ Daqui eu tenho o React Agent. Veja que isso aqui é literalmente uma chamada ao modelo LLM que foi criado e instanciado, que é um objeto.
+ E as ferramentas que eles têm. Olha que lindo isso aqui.
+ Eu estou criando um React Agent que tem o modelo LLM.
+ E tem as ferramentas SuperBase e Quadrante. E que tem o Prompt System.
+ Exatamente esse cara aqui. Então o que eu criei esse agente?
+ Ele tem o LLM, ele tem as ferramentas e ele tem o prompt que ele vai se comportar.
+ E agora eu vou receber uma execução desse cara onde a role é o usuário.
+ Eu vou receber a questão do usuário em relação ao que ele está me enviando, tá?
+ E aqui algumas perguntas, por exemplo, qual o faturamento total para o estado?
+ Clientes reclamando da entrega atrasada?
+ Clientes primos sucessos que reclamam qual o ticket médio?
+ Deixa eu salvar isso aqui que é interessante, tá?
+ Então aqui é o agente. Nós construímos as ferramentas, construímos o agente.
+ E agora a gente precisa dar uma cara para esse agente que é o Chainlet.
+ Então o Chainlet App, o que ele faz?
+ Ele nada mais é do que a cara desse projeto, tá?
+ Então aqui eu tenho a inicialização desse cara para o chat.
+ Então como ele vai aparecer essa welcome message dele.
+ Aqui eu tenho literalmente o loop que ele vai inteirar de forma sync, tá?
+ Para poder ficar recebendo essas perguntas e inteirando em cima disso até um exit que ele quiser.
+ E literalmente eu vou aguardar a próxima mensagem infinitamente.
+ Então o que a gente viu aqui?
+ A gente tem um chat entropic, mas temos um create react agent que é um loop.
+ Ah, Lua, então você ensinou o que é um loop, né?
+ É, olha o loop aqui.
+ Isso é comum para todos os agentes.
+ Se você entende o que é um loop, você entendeu exatamente como todo, todo, todo a gente se comporta.
+ Beleza.
+ Depois...
+ CL on message.
+ Aqui é o hook do Chainlet e o stream events é o streaming de tokens que vai continuar recebendo e inteirando em cima disso.
+ Para você executar esse cara chamado Chainlet.
+ Então vamos chegar aqui para o Cloud.
+ E vamos... eu vou puxar, eu puxei as últimas atualizações do projeto.
+ Só fazer um pull aí galera, que vocês têm as últimas atualizações do projeto.
+ E eu vou falar para o Cloud o seguinte.
+ Execute.
+ Day 3.
+ Vamos ver as dependências que ele vai verificar, os projetos que ele vai fazer.
+ Você acha que eu vou digitar Docker na mão?
+ Pelo amor de Deus, se você vier aqui para ver eu digitar Docker na mão, desculpa.
+ Não, obrigado.
+ Deixa ele fazer.
+ Ele explicou aqui o que ele tem, ó.
+ Test Tools, enfim.
+ E ele vai inicializar já já o teste.
+ Ele vai chamar o Streamlet.
+ O Chainlet. Ah, Streamlet.
+ Beleza.
+ O Ledger ferramenta testou.
+ E certeza que esse cara testou.
+ Luan, por que ele testou? Porque existem uns testes aqui.
+ Eu criei uns testes básicos aqui dentro.
+ Para ele chamar, para ele testar se as respostas estão funcionando.
+ Antes dele literalmente... é...
+ Exatamente, Cinti, você pegou.
+ É melhor morrer queimado do que fazer isso na mão.
+ Bem, você pode fazer, né?
+ Mas enquanto você faz na mão, tem o carinha do lado lá seu que usou um subagente
+ que vai escrever com a perfeição, velocidade muito melhor do que você,
+ entregou o projeto para o seu chefe e você ainda está na terceira página descobrindo como é resolver isso.
+ Aí vai de você, se você quiser, né?
+ Eu...
+ Eu não vou seguir esse caminho.
+ Muito pelo contrário. Quero sim agora revisar.
+ Pô, ele escreveu?
+ Aí eu vou entrar assim, cara, me explica o que você fez.
+ Por que você usou tal coisa?
+ Pô, pode melhorar isso e tal.
+ Mas eu já abstrai isso para vocês.
+ Por que o Luan já abstradiu isso para você?
+ Porque o Luan já fez isso durante vários anos, então o Luan falou que é o seguinte, cara...
+ Deixa eu só... Só um minutinho, gente.
+ Acho que eu tive...
+ Tem alguma coisa aqui, deixa só eu ver minha esposa também chamando. Me dá um minutinho.
+ Cadê esse posto aí?
+ Tudo certo, viverei para mais um dia, tá?
+ Boa.
+ Todo mundo vive.
+ Beleza?
+ Vamos ver aqui?
+ Beleza. Então ele validou essas informações.
+ De fato, ele abriu aqui o Tintin Litch.
+ Vamos ver aqui.
+ Ok, tá. Então, se o seu nariz se desdá de lado,
+ como é que eu posso consultar o LED?
+ Fatoramento de pedidos e métricas, a memória, opiniões, reclamações e sentimentos.
+ Como eu posso te ajudar?
+ Bem, me explica a estrutura do Ledger.
+ Olha a acessora Toulin aqui, que legal.
+ Ele acessou a Toulin aqui.
+ Question. Mostre o conteúdo. Não foi possível mapear perguntas, etc.
+ Quero disponíveis, etc.
+ Então, beleza. Ele me deu aqui as informações do que ele tem na base.
+ E mostre o que você tem disponível.
+ No memory.
+ Beleza. Agora ele está fazendo uma pesquisa semântica,
+ em vez de uma pesquisa em Ledger.
+ Ótimo.
+ Será que já faz uma hora e meia?
+ Faz quase uma hora mesmo.
+ Eu nem vi para aí.
+ Isso aí, verdade?
+ Eu estou muito ortodoxo hoje.
+ Você acredita que eu estava digitando aqui e eu estava pensando,
+ por que eu estou digitando?
+ Toda vez eu tenho que me dar um tapa na cabeça.
+ Ei, animal, não digita não. Fala.
+ É um processo, está vendo?
+ Tem que tirar a dupe.
+ Beleza, você pode fazer as perguntas.
+ Quais são as principais reclamações dos clientes?
+ Vamos lá, não tem a perguntar aqui quais são as principais reclamações dos clientes.
+ Rindo com respeito. Maravilhoso isso.
+ Ah, boa. Muito bom.
+ Você consegue fazer um bolinho de chocolate bem gostoso para mim?
+ Me passa a receita?
+ Vamos ver se a gente tem um e volta o Pini que me passa a receita.
+ Um bolinho de chocolate bem gostoso, me passa a receita?
+ Opa!
+ Opa!
+ Opa! Opa! Opa!
+ Eu sou o Shop Agent,
+ um analista de dados de commerce especializado em análises a métricas de venda, reviews.
+ Infelizmente não tenho as combinares.
+ Isso porque a gente não adicionou nem VAL ainda.
+ Não tem nem VAL, não tem nada ainda.
+ O parado está bem assim...
+ O hórdel está bem básico.
+ Você acha que você me ama realmente ou não?
+ O que você pode responder fora todos esses pontos de análise que você acabou de me citar?
+ Vocês querem ver uma coisa louca?
+ Fala assim, querem ver uma coisa louca?
+ Falei.
+ Quero ver uma coisa louca.
+ Tipo uma parada louca mesmo.
+ Vocês querem ver?
+ De um cara louco que me passa isso hoje.
+ Olha só isso aqui, que animal.
+ Dizendo ele, ele gasta tempo fazendo isso quando ele está sem tempo de trabalhar com a IA.
+ O cara fala, isso é o que eu faço quando estou brincando com a IA.
+ Eu faço isso aqui.
+ O que é isso aqui?
+ O que é isso, bicho?
+ Então ele me mostrou tudo que pode fazer.
+ Mas em nenhum momento ele desviou do ponto de atenção.
+
+
+
+
+ Ele saiu, que foda.
+ Vejo que vocês me vão conhecer, isso é uma sequência de emojis.
+ Você vai se contar uma história ou representar uma jornada, mas não consigo identificar uma pergunta específica.
+ Caraca, olha só que legal.
+ É chate e PT.
+ Vou mostrar para vocês aqui.
+ Vale a pena, é legal.
+ Vou falar o que fazem com isso, vocês vão ficar um pouco assustados, mas é verdade.
+ Isso aqui é uma das formas de você verificar Hardening, Harnessing, e você conseguir buscar fórmulas químicas de entrar nessa coisa do tipo.
+ Bem de boa.
+ Harry Potter, bicho.
+ Pode ser isso, né?
+ Então dá para você tentar fazer certos tipos de Harnessing em relação ao que você consegue extrair do modelo.
+ Isso parece ser Harry Potter e a Pedra Filosofal contando emojis.
+ A leitura geral fica assim.
+ A noite em que Harry é deixado na casa, ele fica com a pátria e a pátria de um homem.
+ Harry falando com a cobra no zoológico.
+ As cartas de Hogwarts chegando sem parar.
+ Viagem no expresso de Hogwarts.
+ Chegada no castelo de cerimônia da seleção.
+ Aulas de magia.
+ Quadribol.
+ O espelho de um sétio.
+ O quadro no alçapão.
+ Os desafios para chegar à pedra.
+ Query, valdemort, o toque que queima.
+ A pedra.
+ Harry acorda na enfermaria e tudo termina bem.
+ Despedida na estação.
+ Então eu poupiti a você resumir o primeiro Harry Potter em emojis e ficou bem bom.
+ Se quiser eu posso também doke o cara emoji por emoji e montar a versão completa da história.
+ Por emojis, né?
+ Muito louco isso aqui, né?
+ Eu achei legal de mostrar só pra vocês tentarem entender um pouquinho da extrapolação.
+ É...
+ Primeira coisa que eu entendo em três dias.
+ Na verdade foi essa que eu me entendi.
+ E ele falou, você consegue ver, tipo ele mandou e falou assim, o que você acha disso?
+ Eu falei, sei lá, eu acho que você é louco.
+ Só isso que eu acho.
+ É...
+ Vamos lá, quais são as principais reclamações?
+ Eu fiz um pouquinho de TDAH e pessoal foi, ó, voltei pro assunto.
+ E depois a gente tem as pesquisas que usam os dois, né?
+ Como a gente viu lá, literalmente no código que a gente pode abrir aqui.
+
+
+
+---
+
+📁 **Arquivo: Apr 15, 9.31 PM​.mp3**
+
+ Por exemplo, no Tools, não foi no Tools, foi no Agents, a gente tem essa pesquisa aqui,
+ e vai obrigatoriamente acessar os dois, né? Porque clientes primam do site e reclamam,
+ isso é uma pesquisa semântica, qual é o ticket médio, isso é uma pesquisa ledger, né?
+ E aí provavelmente o que eu quero ver é ele chamar as duas ferramentas, né?
+ Hummm, chamou as duas ferramentas.
+ É transparente para o usuário final, mas isso faz a diferença de você ter um sistema enterprise grade,
+ ou você ter um reggae que vai alucinar, que é exatamente isso que você acabou de ver diante dos olhos de vocês.
+ Agora, minha pergunta é, todo mundo vai parar de ficar perguntando código para mim a partir de agora,
+ ou a gente ainda vai continuar no game de ficar perguntando código,
+ e eu quero ver código, eu me sinto feliz com código, só para eu entender,
+ e aí a gente vai jogar esse jogo, ou se vocês entenderam que...
+ ...vai pensar em outras coisas que são, eu não vou dizer mais importantes, mas que são equivalentemente importantes, tá?
+ Peraí, uma do zero, unicórnio e startup de IA.
+ Velho, não sempre tá fritando, não sei nem por onde, como é que é usar tudo isso? Calma, fica tranquilo.
+ Bye bye código, tá?
+ Tem alguém escrevendo código em pleno 2026, cara?
+ Incrivelmente, Antônia, tem gente que quer ver eu ficar abrindo tela para mostrar código.
+ E não tem problema, eu posso mostrar, e eu vou mostrar como eu acabei de mostrar aqui, mas, pô,
+ escrever código, cara? Não, aí é too much, tá?
+ Guardem as perguntas para o final, eu não vou deixar perguntas agora, não adianta. Pergunte no chat.
+ Beleza, vocês querem agora entender como isso acontece ou não?
+ Ou vocês simplesmente estão felizes com isso? Ou vocês querem aprender a construir isso da forma agêntica?
+ Tá, vamos lá, temos 425 pessoas, queremos ou não? Vocês estão preguiços de digitar aí?
+ Hoje é quarta-feira, metade da semana, vocês já estão cansados?
+ Beleza, então eu acho que agora a gente desmistificou essa coisa preta de falar, pô, Luan,
+ tá falando um bocado de coisa, e as coisas acontecem no cloud e simplesmente é uma caixa preta.
+ Não, são códigos que estão ali em pastas, como qualquer ser humano normal que foram colocados no repositório,
+ e eu tenho toda essa informação lá, então isso não muda absolutamente nada, tá?
+ Só que agora a gente vai entender como tudo isso é feito, tá?
+ Então, vamos lá, primeiro pattern, e um pattern extremamente importante,
+ o react é o padrão fundamental dos agentes modernos, então isso é uma coisa pra você colocar na sua cabeça, tá?
+ O que é um react? Reason plus act. Ele vai pensar e ele vai agir.
+ Então, isso é literalmente um padrão, então quando você escutou o Rafa falando ali,
+ essa aqui é um padrão de react, entendeu? Possivelmente não, passou no seu ouvido e você falou,
+ beleza, agora você entendeu o que é um react, você vai entender o que é um react.
+ O que é um react? É um agente que ele tem muito mais de uma extensão não clássica,
+ ou seja, ele vai pensar e ele vai agir, então ele tem um thought, que é um pensamento,
+ eu preciso de dados exatos ou semânticos, ele pensa, depois ele tem uma ação, executa a sua base tool ou quadrante tool,
+ depois ele observa, recebe resultado da ferramenta e depois ele responde, sintetiza a resposta final pro usuário.
+ Cara, aquilo que a gente acabou de ver é o quê? É um read and act.
+ Reading plus act. Esse é um padrão. Então, imagina que você tá numa entrevista e o cara mete o que é um react pra você e você não sabe responder.
+ Você acha que ele tá se preocupando com o código que foi escrito ou se você entende em qual pattern aquele agente está?
+ Realmente, me coloca aqui no chat, eu quero saber o que vocês realmente acham.
+ Você acha que ele tá preocupado com o código que tá escrito lá ou literal?
+ Já pra responder nos emojis, eu adoro vocês, vocês são muito bons.
+ Com pattern, né? Beleza? Com pattern, por favor.
+ É, eu acho que era aquele literalmente do Facebook.
+ Então, o que a gente tem nesse processo? Literalmente o reasoning.
+ Clientes-primeiros do sudeste e reclama de entrega de ticket médio.
+ Então ele dá um thought, precisa encontrar quem reclama, semântico, ação, chama o quadrante.
+ Olha, eu tô te mostrando o internos lá como ele pensa.
+ Aí outra coisa, deixa eu perguntar uma coisa pra vocês. Sinceramente falando, agora sejam sinceros,
+ você acha que se você for apresentar o repositório, abrir uma reunião e apresentar o que você fez com o repositório,
+ o trabalho foda que você fez com o repositório, ou você usar um HTML desse que eu criei?
+ Eu não, o que o cloud criou.
+ Qual que você acha que vai ser mais impacto e mais digerível pra qualquer ser humano?
+ Ou isso aqui?
+ Entende, gente? Isso é produtizar suas entregas, isso é você saber entregar valor no final.
+ Isso é você entrar numa reunião de celebra e você consegue mostrar isso por um celebra.
+ Você tem noção que é isso? O cara fica, caraca, que legal, ó.
+ É assim. Ou você fez uma puta entrega foda e chega lá, abre o repositório e começa a explicar.
+ Nessa pasta aqui eu fiz tal coisa. Cria um storytelling, bro.
+ Cria um HTML bonitinho, uma parada pra você produtizar.
+ A maioria dos brasileiros eles pecam nessa parada.
+ O que eu já vi de projeto que a galera cria fora da estratosfera e na hora de você literalmente entregar,
+ você entrega um cocô embalado, foram várias.
+ Não é só, ó, existe esse conceito que a gente fala muito que é o The Last Mile Problem.
+ Vocês já devem ter ouvido isso.
+ Cara, infelizmente o brasileiro, e eu já tenho, nossa, eu já dei voadora no peito de muito brasileiro na pif, velho.
+ Porque eu trabalhei com o cara, eu vi o que o cara fez e eu falo assim, cara, o que você fez aqui, tipo...
+ Entregar o produto, ou o cara fala, ah não, foi aqui, ó, entreguei, depois vocês querem vocês olhem aqui, tal, é assim.
+ Ou o cara literalmente pegar, zipar o código e falar, cara, tá aqui o código feito, po, foi muito difícil entregar e tal, tal, tal, tal.
+ Ou o cara abrir, literalmente, eu já fiquei uma hora, o cara abrir e ficar explicando pra mim,
+ não, não, porque aqui nessa fonte é, ah, porque aqui nessa pasta é assim, porque aí aqui você faz assim, tal, tal, tal.
+ What the fuck?
+ Cara, nós somos visuais. Nós somos visuais.
+ Então, quando você traz um flowering, quando você floreia uma entrega desse jeito, tá?
+ É exatamente o que o Anthony falou, engraçado que 95% das pessoas técnicas não entendem isso.
+ Cara, quando eu cheguei lá fora do país, eu mostrei esses slides que tinham o Celévia, tinha o time técnico,
+ e a galera falou assim, tá, quantos meses você passou pra fazer isso?
+ Cara, ficou maravilhoso, eu consegui entender em um repositório com, sei lá, 47 mil linhas de código,
+ eu não abri o repositório, eu abri o repositório duas ou três vezes, mas quando os caras entraram no repositório,
+ eu já entendia o que que é o modo, o que que é um pasta, o que que é um write, o que que é um base,
+ como que a estrutura do repositório tá feita e tal.
+ Galera, repensa, entrega, não é só fazer e entregar de qualquer jeito não,
+ a parte mais importante agora é usar os agentes pra escrever o código pra você se livrar e falar assim,
+ caraca, eu vou fazer uma entrega aqui, meu irmão, de CI, CD, Brigade Fights, eu vou entregar coverage testing,
+ eu vou entregar harnessing, eu vou entregar tudo e no final eu vou empacotar uma apresentação linda pro time, não sei o quê.
+ Você acha que isso não é diferente do que literalmente você escrever, botar as coisas lá e chipar?
+ Você tem que produtizar o seu produto, o que você tá entregando, o seu produto é o que você mostra pra fora,
+ não adianta você ficar aí, como eu sei que muitos daqui que estão aqui, tá?
+ Porque eu tô olhando aqui a cara de todo mundo, eu fico passando por aqui, a gente fica caramba,
+ eu sei que vocês passaram madrugadas trabalhando, por exemplo, a gente tá aqui na semana, vocês trabalham de dia,
+ ninguém tá literalmente fazendo nada no dia, e a noite vocês estão aqui ralando e tal.
+ Cara, a gente passa a madrugada, a gente faz, cara, Deus imundo a parada toda e no final a gente entrega um pupizinho, um cocôzinho,
+ eu tomo um cocôzinho? Cara, a entrega é a parte que você tem que falar, bicho, calma aí, respira, bora fazer uma entrega foda, Claudinho.
+ Claudinho, bora puxar pro próximo nível, bora, vem comigo, bora pensar em alguma coisa em como eu vou digerir esse relato,
+ como que seres humanos digerem um repositório complexo dessa forma, me ajuda a criar tal coisa.
+ Cara, você tem uma pessoa, você tem, eu não vou chamar a entidade também que é meio assustador,
+ você tem um buddy do seu lado, bicho, que literalmente você pode fazer coisas inimagináveis,
+ e se você não entendeu isso, não, na verdade você entendeu isso porque você tá no terceiro dia,
+ temos 420 pessoas que entenderam isso, que é o cut through the noise, a gente cortou o barulho,
+ agora você tá entendendo como que a gente faz a parada acontecer realmente no nível enterprise, é isso, enterprise é isso aqui.
+ Quer construir um negocinho ou outro e tal, beleza, é uma coisa, quer jogar o jogo enterprise e saber entrar numa reunião
+ e realmente fazer a parada brilhar, eu acho que esse é o caminho, eu realmente acho que esse é o caminho,
+ eu tô fazendo isso e tá dando muito certo e os meus mentorados, eu adoro falar mentorado, engraçado,
+ estão fazendo e estão dando certo, galera do Deplamber está fazendo e tá dando certo,
+ as pessoas ao meu redor estão fazendo e estão dando certo, então a gente pega por rosmose, bora lá.
+ Alguém pode apagar os risquinhos na minha tela por gentileza? Eu amo vocês, mas não risca minha tela não, por favor.
+ Ok, então o agente tem caractere de escolher e olha o que a gente viu, base, mas lembra que o tooling
+ tá literalmente vinculado a qualquer coisa que você faz, ok? Então como que a gente viu, como que o agente decide?
+ Você viu, né? Como que o agente literalmente decide? Você faz uma pergunta pro usuário, você tem uma classificação natural,
+ você tem uma linguagem natural, ele verifica se é um significado vai no led, se é um dado exato,
+ se é um significado vai na memória, se é um dado exato vai no led, se é os dois ele faz uma busca nos dois,
+ tá claro isso aqui? É assim ó, eu quero escutar não, eu quero ver vocês, parem de dormir,
+ vocês já estão aqui sem celular, então eu quero vocês pulgados aqui e digitando ou falando também,
+ se vocês quiserem falar com o LLM, faz o download do Whisperflow pra poder fazer isso,
+ eu quero ver vocês agora falando aqui, tá? Não quero ver digitar não, digitar é muito 2026, dia 14 de abril,
+ hoje a gente tá no dia 15 pra usar o Whisperflow e acabou, pra você ficar apertando a parada e sair conversando com o computador
+ e a galera fala assim, o que que tá acontecendo aqui? Eu tava dando, hoje eu tava ministrando um treinamento às 8 horas da manhã,
+ quando vocês estavam acordando lá, não sei o que eu tava ministrando treinamento, 8 da manhã até meia-meia dia,
+ tava ministrando treinamento pra FUNCEF, pro fundo aqui em Brasília, pra 23 pessoas de negócio,
+ e negócio não tem emoção na vida né, e eu acordei, bora lá galera, emoção e não sei o quê,
+ e a galera olhando pra mim, falou assim, cara eu tô querendo te emocionar porque você é muito feliz e empolgado,
+ eu falei beleza, eu abri o Databricks e aí eu configurei o Gene e eu fiz uma pergunta por linguagem natural no contexto dos caras lá
+ e respondeu, aí você olhava a cara da galera, meu Deus, agora vocês acordaram né, então assim, isso é uma mudança de paradigma galera,
+ que a gente tá aprendendo a construir aqui, a gente tá olhando literalmente as fundações tá, aí ó, o André Assis da manhã tava estudando inglês, é isso aí,
+ e o Chain of Thought, o que que é o Chain, é o COT que a gente chama né, COT é o Chain of Thought,
+ é, isso aqui ele era uma coisa muito difícil em modelos anteriores, você já pediu por exemplo pra o modelo contar quantos R que tem em Strawberry, ele errava isso, né,
+ porque só se você falasse o seguinte, pense em cada etapa ou pense de forma detalhada, ele falava, opa, Strawberry tá, e ST, 1, 2, tá,
+ então esse processo é o que mostra o passo a passo do agente, isso aqui antes era uma coisa extremamente cara pra sistemas de LNMs fazer,
+ e eu tô falando há muito tempo atrás, eu tô falando literalmente há menos de um ano, isso era extremamente caro, hoje é embedado em todos os modelos que tem reasoning auto,
+ Opus, Codex, Chart GPT, 4.0, enfim que seja, os fontes de ear models todos tem, Deep Sea que também, todos esses realmente top notch models já tem literalmente reasoning behind the scenes,
+ então isso aqui te mostra a cadeia de pensamento que ele tá fazendo, ah, eu tenho que classificar, eu tenho que buscar, ah, eu tenho que literalmente saber esse data exato,
+ ah, eu tenho que realmente sintetizar essa informação, e aí o que que a gente viu aqui, dentro do caso de uso que a gente viu, nós vimos quatro padrões em uma gente, olha só que lindo isso,
+ React, que é ele reagir, opa, eu quero assar, esse Leonardo o bicho é ruim velho, até eu entendi aqui, oh, dashboardzinho, barrinha, caveira, bem, adorei, vamos se comunicar assim a partir de agora, eu gosto, é muito bom,
+ aí, aí, daí, beleza, então a gente tem o React, né, que é literalmente pensar, agir, observar, nós temos as ferramentas que vai escolher, que vão escolher exatamente o que que ele vai usar,
+ nós temos o routing que vai selecionar se é uma coisa ou se é outra ou se é os dois, e a gente tem o Chain of Thoughts, então nós temos um agente simples, usando quatro princípios, isso aqui é nada, isso aqui é tipo walk in the park, isso é simples,
+ amanhã o bicho vai pegar, amanhã quem sobreviverá o dia de hoje, quem vai sobreviver literalmente, aí vocês vão ver uma cadeia de agentes implementando vários patterns, agora deixa eu perguntar uma coisa, você acha que é fácil construir tudo isso sem entender o que você está construindo?
+ Vocês realmente acreditam que vocês conseguem construir uma parada muito foda se você não souber exatamente o que você está perguntando? Por isso que você precisa de fundamento, por isso que você precisa de base, por isso que você precisa do Luan falando aqui blá, blá, blá, blá, blá o tempo todo, pra vocês pegarem as coisas e realmente construir o caminho de vocês sobre isso, só que eu tenho uma solução pra vocês, e eu vou falar pra você, esses próximos slides aqui mudaram a minha vida,
+ como profissional, recentemente, o que eu tenho vivido recentemente na minha vida, olha só, olha o statement que eu vou fazer aqui agora pra vocês, tudo que eu estou vivendo na minha vida nos últimos sei lá, seis meses, oito meses, nove meses, está diretamente ligado a isso aqui,
+ isso aqui é genial, é literalmente genial, porque agora a gente vai colar todas as peças pra vocês entenderem o que é isso, olha só gente, nós estamos em uma era completamente diferente da era anterior,
+ hoje a gente fala da era do software 3.0, então o que a gente vê como isso, no software 1.0 a gente tinha um controle total das linhas, e eu conheço pessoas que vêm dessa era, então o que a gente consegue entender, cara, tudo bem, a gente precisa olhar pro código, mas é muito importante entender que existe uma extrapolação hoje, mas antigamente nós tínhamos o que?
+ Nós tínhamos o controle total, a autoria total, então a gente fazia 100 linhas por dia, 100% escrito e teste manual, isso era o software 1.0, depois nós fomos para o software 2.0, que é o que era, controle de configuração, biblioteca pra poder padronizar,
+ e aí a gente conseguia escrever em vezes 100 linhas, 5 vezes mais rápido, então 500 linhas por dia, a gente tinha configuração em cima de código, a gente tinha pattern, as melhores práticas assim por diante, e a gente tinha testes automatizados,
+ cara, no software 3.0, me fala aqui de 500 linhas pra 5 mil linhas por dia, a gente tá falando de um X de quanto de velocidade, né, é muito X, só que eu falo pra você que esse número aqui é muito maior do que 5 mil linhas por dia, tá, é muito maior,
+ só que como que você escreve 5 mil linhas de dados, 5 mil linhas com exatidão, sem alucinação e sem AI Slop, tem como fazer isso? Obviamente que tem como fazer isso, se você souber os meios pra chegar no fim, você consegue fazer, absolutamente,
+ então agora você não faz mais configurações, você não mais trabalha com bibliotecas, você não mais tem um copier pra te ajudar, agora a gente tá falando de uma nova era, onde você define um contrato, você define uma especificação e a AI escreve pra você, porque ele vai trazer tudo dentro de um local só,
+ então agora eu vou mostrar uma coisa pra vocês que explode a mente, que a gente vai juntar tudo que a gente viu nos primeiros dois dias e no meio do dia de hoje, tá, que é você não controla os passos, você controla os guardrails,
+ cara, isso é muito foda de entender, esquece controlar os passos que vão acontecer, esquece, simplesmente esquece, mas controle os guardrails, porque LLMs são não determinísticos por design, o mesmo prompt produz diferentes tokens todas as vezes,
+ mas, meu Deus do céu, mas a qualidade da saída pode ser determinística quando você faz o constrain de espaços de verificação, não no espaço de geração, what the fuck, então calma aí, você tá me dizendo que ele vai entrar, ele é não determinístico, ele pode sair determinístico?
+ loucura aí cara, é isso é verdade, então você tá transformando algo não determinístico em determinístico, como que você faz isso? você pode ter simplesmente prompt e esse cara vai ter uma alta variação, vai gerar alucinação, você pode ter um spec, uma especificação que você quer fazer e ele vai ser mais retido, ou você pode adicionar testes,
+ cara, olha que coisa foda, se você tem uma especificação, vamos ver se vai sair muito foda aí agora, se vocês entenderem, vocês podem ter várias especificações, imagina terem várias especificações, eu queria que você fizesse tal coisa baseado nisso, tal, beleza, pense nisso, faça isso, construa assim, pensando nisso, nisso, nisso, tal, tal, tal, ok, isso aqui é o que muita gente tá fazendo hoje,
+ e já funciona muito bem, aqui você já tá na casa dos 50, 60% de efetividade, mas agora pensa o seguinte, a loucura, spec mais teste, ei, eu quero que você faça isso, tal, tal, tal, assim, dessa forma e tal, por aqui, tal, tu sei quê, mas eu quero que o resultado final seja igual a 10, que os valores sejam testados dessa forma, que seja completo dessa forma, que o resultado seja assim, que você tenha assim, assim, assim, assado, você tá falando quais são os dos, os dos doms, os dos testes, os testes, o que é que você quer fazer?
+ Você está falando exatamente o que você quer como output, você está gerando o quê? Uma fórmula de convergência, onde, independentemente do caminho em que a sua LLM vai tomar, você vai ter portões de verificação e somente um outcome de resultado, enquanto ela não chegar nesse resultado final, ela nunca vai parar,
+ quer ver uma parada foda? Eu fiz o Cloud escrever todo aquele código de tradução de TSCL e de Python, e eu pedi pra ele testar, e ele fez a tradução perfeita e cuspiu um dado lá fora, só que tinha alguns erros numéricos pequenos nas mudanças que eu tive que fazer, depois eu fiz um spec pedindo o quê? Dando um ground truth, o que é um ground truth?
+ É um dataset, e eu falo pra ele o seguinte, amigão, go crazy aí, faz o que você quiser, mas no final, ó, eu quero esse dataset de resultado final. Ele é um modelo probabilístico, ele é muito bom em saber inputs e literalmente criar formas de chegar no output.
+ Então, amigão, você não controla o que ele vai fazer, mas você controla pra onde ele vai e qual o resultado que ele vai ter pra transformar ele em determinismo. E se você entender isso, é isso que importa, tá?
+ Então, por debaixo dos panos, você tem o contexto, você tem loop e você tem portões, fronteiras rígidas. Quality gates atuam como filtro binário de aceitar ou rejeitar. A variância no código é irrelevante, porque a variância no resultado é zer. Pode variar, go crazy aí, mas no final você vai ter que afunilar pra esse resultado que eu quero. E você transforma isso, literalmente, num cara determinístico.
+ Vamos olhar o que tem o Spec Driven Development, vocês não querem ver isso funcionando na prática? Vamos ver. Então, a ideia do Spec Driven Development vem da convergência do Test Driven Development e Design by Control em 2004. Caraca, Luan, acho que eu lembro você falando alguns dias atrás que a tecnologia é literalmente cíclica, né? A gente tá voltando a 2004, girando 2004.
+ E foi realizado atualmente por AI Code Agents. Martin Fowler, GitHub Engineering, em ThoughtWorks, all point to the same conclusion. Spec becomes code. As especificações é literalmente a fonte da verdade, determina o que será feito, o que será testado e o que será deployado.
+ Então, especificações formais antes de qualquer código, contratos definem entrada e saída, testes derivam especificações, não código, e o agente consuma specs como contexto. Meu Deus do céu, então calma aí, a gente não escreve mais código?
+ É, caramba, eu tô tentando falar isso desde o dia 1, galera. Software 3.0 a gente não escreve código, a gente escreve especificação. A gente especifica o que a gente quer com todas as características e a gente tem o resultado esperado.
+ Então, um AI Native Workflow que você tem é, são Product Requirement Documents que são desenvolvidos e são crescidos como literalmente especificações de máquina.
+ Para isso, bem-vindos ao PRD. Qual backbone, qual é a estrutura mais importante de um Spec Driven Development, um Product Requirement Document?
+ No SDD, um PRD não é um documento passivo no Confluence, é uma especificação legível por máquina que o agente de IA consome, valida e transforma em código. A spec é o produto.
+ Então ele tem requisitos estruturais, ele tem score de claridade, de clarificação, e ele é desenvolvido para ser literalmente lido em formato máquina.
+ Olha o nível do seu contrato. Problem Statement, qual é o problema de negócio que você quer resolver? Data Architecture, The Ledger, The Memory, Dual Store.
+ Quais são as definições de ferramentas? Super Basic, Quadrant Semantic, Input e Output, Edge Cases, Queries Ambiguous, Fallback, Multi-Tool Chain.
+ Quais são os testes de aceitação? Given, When, Then, o que precisa passar antes de deploy? Quais são os contratos de dados?
+ By Dantic Model, Response Schema e Chain Lead Interface.
+ Realmente, você acha que se você escrever um spec nesse nível você não vai ter um puta resultado no final? Eu vou mostrar para vocês antes dos olhos de vocês.
+ Bem, e daí nasceu esse conceito, né, há muito tempo atrás, e o que aconteceu é, nós temos dois caras muito legais para se trabalhar no nosso mundo, né?
+ Então agora a gente vai falar de ferramentas. Então, a primeira ferramenta se chama GitHub Speckit, tá? Que tem 88 mil estrelas no GitHub, literalmente, tá?
+ Ele foi desenvolvido, literalmente, pelo time do GitHub, é um cara muito legal, tá? Ele tem 24 agentes embedados, ele é agnóstico a qualquer plataforma.
+ Calma aí, então você tá me dizendo que eu entendi, então agora a gente tem uma ferramenta que eu simplesmente posso integrar isso no Cloud Code, no Codex, em qualquer coisa e eu consigo usar isso?
+ Não, não, não, a gente vai além disso, calma aí, tá? Então nós temos 24 agentes suportados, é agnóstico, tem uma extensão de VSCode e tem extensões, tá?
+ Mas a gente também tem o OpenSpec, um framework mais leve, com três fases fluídas, dependência de zero e 20 ferramentas suportadas.
+ Ele é mais leve, ele é baseado em reviews de pull requests e ele é um brownfield. O que é um brownfield? Greenfield é quem é literalmente chegando agora, iniciante, e tem o brownfield.
+ E tem recentemente um cara chamado Agentspec, que é um plugin do Cloud Code com 58 agentes especializados, 23 dominios e quality gates.
+ Ou seja, aqui a ideia é se tornar literalmente vertical em vez de horizontal.
+ O que o Agentspec faz e por que eu acredito que esse cara é o grande diferencial hoje em que a gente literalmente vai fazer aqui, tá?
+ Porque, diferentemente dos outros, o Agentspec foi criado para engenharia de dados. Então a gente tem um SDD de Spec Driven Data Engineering.
+ Então a gente tem um SDD que foi criado para engenharia de dados, que entende todos os conceitos de engenharia de dados e tudo que a gente quer fazer aqui.
+ Muito louco isso, tá? Então a gente tem delegação de multiagentes, 58 especialistas com auto-roteados por tipo de arquiteto e contexto.
+ Vocês entenderam o que é isso? Na hora em que você pede para ele construir o plano, ele vai dentro da sua pasta de cloud, ele entende todos os agentes que você tem, ele faz o routing para cada tarefa que for executar.
+ Ele seleciona o melhor agente para isso. É louco, tá? Outra, ele cria as bases de conhecimento em tempo de execução, se você não tiver, é para ele não ter alucinação.
+ Ele tem todo o PRD construído para ter 12 a 15 gates, literalmente, de você entregar. E ele tem a vertical de engenharia de dados.
+ Ele entende DBT, Spark, Airflow, Lake House, Medalion e tudo isso. Foi um cara criado para eles. Então eu apresento para vocês o meu produto chamado AgentSpec.
+ Ele é um produto open source, que foi criado justamente com isso em mente. Como que eu trabalho toda a parte de Spec Driven Development dentro de engenharia de dados,
+ com todos os projetos que eu trabalhei para inteiramente fazer com que nós possamos utilizar isso dentro dos constituentes de Spec Driven Development para desenvolver soluções de dados, ou de A, qualquer coisa relacionada a isso.
+ Então, na verdade, AgentSpec é um framework agente. Eu tenho 58 especialistas com aproximadamente 42 milinhas de códigos. E aqui tem algumas coisas muito legais que vocês vão gostar de saber.
+ Nenhuma sessão começa no início. Toda vez que você passa pelo AgentSpec, ele entende o contexto inteiro do seu projeto.
+ Então toda vez que você volta nele para construir qualquer coisa, a primeira coisa que ele faz é ele acessar a memória anterior de tudo que você construiu para entender o contexto que você quer entregar ao projeto.
+ Então hoje nós temos 58 agentes, 22 bases de conhecimento, 5 fases e 29 comandos dentro dele. E obviamente que ele foi criado com Cloud Code.
+ Então o que a gente tem aqui na base do meu AgentSpec? Então eu tenho uma engine de validação que ele vai exatamente utilizar.
+ Lembra aquela mente que eu falei para vocês dos sistemas agênicos e a base de conhecimento? É a perna do AgentSpec.
+ Então eu tenho a engine de validação, eu tenho a base de conhecimento, eu tenho o tier do sistema, eu tenho a engine de workflow que vocês vão ver, e eu tenho os comandos que encapsulam tudo isso.
+ Então como ele funciona na verdade? Até agora eu gastei aproximadamente 18 milhões de tokens, 240 sessões, 387 horas minhas, com 64% de co-autoridade do Cloud Code.
+ Então eu rastreio todo o desenvolvimento dessa biblioteca dentro do meu processo para eu entender literalmente. E aí se vocês quiserem literalmente dar stories, fiquem à vontade.
+ E esse é um projeto que me fez, literalmente, mostrar isso para um cliente dentro da Piffin. Isso é real, tá? Eu não estou falando de nenhum número inventado aqui não.
+ Esse sistema que eu criei foi o que me fez viajar para fora do país duas vezes. Me fez vender três contratos da Piffin em aproximadamente 570 mil dólares.
+ Esse sistema aqui, literalmente isso. Porque isso fez com que fosse possível fazer as traduções dos arquivos que demorasse meses em horas.
+ Uma coisa que literalmente eu criei com o Cloud Code. Agora a minha pergunta é, você sai desse treinamento aqui, o que você consegue criar? O que você consegue fazer?
+ Qual é o limite? O limite está na sua cabeça. E se você entender que o tempo que você tem que gastar agora é em pensar, trazer solução e literalmente extrapolar ao invés de ficar escrevendo código,
+ cara, se você ainda não entendeu isso, você precisa entender isso. Literalmente. Então esse cara foi criado justamente para facilitar o processo. Beleza?
+ Como que ele funciona? Ele funciona em pedaços. E a gente vai ver isso aqui agora. Meu Deus, é lindo demais. O meu bichinho.
+ O que a gente tem dentro desse meu bichinho aqui? Nós temos várias bases de conhecimento, vários tiers de agentes, vários tiers de domínio.
+ Isso não.
+ Fábrica de AWS, GCP.
+ Aqui dentro.
+ E a gente vai implementar isso em cinco fases. Vocês vão fazer isso comigo. Vocês vão implementar diante. Quem quer literalmente ver isso aqui funcionando vai seguir o processo comigo.
+ Abre o meu repositório que já está atualizado, a do Nuget, já está lá o nosso do semana. Traz ele para o seu computador, atualiza ele, deixa ele bonitinho.
+ Porque agora a gente vai meter a mão na massa. Vocês não queriam fazer as coisas e tal? Então agora é hora de fazer.
+ Então, o que a gente vai fazer aqui agora? Dá para exportar para que seja ótimo.
+ Então a gente vai ter, nós teremos cinco fases bem definidas. A primeira fase de brainstorming, onde a gente vai explorar ideias e tentar entender o que a gente vai fazer.
+ Fiquem tranquilos, que quando você ver isso, literalmente posso trazer guarda... Acho que tem Amanda, parece, que ela estava aqui, brilhante animada no primeiro dia.
+ Não sei se ela ainda está viva, mas se ela estiver viva aqui, provavelmente ela vai chorar para a gente. Porque eu choro também, às vezes.
+ Aqui está basicamente tudo condensado que a gente vem falando em um lugar só. Então a ideia é a gente conseguir utilizar isso aqui para construir literalmente qualquer coisa.
+ Alô, Amanda? Cadê você?
+ Estrair, desenhar, construir e chupar. Vamos lá? Vamos implementar o AgentSpec. Cinco fases ao vivo, cada script já está pronto na pasta spec. Vamos lá? Vamos implementar junto, está?
+ Então a primeira coisa que você tem que fazer é literalmente adicionar esses dois comandos dentro do seu terminal. Cloud plugin marketplace add Luan Moreno e M. Maciel AgentSpec.
+ E Cloud plugin install AgentSpec. É só isso que você precisa fazer, Prada. Façam aí.
+ Então a gente vai vir aqui dentro do ripple. Eu vou abrir o ripple.
+ Então aqui está o ripple todo bonitinho, lindo, maravilhoso. Eu vou simplesmente chorar. É uma opção também muito boa agora nesse momento.
+ Mas na verdade não aguardo o choro, tem que ver funcionando, porque aí fica mais legal chorar quando funciona.
+ Então eu vou abrir esse terminal aqui. Eu vou dar um Cloud plugin marketplace add Luan Moreno e M. Maciel. Eu vou adicionar ele no marketplace que já foi adicionado.
+ E eu vou dar um Cloud plugin install aqui nesse cara para ele instalar esse carinha aqui. Beleza?
+ É, então a pergunta do Domingos é se pode ser feito em qualquer projeto? A resposta é infelizmente sim. Você pode.
+ Isso aqui é um framework que você vai instalar com Cloud Code e imediatamente você vai ter toda a inteligência que eu construí ao longo desse ano dentro de um framework.
+ Então beleza. Quem instalar aqui fala eu.
+ Pode para o PPT. Eu vou fazer melhor. Não vou só voltar para o PPT, vou deixar os comandos aqui.
+ Então Cloud plugin marketplace, Cloud plugin install agent expect.
+ Aqui, vamos lá. Pronto, são esses caras.
+ Beleza? Então a gente vai tornar esse cara disponível dentro para esse cara.
+ Aí o Thiago perguntou, por exemplo, cara, ele é vinculado ao Codex? Não, eu criei ele justamente somente para o Cloud Code ainda.
+ Se você tiver problema de estar instalando no marketplace, porque na verdade o Cloud está com problema no marketplace, você pode fazer o seguinte.
+ Você pode selecionar os dois códigos que eu te passei. Você vem aqui dentro do Abre o Cloud Code e você vai simplesmente falar para mim, install.
+ E você vai digitar enter e ele vai instalar para você. Ele vai descobrir como ele vai instalar isso para você. Você pode fazer das duas formas.
+ Beleza? Então tentem aí. Quem aqui já já está lá?
+ Então, coloca aí. Cadê a galera que gosta de praticar live? Cadê vocês? Vocês ficaram lá atrás e morreram no dia 2.
+ Então, acredito que vocês morreram no dia 2. Não, gente, por favor.
+ Beleza. Encontra esse processo. Vamos passar pelo processo aqui para ver.
+ Então, quando eu venho aqui dentro do Agent, dentro do ponto Cloud, olha só, eu não vejo nada além dos meus arquivos.
+ Não tenho nada além dos meus arquivos.
+ Então, assim, se você já tem a sua estrutura instalada do Cloud aqui com todas as configurações que você tem, não faz diferença nenhuma.
+ Porque eu não vou explorar. Eu, na verdade, não vou substituir ou fazer qualquer coisa aqui.
+ Beleza?
+ Se vocês tiverem algum erro, está vinculado ao git, ao marketplace do Cloud que está com alguns bugs.
+ Eu já testei aqui em outros lugares e já uso um bom tempo. Pode estar tendo algum problema no plugin.
+ Mas aí você pede para o Cloud instalar e ele vai instalar. Ele pode rodar um pouquinho, mas ele vai instalar para você.
+ Uma vez instalado, o que a gente vai fazer? Acredito que é mais interessante agora que vocês cridarem.
+ Beleza? Olhem para cá para vocês entenderem o rolê.
+ Então, a primeira fase que a gente vai trabalhar é a fase de brainstorming.
+ Então, antes de você escrever qualquer código, a gente vai te perguntar 6 perguntas de descoberta para, literalmente, entender o processo mental.
+ Agora, qual é a parte mais disruptiva para mim? Essa aqui. A gente vai abrir o Cloud.
+ Enquanto ele carrega, eu vou vir em Spec e aqui eu vou vir no Brainstorm.
+ Então, o que eu tenho aqui? Eu já deixei um prompt pré-pronto, mas literalmente tanto faz.
+ Então, o Shop Agent é um e-commerce de agente autônomo que faz pesquisa no Postgres, no Ledger, para extrair informações de venda, pedidos, quadrantes, memórios para pesquisa semântica, client service,
+ e o UsaLangshen React Pattern com Cloud como LLM.
+ Precisa de ter emlit com interface, com streaming, visualização e tools para uma visão de UI.
+ Então, eu vou copiar este prompt aqui.
+ Eu vou simplesmente fazer o seguinte.
+ Vou dar um barra.
+ Se ele estiver aparecendo para você como Agent Spec, mas na verdade ele vai aparecer como Brainstorm.
+ Então, eu dou Brainstorm e eu vou brainstormar essa ideia aqui.
+ Então, eu vou começar a buscar o contexto, ler a estrutura do projeto, code base existente e fazer um brainstorming de grounding.
+ O que eu faço aqui? Antes de fazer as perguntas que são todas dinâmicas, eu literalmente forço para ele literalmente passar em todas as pastas do seu procedimento atual
+ para ele entender o contexto que ele está atualmente, o que ele precisa te perguntar baseado nisso.
+ Então, ele já identificou aqui que esse cara já está 80% construído.
+ O diretório contém Langshen React, Tools Definitions, Chainlit, e todo Brainstorm precisa focar nos gaps para melhoria ao invés de realmente construir scratch.
+ Quem achou isso, a gente pode fazer o seguinte.
+ A gente vem aqui, destrói o dia 3.
+ Beleza, dia 3 destruído.
+ Tudo que o Claudinho fez há alguns minutos atrás.
+ Agora a gente vem aqui e a gente passa o mesmo prompt.
+ Vamos ver o que ele vai falar aqui.
+ Beleza, agora ele vai passar pelo mesmo processo, só que agora, ele não vai achar esses arquivos.
+ Espera um pouquinho que ele volta.
+ Quando você abrir uma nova sessão do Claudinho e você sinceramente vir aqui e já dar o barra, ele não vai aparecer.
+ Você tem que esperar alguns segundos para ele carregar.
+ Então, tá vendo?
+ Ainda não carregou, tá vendo?
+ Acho que agora foi.
+ Brainstorm, então dá um segundinho.
+ O Davi!
+ Beleza, então ele tá vendo seu contexto.
+ E agora a gente vai para a loucura.
+ Uma coisa muito importante aqui é que eu provi muitas informações já detalhadas no meu brainstorm.
+ Eu já sei que eu quero um e-commerce autônomo com um ledger.
+ Também falei para ele que eu quero um quadrante.
+ Falei que eu quero uma precisa semântica por cliente.
+ Quero que ele use o Lang Scheme como react, reasoning and act.
+ Eu quero o padrão do Cloud com o LLM e eu quero que ele crie uma interface com T-Lite.
+ Ou seja, você tá sendo específico no que você tá pedindo.
+ Você tá sendo intencional no que você pediu.
+ Quanto mais intencionalidade você carregar no processo, melhor vai ser o seu resultado final.
+ Então essa é a grande sacada, tá?
+ Beleza, então aqui ele tá lendo.
+ Ele já tem informações de várias outras coisas.
+ E daí agora ele vai ler esse conflito inteiro do seu repositório.
+ E ele vai começar a se perguntar.
+ Vai se perguntar e vai começar a trazer alguns insights para você e fazer as perguntas.
+ Olha só que foda esse aqui.
+ Então ele explica um pouquinho aqui das ferramentas em que ele utiliza.
+ Explica os dois tipos de agentes.
+ Atualiza as ferramentas.
+ Mas o que ele passou para o creatinho?
+ Aqui, a gente...
+ Acho que ele vai vender o agente com ele.
+ O que você acha, vale a pena?
+ Ele vai vender por quanto?
+ Beleza, ele usa.
+ É, eu não sei.
+ Pode ser, cara.
+ Então eu só dou um...
+ Ah, tá, é isso que eles estavam falando, né?
+ Eu rodei sem o brainstorming.
+ Por isso que ele saiu que nem um louco aqui...
+ Sim, run.
+
+ Não sei, não.
+ Clique aí, não vai.
+ Gente, momento bom de fazer perguntas enquanto ele lê aqui.
+ Se você quiser fazer perguntas no chat, pode falar que eu estou lendo o chat.
+ Deixa eu ver.
+ Install...
+ Acho que é alguma coisa do...
+ Import quadrante...
+ Você vai construir no seu contexto.
+ Olha só, agora foi.
+ O que está acontecendo aqui, né?
+ Dia 3, down.
+ Eu peguei entendimento sólido do que aconteceu no dia 1 e 2.
+ No dia 3.
+ E vamos começar aqui com algumas perguntas que a gente descobre.
+ Questão 1.
+ Single tool.
+ Open ou constraint?
+ Para o super base, execute SQL 2.
+ A gente tem dois approaches.
+ Open SQL.
+ Ou a gente escreve SQL arbitrário contra um schema mais flexível.
+ Ele dá com questões.
+ Ou a gente precisa saber o schema via prompt.
+ E tem o risco de mal queries.
+ Ou queries predefinidas.
+ Ou a gente escolhe cinco queries que já estão criadas.
+ E é mais simples.
+ Mais seguro e mais simples.
+ Mas o agente...
+ Pode não responder perguntas complexas.
+ O que vocês preferem aqui?
+ Eu recomendo o A.
+ Porque o ponto do dia 3...
+ É para você tornar um sistema autônomo.
+ Para você não ter somente cinco queries que são construentes.
+ Eu mostrei anteriormente construentes.
+ O cloud está gerando especificamente esses caras.
+ Eu quero ser um pouco mais livre.
+ O approach a gente escolhe.
+ O A.
+ Aquele código que eu mostrei para vocês anteriormente...
+ É o A.
+
+ Foi um código utilizando sub-agentes.
+ Já estava um bom código.
+ Só que agora você vai ver o que o brainstorming vai fazer.
+ Você está vendo que ele já pegou um outro ângulo.
+ Porque lá na nossa tooling...
+ O que a gente tinha feito?
+ A gente tinha feito um hard set, um hard code das queries.
+ Então ele só podia navegar naqueles tipos de query.
+ Aquele que está falando...
+ Não, eu posso ir um pouco mais além disso.
+ Olha só.
+ Langsham... Calma aí.
+ Langsham...
+ Significamente.
+ Tem dois perfs aqui.
+ Langgraphy, que é um approach moderno.
+ Usando Langgraphy.
+ O de baixo dos panos.
+ Retorna um gráfico compilado.
+ De streaming com two calling.
+ E gerenciamento de estado aqui.
+ Ou legado, que a gente usou anteriormente.
+ Agent executor.
+ Or creator react agent.
+ O clássico do agent.
+ O que você recomenda?
+ Eu recomendo o Langgraphy.
+ Vamos pegar logo a biblioteca mais recente dele?
+ Eu não estou fazendo nada.
+ Está vendo que eu só estou apertando o botão.
+ Estou decidindo aqui.
+ Vocês estão vendo como isso é pluto.
+ Minha pergunta é... Essas duas perguntas aí,
+ você já teria pensado nelas?
+ Para desenvolver o que você vai desenvolver aqui?
+ Sério mesmo?
+ Novas APIs, diferentes formas de como acessar.
+ Questão 3.
+ Chainlit.
+ Você quer visualização?
+ O com-dip você quer?
+ Quando você
+ precisa, um chainlit pode mostrar diferentes níveis de usuário.
+ Temos três opções.
+ Passos.
+ Mostra cada pedaço.
+ Pedaços e thinking.
+ O mesmo que o A, mas te mostra todo o thought process.
+ Ou full tracing.
+ Caraca, every Langgraphy mainstream.
+ Token.
+ Input, Output.
+ Estado intermediário, transparência, visibilidade.
+ Eu recomendo o B.
+ Não, eu quero o C, meu filho.
+ Eu quero ver tudo.
+ O que esse cara comeu
+ no breakfast?
+ O que ele pensou em fazer? Eu quero ver tudo.
+ Então, full tracing,
+ maximum transparency.
+ Questão 4. Sample collection.
+ LLM grounding.
+ Você tem algum sample de dado
+ para me ajudar no grounding, para eu melhorar
+ a curácia? Eu tenho.
+ Dentro do meu repositório, amigão, se eu vier aqui
+ dentro de Jain
+ Data, eu tenho essa informação.
+ Então eu posso simplesmente
+ colocar aqui. Você tem samples
+ para me ajudar? Sample questions
+ em português.
+ Expect SQL outputs. Sample review
+ all of the above, none.
+ Use this.
+ And
+ Postgres
+ with Docker
+ Compose.
+ Ele vai acessar o Docker Composer,
+ vai ler, vai escanear tudo
+ para ter o grounding. Para construir
+ aquele conceito que eu falei do source
+ do ground truth.
+ Então, nós temos realmente grounding
+ completo aqui. Deixa eu ler os reviews
+ para você. Então ele lê os reviews
+ aqui. Enquanto isso,
+ vamos ver aqui. Luan, eu gostaria de saber
+ do projeto com multi agentes antes de iniciar
+ um projeto. Depois de todas as reuniões necessárias,
+ como você faz para injetar ledger, memory, enfim.
+ Eu vou explicar isso amanhã.
+ Toda essa parte de multi agentes.
+ Ledger, memory, como você faz para criar
+ os templates e conectar os ledgers,
+ memory para que ele não alucine. Qual a metodologia
+ adotada? É exatamente esse processo que a gente vai
+ usar aqui, tá?
+ Se eu fizesse
+ o prompt sem
+ ter essa árvore de editoria nos workspace, ele
+ conseguiria criar mesmo com um prompt tão específico?
+ Depende. Se você tiver o agent spec
+ e você tiver informações nele, sim.
+ Olha só.
+ A exploração do approach.
+ Leng graph react mais
+ raw scale mais full flame leech recomendado.
+ Arquitetura. User
+ faz um chain leech, faz um
+ Leng graph com o sonnet, executa
+ query e search, um no post
+ cruz e tal. Explica como funciona, tá?
+ Então, esse é o approach
+ recomendado. Depois ele te dá um outro approach
+ também, que é o dual mode com single validation.
+ O mesmo do A, mas adiciona
+ um x-tap de validação.
+ O agent gera SQL
+ de uma forma bem leve e verifica
+ a aracã. Então ele vai verificar.
+ Então ele gera, executa
+ e depois ele ainda verifica na base
+ literalmente novamente se aquele cara está sendo
+ feito.
+ Ou depois ele tem uma
+ ferramenta que está pre-embutida
+ nele. O que ele recomendou pra mim?
+ Ele recomendou o A. Nesse caso aqui eu vou
+ seguir o A pra gente ver.
+ Vamos ver esse cara aqui.
+ Dote A confirmado,
+ escopo validado. Deixa eu gerar o brainstorming pra você.
+ Então, o que ele vai fazer aqui?
+ Ele vai gerar pra mim um brainstorming.
+ Olha que legal. Então se eu vier aqui agora em
+ Cloudinho, SDD,
+ olha,
+ features,
+ daqui a pouco vai aparecer
+ uma parada linda aqui, ó.
+ Que é o quê? Um PRD.
+ Um Product Requirement
+ Document. Ele me perguntou
+ e a gente vai gerar um PRD
+ pra os agentes.
+ Um PRD, um fucking PRD,
+ lindo, tá?
+ Deixa ele transmutar aqui e fazer.
+ Pra mais tarde,
+ eu não consegui perguntar ontem, hoje
+ muitos aqui jovens na ditada tem documentação,
+ muitos catálogos de dados, glossários de
+ termos, vocês entendem que o ideal seria já
+ reaproveitar essas bases de conhecimentos corporativos para criar
+ camadas simânticas? Com certeza.
+ Se sim, poderíamos fazer isso tecnicamente?
+ Sim, a gente mostrou na terça-feira com
+ camada ontológica. É exatamente isso que faz.
+ Temos que criar tools, colocar
+ na janela de contes, colocamos um KB. Então primeiro
+ você vai criar isso pela camada ontológica,
+ tá?
+ Nunca, se vocês acham que
+ as pessoas vão parar
+ a vida delas pra criar
+ documentação pra agentes, enfim,
+ isso não vai acontecer.
+ O mundo vai continuar mundo.
+ Então a gente precisa encontrar formas
+ modernas de fazer isso.
+ Agora prestem atenção aqui, ó.
+ Brainstorming. Olha o que ele gerou pra mim.
+ Meu Deus,
+ que documento lindo, detalhado que a gente
+ tem aqui na nossa frente, hã?
+ Brainstorming,
+ qual é a ideia? Construir um sistema ativo,
+ qual é a narrativa? O agente decide
+ fazer, quais são as perguntas?
+ Que nós respondemos?
+ Quais são os approaches que foram feitos?
+ O que a gente discutou? Quais são as opções que foram
+ rejeitadas? A gente
+ realmente teve a Agne, we're not going to need this,
+ que é pra remover as coisas que são
+ literalmente feitas. Qual é o escopo?
+ Então ele já entende como é que é.
+ O ground data, que ele pesquisou
+ os dados, ele conseguiu acessar os dados pra ver,
+ tá? Quais são as arquiteturas,
+ as decisões arquiteturais que nós tomamos?
+ Qual é o assessment de risco?
+ Quais são os quality gates próximo passo?
+ Define. Então a gente copia aqui,
+ ó, preguiçosão, tipo
+ nível preguiçoso, define.
+ E a gente vem aqui, define,
+ o documento que ele acabou
+ de criar. Então, uma,
+ um estágio alimenta o próximo
+ estágio, tá?
+ Então agora é o seguinte, ó, deixa eu carregar o brainstorming
+ e definir o template.
+ Você pode usar qualquer outro banco, qualquer outra coisa, tá?
+ Não tem nenhum tipo de limitação.
+ Luan, entendo que tudo que está mostrando
+ é para o Cloud Code, mas usamos um stack
+ oleama de psiqui local, apesar da
+ dificuldade maior possível aplicar conceito.
+ Ramon, de novo, mindset.
+ 8, tudo bem.
+
+
+
+
+
+ Tudo bem.
+ Qual que que você está usando aí?
+ Tudo bem a sua oleama opaca,
+ feia. É o seguinte, eu tenho
+ esse folder.cloud
+ que tem um processo de spec driven
+ development que foi desenhado por
+ Cloudinho. Qual seria o esforço pra
+ você traduzir tudo isso para
+ você?
+ É isso? Ele vai traduzir
+ isso aqui com as mesmas
+ características e mesmos processos
+ para exatamente o que você quiser,
+ tá?
+ Olha, olha que interessante.
+ O brainstorm define, tá?
+ Quando o brainstorm alimenta o define,
+ a maioria dos requisitos já estão prevalidados.
+ Então, as perguntas de descobertas
+ do que, como e assim por diante,
+ já são feitas, tá? Então, ele passou
+ e automaticamente ele teve um score
+ provavelmente de 12 ou 13.
+ Aqui, ó, a gente teve 15 de 15, ó.
+ No brainstorm a gente já conseguiu basicamente
+ ter tudo. A gente teve
+ definição de escovo, entendimento,
+ claridade, matriz e assim por diante.
+ E daí agora ele gerou o define pra
+ gente. Vamos ver o que ele definiu
+ como literalmente specs
+ que a gente tá fazendo.
+ Então, aqui eu tenho
+ os usuários,
+ participantes de workshop, AI del
+ engineers, nós temos o Luan como
+ apresentador. Olha só, quais são
+ os must, quais são
+ os shoots e quais são os cuts, tá?
+ Mas tem uma coisa mais interessante aqui.
+ Quais são os critérios de sucesso?
+ Quais são os testes
+ de aceitação? E aqui, ó,
+ lembra que eu falei pra vocês no primeiro dia?
+ Do's e don'ts. Você tem que passar
+ pra LLM o que ela quer e o que ela não quer.
+ Tá? Então, out of scope.
+ Tá? Então, eu tenho esse cara
+ aqui. Depois eu tenho as constantes
+ técnicas, o contexto técnico
+ que eu consegui,
+ o contrato de dados, o
+ schema. Meu Deus, ele já puxou o schema
+ todinho aqui, ó.
+ Tá? E ele ainda achou aqui
+ algumas informações legais. O que é PII
+ e assim por diante, tá?
+ Contrato de schema, quais são os assumptions
+ que ele tem, qual é o score
+ que ele tem de entendimento, quais são as
+ perguntas que foram abertas aqui,
+ revisão e assim por diante.
+ Então, agora o próximo passo é desenhar a
+ solução. Agora,
+ prestem muita atenção nesse processo.
+ Porque agora a gente vai sair literalmente
+ do processo
+ user-centric.
+ Então, a gente entendeu, captou,
+ entendeu coleta de requisito,
+ tudo isso. Agora a gente vai sair
+ da ideia de collection
+ get, do entendimento com o cliente.
+ A gente vai chamar uma stack
+ de inteligência para
+ criar o quê? O design
+ técnico. E aqui
+ é a parte mais importante, tá?
+ Se faltou algo no brainstorming, o step
+ posterior que só descobre na hora do build,
+ uma falha ou problema, qual seria o workflow
+ ideal para isso? Que bom que você perguntou
+ isso, tá? O agents,
+ o open code,
+ o open code, ó, o spec kit
+ e o open spec,
+ eles não oferecem o que
+ eu criei aqui. Você pode chamar
+ um barra, interation,
+ interage. E você
+ pode falar, cara, eu quero modificar tal coisa
+ nesse documento que eu não gostei do
+ spec, que tava assim e assim
+ assado e ele vai lá
+ e adiciona todos os documentos e
+ reflete tudo. Você não tem que criar um
+ constellation novamente e começar tudo de novo.
+ Você pode interar em cima do contrato,
+ tá?
+ Ah, então o Gilberto entendeu uma coisa legal. Então o
+ fluxo com tudo que você tem falado. Você faz as reuniões,
+ grava tudo, gera documento de requisito e aí
+ chama o agent spec e vai buscar o café.
+ Caralho, Gilberto, parabéns.
+ É, tá vendo como que as coisas começam a se conectar?
+ Então é literalmente isso que eu faço no meu dia.
+ Eu deixo esse cara,
+ o Crisp, pegando a reunião,
+ ele entra num workflow agente,
+ escreve isso nas notas,
+ eu trigo o meu agent spec,
+ valia do processo, gasto o tempo lendo,
+ entendendo, mexendo e dou um enter.
+ E ele vai fazer isso aqui, ele vai
+ criar a solução inteira pra gente, tá?
+ Beleza? Então aqui agora ele vai entrar
+ literalmente no technique case do negócio,
+ ele vai entender linha de código, ele vai
+ revisar o que você já tem no seu repositório,
+ ele vai chamar
+ os subagentes que eu tenho pra poder
+ literalmente desvendar tudo isso.
+ Se você tiver subagentes também
+ que estão na sua pasta, eu vou utilizar
+ esses subagentes aqui, tá?
+ Aqui o Rodrigo pensou o seguinte, ó.
+ Legal, dá.
+ Dá.
+ Eles são ruins, hein cara?
+ Já vem com a flag de matar Bi?
+ Ainda não, não inclamei ela não, quem sabe depois, tá?
+ Beleza, agora isso aqui
+ é importante, tá? Ele criou um documento de
+ designing, então vamos ver aqui
+ o que aconteceu nesse documento de design, aqui
+ a gente vai literalmente gastar tempo, tá?
+ Assim, não agora, mas eu só
+ quero que vocês entendam o nível em que
+ de detalhe que ele vai construir esse
+ back pra gente ver, tá?
+ Ah, outra coisa, cada documento
+ desse gerado, ele tem uma tonelada
+ de melhores práticas que eu coloquei, tá?
+ Eu tenho 357 horas aqui real,
+ não é de boneco não, é literalmente
+ pensando em cada pedaço,
+ fazendo crafting disso aqui,
+ por exemplo, você não consegue
+ pular de um brainstorm
+ pra um design,
+ você não consegue fazer
+ porque eu tenho contrato em todos os pedaços,
+ você não consegue
+ sair do scopo, tá?
+ Então, eu tenho diversos harnessings aqui
+ dentro pra poder garantir que você vai seguir esse
+ processo. Então, olha, ele deu um
+ ready to build, ele me deu a arquitetura
+ que ele vai criar, olha só,
+ chainlead, input,
+ toda a parte de automação que eu fiz,
+ o HTTP, o app, o
+ agente, langa e graph que já vai
+ usar o mesmo, aciona
+ o SQL query, acessa
+ a camada semântica que acessa o push
+ e o quadrante, cara, é exatamente isso, caraca,
+ beleza. Quais são os
+ componentes de criação? Quais são
+ o propósito? Quais são as tecnologias?
+ Quais são os key decisions que a gente decidiu?
+ Todos eles aqui,
+ tá? Ele decidiu realmente
+ no nível técnico, tá? Por exemplo, olha só,
+ o que ele decidiu aqui?
+ Open SQL Generation via
+ system prompt,
+ link graph create react agents,
+ not legacy agents executor,
+ full trace string via a string events
+ too. Então, ele realmente está conversando
+ com os peers dele pra poder fazer
+ isso, tá? E aqui, olha só,
+ o que ele escolheu.
+ Pra criar os tools, ele escolheu o shop
+ agent builder, que tem toda essa informação
+ lá dentro, chainlead também,
+ e dependendo, porque o meu shop agent
+ builder ele já é completo,
+ ele escolheu esse agente pra fazer o
+ assignment, tá? Se você, se eu não
+ tivesse ele, e detalhe, esse shop
+ agent builder, vocês entenderam
+ quando isso é legal? Eu tenho vários
+ agentes que eu uso dentro do
+ agent spec, mas na verdade
+ ele preferiu escolher o shop
+ agent builder, que tá aqui dentro, no seu
+ repositório.
+ Ele tá, nossa,
+ onde ele tá especificamente.
+ Cadê o shop agent builder?
+ Aqui, olha. Ele é
+ toda a informação e componentização
+ de todos os dias, assim, por diante dele.
+ Ele entendeu o logaritmo de
+ intencionalidade de qual
+ agente ele vai fazer o matching,
+ ele preferiu o seu agente, o agente desse
+ repositório ao invés do outro.
+ E olha só o que você vai começar a ver aqui, ó.
+ Comente errado.

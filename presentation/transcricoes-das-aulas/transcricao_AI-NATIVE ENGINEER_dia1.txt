@@ -1,0 +1,1777 @@
+
+
+---
+
+📁 **Arquivo: Apr 13, 10.03 PM​.mp3**
+
+ e a gente segue a gente porque a gente tem muito com o para entregar o perdo
+ pediu pegando um conceito do reggae pessoal falando seus obsidian com
+ gráfico para dar uma memória para ele não tem que contextualizar sempre não é
+ de novo para mim ainda é uma pros projetos que já trabalhei eu ainda não
+ precisa utilizar o obsidian com volta com grafite e alguma coisa assim ainda tá eu
+ geralmente eu só uso eu só uso coisas que eu preciso realmente por isso que
+ é uma das coisas que também me ajuda muito a não ficar louco porque eu sei
+ que tem muita coisa foda tem em palestina e vai ter o over tem por a
+ fita e agora com obsidian vault tem cara uma cacetada de parada e se a gente
+ ficar utilizando toda hora isso aí eu fico louco então eu literalmente vou no
+ meu projeto começa a usar na capacidade quando vê que alguma coisa bateu falou
+ para calma e não eu tenho esse problema aqui legal como que eu resolvo esse
+ o meu
+ palácio eu vou atrás de um bairro rover aí eu vou atrás de alguma coisa que me
+ trago que eu preciso mas eu sigo sempre essa regra tá beleza então eu nunca
+ bati num constrante de acesso de retrieval enfim não e não vou bater
+ mais ficar assim você tem um opus com um milhão de contexto agora daqui seis
+ sete meses assim aqui eu consegui o santo grau de
+ perfeição então nem nem nem relação a isso
+ o asley
+ eu gostaria de saber é pensando num contexto de um projeto do zero porque
+ obviamente se desenvolveu isso antes para passar isso pra gente né e essa
+ pergunta é mais pro iniciante mesmo acho que vai ajudar algumas pessoas talvez
+ com essa dúvida qual que é o passo a passo de configuração
+ tipo eu teve uma uma outra workshop como pode dizer que eu segui você fala de
+ md aí eu tô descobrindo e eu acredito que todo mundo tem bastante pessoa que
+ tem outras coisas perientes é qual que é o as configurações porque eu caber hoje
+ descobri nessa semana e aí então desde o zero a me guia do zero me guia do zero
+ não não não tipo assim o resumidamente resumidamente mesmo
+ sim isso mas me guia do zero tipo assim vou começar um projeto agora como que eu
+ faço tudo isso né guarda aí se você quer perguntar porque você saiu aqui do
+ negocinho tirei você do mil obrigado a lã já responderam aqui os colegas
+ responderam aqui as dúvidas perfeito então pronto tá eu tô devendo para
+ vocês duas coisas eu só vou responder no final das aulas porque o que o asley
+ perguntou é muito foda e eu não vou dar esse nugget pra vocês vocês não ficaram
+ até o final eu estou pra vocês como que eu faço para criar do zero tá então só
+ para que eu vou gastar 15 e 20 minutos e a outra coisa mostrar demonstração
+ literalmente do que você não acredita de cláudio que ele consegue fazer se
+ não ver números que são informações sigilosas da agência de dados a cada
+ pra vocês entenderem o com isso assim então valeu a gente já deixou a deixa
+ para mim fica tranquilo que vou responder sua pergunta no final pode ficar tranquilo
+ tá obrigado beleza então vou voltar aqui agora pra
+ gente ficar crazy a outra coisa pra quem faz treinamento comigo da primeira vez a
+ gente tem o instinto de falar foda com uma coisa muito foda tá e geralmente eu
+ dou um foda por dia mas hoje a gente tá falando de ades e tem uns agentes que vocês
+ podem meter o foda aí porque tem muita coisa legal que vão usar o resto da vida
+ de vocês e se for meu que vocês aprenderam vocês aplicam já entendeu que
+ você vai aplicar em qualquer lugar né beleza só que caber legal só que caber
+ sem inteligência não te traz exatidão lembra que eu falei aquilo lá trust
+ você usa isso pra tudo pra tudo em a você cria e verifica e coloca um gate
+ cria verifica coloca um gate cria verifica coloca um gate então que a gente fez
+ que irá caber verificou e botou um gate agora vou mostrar para vocês como que eu
+ faço o agente que a parte mais importante tá então vou abrir aqui ó
+ os agentes que vocês têm eu tenho mais de 170 agentes tá eu trouxe alguns agentes
+ pra vocês aqui pra vocês se divertirem então que vocês entenderam a lógica
+ então vou pegar aqui um agente legal vou pegar uma gente
+ um pai developer tá então vamos abrir esse carinho aqui esse carinho que não
+ sabe nada vamos ver esse carinho que não sabe nada
+ o que que o que que tem esse cara vamos lá então identifica esse cara com
+ arquiteto de engenharia de sistemas domínio data classes typegente generator
+ pass testes threshold 090 padrão opa arquitetura de conhecimento esse a gente
+ segue que ele fez resolution isso é mandatório não opcional ah então
+ camain então eu tenho uma parada socada no red do agente que falei antes de você
+ fazer que fizer qualquer coisa na sua vida o seu primeiro objetivo é checar
+ base de conhecimento ah então adicionei o que uma ordem explícita para esse
+ animal de teta entende então agora tô literalmente falando pra ele ele vai
+ nascer ele vai fazer o que ele vai literalmente na base de conhecimento aí
+ aqui eu tô falando quais são as capacidades dele quais são os padrões
+ aquele vai meu deus adoro isso com a regra regra typegente em todas as funções
+ data class sob dicionário generate os pra tipo de fio dinâmico em sneak case
+ emportes utilizando format nossa que legal então eu tenho as informações
+ desse cara aqui só que vejam esse outro carinho aqui
+ olha a diferença desse outro cara que está vinculado a uma base de
+ conhecimento que eu queria para vocês vejam
+ decisão de fluxo validação de sistema matriz de validação que é isso o ano
+ cara todo meu agente ele segue um template de inteligência então a mesma
+ coisa que eu fiz pra base a mesma coisa tem para todos os meus agentes todos os
+ meus agentes seguem um processo foda não é olha só o nome do agente
+ descrição dele qual é o contexto que está inserido
+ quais são os exemplos que ele tem com essas ferramentas que ele chama qual
+ tipo de agente que ele é em qual domínio se identifica qual é o padrão
+ default threshold que ele tem qual é o flow de decisão dele e classe a
+ calma aí ele tem um flow de decisão é cara toda vez que eu pergunto pro meu
+ agente vai fazer exatamente isso aqui ele vai classificar uma intenção ele vai
+ entender qual tipo de tarefa e qual o threshold configurado ele vai carregar
+ sempre lendo a base de dados do contexto ele vai validar se o threshold
+ não for suficiente no mcp ele vai calcular um score para ter uma
+ confiança final depois ele vai decidir se esses corres está apto para chegar no
+ luan se não chegar nesse score ele volta o
+ processo fica reinterando até ter o score que eu quero eu tô criando um
+ sistema de decisão para forçar o agente a literalmente só me entregar
+ acima de 90% a 95% do que ele realmente acredita que é certo então
+ estou criando um sistema mental para o meu agente e o modelo de confiança
+ então é exatamente isso que acontece que se transforma uma parada de 40% para
+ 95 quer ver
+ é só que legal isso aqui se a gente perguntar para o nosso carinho que a
+ gente perguntou agora gostaria agora gostaria que você me mostrasse a
+ curação em relação a utilizar por exemplo lm graças especialista.md que é
+ um sub agente que se conecta uma base de conhecimento comparado a curação de
+ você utilizar o mcp uma pesquisa no restado normal e coloca lado a lado por
+ exemplo exemplo de código alguma coisa para que eu possa saber a qualidade desse
+ output dos dois
+ eles vão voltar aqui aí que ele faz aqui é o que a gente calcula ele tem
+ ele carrega a base ele valida com mcp e calcula e decide ou seja agora eu tenho
+ uma base local mas no mcp caso eu precise ele já atualize em tempo real eu
+ tenho uma confiança numérica calculada em cima disse um resultado que me traz
+ aproximadamente 95% e aí no final ele ainda tem uma matriz de acordo que é se
+ for maior que 95 executa se for 075 ele pode voltar e se for 050 ele vai
+ se perguntar novamente ele vai precisar de auxílio em cima disso ou seja o que
+ a gente fez aqui agora a gente acabou de criar um sistema padronizado de agentes
+ eu coloquei minha frota de agentes para pensar da mesma forma pesquisar na base
+ de conhecimento de forma extremamente efetiva e literalmente me trazer
+ respostas tanto é que vocês vão fazer isso comigo
+ você acha que eu queria alguma coisa desse treinamento não vocês vão criar
+ juntos a gente vai construir do zero tudo porque vocês vão ter matriz vocês têm
+ sistema a gente vai criar o sistema em cima do sistema não é isso
+ treinamento é sobre vocês saírem com acham a boa e então vocês vão sair
+ literalmente fazendo isso porque porque você tem um sistema que a parte que mais
+ vai levar vai levar tempo tá então o que a gente constrói que agora um puta
+ cockpit de mcp as cabeças sobre a gente a gente que uma plataforma a gente que é
+ de como você trabalha com dá então por exemplo se a gente quiser conectar
+ qualquer tipo de dado aqui a gente vai ter as configurações que estão dentro
+ do mcp a gente vai ter o cloud.md que é literalmente onde você coloca a memória
+ desse cara você vai ter a base de conhecimento as diferentes bases de
+ conhecimento e você vai ter os diferentes agentes que se conectam essa
+ base de conhecimento para a gente poder construir qualquer coisa que a gente
+ quiser desses dias a gente só precisa literalmente entender o que a gente quer
+ construir quais são as capacidades que a gente quer entregar quais são os
+ dados que a gente quer literalmente entregar e começar a construir esses
+ caras com a base de conhecimento e com os sub agentes eu não acabei aqui esse é
+ o primeiro dia a gente está construindo já construiu outras coisas em cima disso
+ mas essa é a pura base que você pode levar para casa porque o repositório já
+ está pronto para você consumir ele agora então vê se vocês conseguem acessar
+ esse repositório aqui
+ eu sei se ele está público ele está público acho que está público
+ beleza então vocês acabaram de ter a inteligência que eu criei para vocês
+ aqui tá que eu já trabalha muitos anos muitos anos trabalha um ano em alguma
+ coisa com essa inteligência sempre melhorando ela então agora vocês têm a
+ mesma a mesma nível de inteligência então que a gente tem basicamente em
+ nós temos uma base de conhecimento local com o template que criam iguais e
+ literalmente um index que vai literalmente consumindo essa informação
+ tá e aí a gente tem os agentes que também tem um template que se comporta
+ em todos esses agentes se conectam esse template então agora eu posso ter 300
+ agentes eles têm o mesmo processo mental qual é a parte legal disso quando tem um
+ novo modelo que lança alguma coisa eu falo cara eu quero refatorar o meu o meu
+ modelo mental verifico o arroba template contém de verifica se existem
+ características melhores ainda para aumentar a qualidade a curácia do
+ resultado e assim por diante tá é a manda relaxa você ainda nem viu funcionando
+ calma você não é funcionando aí aí aí eu vou levar o napkin para você vou
+ levar para você o o negócio é um processo de chora acontece a gente
+ chora é normal tá porque você vai ver o que que vamos ver o que ele falou que
+ a pedido só vão passar que fazer um esquema em comparação a tarefa idêntica
+ para os dois criar um sistema prompt para repórter agente do shop agent que
+ sintese as datas que ele semânticos em relatórios executivos
+ o fã output ele é especialista conectando com o cabelo
+ o arquivo os cabeços cruzados para fundamentos de decisão prompt criado
+ beleza que eu aqui não gosto sete técnicas de prompt indinímero colocadas
+ output da mcp direto e sim pente zendesc google sheets no flex o melhor prompt
+ com mcp me deu para o repórter agente olha o que ele retornou da mcp
+ olha o que ele retornou do meu mcp isso é foda galera a gente está falando de
+ otimização de token de melhor prática de sub agentes de utilizar o sistema da
+ forma correta está começando a clarear agora o louco de uma hora e meia atrás
+ todo animado é porque o sistema consegue garantir literalmente a exatidão porque
+ você construiu o sistema da forma certa vamos desseguir comparação estrutural
+ sub agentes mais cabem cp conhece o shop agent sim porque tem o contexto do
+ que é um retorno zendesc mandou bem aqui né menciona ledger e memoria sim aqui
+ não formato de relatório definido cinco sessões nenhum antes alucinação nunca
+ invente números ou beck ou pá tina fot cinco pass sequenciais nenhum só se
+ atribui ledger fonte memória nenhuma eu andrei graceful degradation para dados
+ vazios nenhum idioma português brasileiro inglês formato monetário nenhum
+ técnicas documentadas sete técnicas com referência de cabeça é a linha de
+ backstory 50 linhas estruturadas uma linha genérica pronto para produção se
+ cola no agente porque não precisa escrever tudo porque a diferença sub agente
+ não é mais inteligente com mcp ele é melhor informada diferença está em três
+ camadas camada com o texto do projeto camada técnica de engenharia de prompt
+ camada de composição multi caber o poder real está no cruzamento entre
+ cabeças diferentes o sub agente compõe conhecimento de três domínios numa
+ resposta único mcp só busca um bom menino puta que pariu e se nem para
+ vocês a porra da arte de vocês fazerem qualquer coisa hoje é o dia 1 vocês vão
+ construir que vocês não o cláudio vai construir a parada inteira para vocês
+ só que na exatidão perfeita vocês vão revisar o interavô melhorar mas você
+ não é mais código cara se faz que é importante business magia negra black
+ total
+ em relação a se se conhece por exemplo o open spec se acha que é interessante
+ utilizar o open spec para montar o meu conhecimento com caber é se você esperar
+ até quarta vou te mostrar algo melhor do que isso para construir os caber
+ ótima pergunta vou criar um framework de escorro objetivo para avaliar os dois
+ naquela mesma tarefa tem prompt para o porto de gente do shopping gente vamos
+ ver o escorro que ele vai dar aqui do nosso sistema de confiança junto com o
+ escorro do mcp da pergunta que ele tem jovani pode perguntar enquanto ele
+ gera aqui
+ me escuta a beleza te escuta bem o bar uma dúvida só o que a gente está
+ falando agora é ela está centralizada no calde code né
+ é necessariamente protocolos não a gente colocar um agente online para se
+ conectar uma base talvez de sites para algum usuário é muito claro que eu estou
+ te ensinando o sistema para você construir esse tipo de coisa
+ sendo cláudia em qualquer um tanto faz porque aqui dos mds e subagentes tem
+ qualquer um então eu te ensino no sistema literalmente
+ é o sistema da cláudia o seu mas por exemplo se eu quiser colocar uma uma
+ web assim um agente que se conecta na base de vendas e conversa com o usuário
+ também seria essa mesma essa mesma framework assim não não são coisas são
+ coisas diferentes a gente vai passar sobre o que é que você vai usar reg
+ você vai usar outras coisas não não é uma ideia eu tô com problema lá na
+ empresa que a gente tá migrando os fluxos de bem me dar de esteja para
+ lake flow poderia criar um agente para fazer essa migração ajudar nessa
+ migração eu migrei 2753 linhas de código de
+ eu não fiz uma linha de código é exatamente o sistema para fazer isso
+ também diz beleza já passa depois vamos continuar aqui que a gente está nem na
+ metade tá calma aí vamos lá tem de 51 então mostrei um pouquinho da demo né
+ a gente vai explorar o projeto e agora já que vocês têm acesso aí que a gente
+ pode fazer a gente começa a qual conhecimento que vocês têm desse projeto
+ é conhecimento negativo né é olha só que legal resumo final do
+ ranking que ele teve ó posição um método subagente mais mais cabe um
+ especialista com biblioteca curada pronto para produção eu orquestrador 0
+ 6 caras de arrepiar vocês entendendo isso aqui tá mas vou explicar eu
+ orquestrador 065 generalista com mapa de projeto raspum razoável 3 mcp direto 0
+ 50 busca pública sem contexto a lição curadoria mas busca mais memória de
+ treino e o sistema de sub agentes foi projetado exatamente para explorar essa
+ hierarquia eu vou explicar para vocês entenderem o que o cláudio me falou aqui
+ ele falou basicamente seguinte se você abrir aqui ó no chat e pedir o que você
+ quiser e ele já muito foda nisso você vai ter 65% de acuraça se você fizer o
+ que eu mostrei para vocês com sub agentes e tal você vai ter 100% de
+ vocês têm noção que é isso aqui esses lentes aqui o caudinho está falando que
+ ele é burro comparado ao sistema de sub agentes e cabeça
+ porque porque aqui ele é um orquestrador genérico e tá tudo bem ele sabe muito de
+ muita coisa mas você não está dando as especificidades dele o projeto então
+ tudo sobre construir literalmente o processo como um todo então se você tá
+ aqui nesse cara olha só que legal fechar todas essas
+ almas aqui todas elas tá se você pegou o projeto você conectou aí está
+ local e amanhã você vai ter tempo também para fazer se você ficar até o
+ final vou mostrar a base do zero e o produto lá fiquem aí que a gente vai
+ até às 11 10 20 mas beleza acontece vamos lá abrir ele eu não sei nada de
+ projeto acabou de abrir o projeto eu deixei aqui prompt um dois três quatro
+ cinco seis sete oito nove dez eu vou chegar ao seguinte vou chamar prompt
+ barra na verdade rodou o nome arroba 011
+ barra project exploration apertar enter só chamou prompt eu deixei uma lista de
+ prompt que a gente vai começar a explorar hoje olha o que ele vai fazer
+ ele vai executar o prompt e o que esse prompt tem um prompt é simples que está
+ falando assim olha para esse projeto e explica o que o shopping agent é leio
+ cloud.me d para entender a arquitetura me dá um sumaro de o que a gente está
+ construindo essa semana quais são os modelos e que quer ledger e memoria
+ nossa que sexo é que vocês vão aprender um conceito muito legal de ledger e memoria
+ então aqui ele dá a informação para você ó poxa que a gente vai construir
+ a gente vai ingerir na segunda terça-feira a gente vai contextualizar
+ na quarta a gente vai ter um agente na quinta a gente vai ter um multi agente
+ então a questão central é o que eu consigo fazer agora que não conseguiria
+ antes tudo vai rodar no docker first do dia 1 ao dia 3 e no dia 4 a gente vai mudar
+ tudo para cloud caraca o que a gente tem de modelos de dados do do postman
+ a gente tem clientes a gente tem produtos a gente tem pedidos a gente tem reviews
+ insight note que três entidades vivem no postres estruturadas enquanto review
+ vai viver no quadrante com um banco de dados vetor isso é esse split é
+ intencional cara olha isso aqui isso cria uma arquitetura de
+ armazenamento é dual dupla é que faz com que o sistema de multi agentes se
+ torne interessantes revisões contém dados estruturados em linguagem natural
+ português em sentimentos benefícios da pesquisa semântica sem csk e aí ele
+ explica o que que é arquitetura cor de um ledger e de um memória que a gente vai
+ entender já já legal então eu estou explorando
+ literalmente o que eu não sei do meu repositório eu vou chamar agora o 2 0 2
+ e quem tiver fazendo me fala e cola eu quero ver que vocês estão tendo de
+ resposta que eu tenho certeza que de 540 pessoas e 50 pessoas tem gente fazendo
+ e fala em seja tão fazendo eu estou entendendo repositório agora estou
+ abrindo o repositório que eu nunca vi na minha vida e eu tô tentando entender
+ tá é isso que a gente tá fazendo o que a gente vai fazer aqui sem ter contexto
+ basicamente nenhum tá então aqui eu tô entendendo qual é o esquema esse esquema
+ segue o estar esquema light pattern pedidos na tabela de fato clientes e
+ produtos quais são as tabelas que eu tenho postres olha só que legal ele já
+ mostrou tudo pra mim quais são os produtos quais são os caritéis que achava
+ que não é pedidos que a transação chave também explicou relação ele já
+ explicou pra mim também quanto tempo você demoraria para fazer isso um
+ projeto se teria que marcar uma reunião com cara para te dar acesso não existe
+ mais isso acabou isso é muito dois mil dois mil e vinte e cinco existe mais isso
+ ao calde com você e isso também não é gente está fazendo literalmente isso aqui
+ perguntando para ele vamos entender agora a configuração do shadow traffic
+ que eu chego para o gerador de dados estão em vez de se perguntarem para mim
+ vocês não tem muito mais para mim se perguntam o cláudio cláudio vai lá o
+ shadow traffic que o shadow traffic é o gerador de dados declarativo onde você
+ descreve como que você quer ele gera o dado de infraestrutura como código é um
+ arquivo jason configurado com fonte da verdade com quatro entidades e as suas
+ relações ao que lindo se usa um arquivo de ex-narrador para você então
+ gerou dado de cliente de produto de pedido de reviu em sites o peso é a
+ distribuição entre o mundo real e o conhecimento no dado sintático
+ notem que 50% dos pedidos são entregues a maioria completo somente 10% são
+ cancelados pique 45% reflete o pagamento de pagamento do brasil
+ onde o pique domina desde 2020 é rating skills de 65 estás de 4 a 5 como
+ qualquer que como se real esses pesos fazem o sistema de geração de dados
+ parece bem autêntico para os sistemas e sistemas agentes
+ vocês não estão perguntando mais para mim ver acabou olha só vocês entendem
+ tudo do projeto é só ler qual é a maior característica hoje de um engenheiro de
+ dados de um e aí nem de engenheiro que quiser leitura
+ lê a voltando a ler que você não precisa mais de ninguém de marcar uma
+ reunião para entender o que aconteceu que demoraria semanas para você entender
+ você consegue entender em minutos inteiramente tá fica tranquilo que eu
+ já abro para vocês aqui a gente vai ver algumas outras coisas que ainda estou
+ chegando no ápice do negócio já passa já aí a pergunta rápida se for pergunta
+ rápida
+ eu já achei a resposta aqui já
+ tá só para a pauta então vamos lá que a gente vai fazer é por causa que eu eu
+ tô eu vi que você tá usando o curso dos anos de escudo e foi jogando aqui os
+ marques da uma fãs podendo certinho aí eu falei beleza aí quando abriu o marque
+ da o presente do xedro vi que ele tinha poucas linhas mas lá em cima ele tava
+ dizendo pega do deisão xedro tráfito tem as informações a agora entendendo
+ tá puxando até 2030 a gente já vou intermedia mais comércio do que todos
+ os marketplaces que foda a gente está falando de 3 a 5 trilhões de comércio
+ dia nos próximos anos até 2030 a gente está falando de um novo paradigma de
+ agent first e a gente está falando de 60% de pesquisas via ia ninguém mais vai
+ utilizar google isso é muito 2025 então está falando de um mundo completamente
+ novo com novos paradigmas em novas formas lembrei disso novos paradigmas
+ exatamente novas formas de resolver esses problemas é assim que funciona
+ então olha só a essa essa parte é nossa eu me arrepio
+ pra mim essa parte mais foda
+ dia de hoje porque isso aqui é uma realidade enterprise isso aqui é vida
+ real tá então vamos entender aqui isso tá aí vamos ver como que vocês
+ entendem o como vocês podem levar isso para a vida de vocês galera pensa numa
+ arquitetura dessa forma aqui ó ó
+ E aí
+ a vida real isso serve para qualquer coisa eu tô pedindo para a gente tem que
+ que a gente vai construir ao longo dessa semana a gente vai construir um sistema
+ de comis então que tem um sistema de comis como a gente viu aqui ó o sistema
+ de comence ele tem dados que são dados estruturados e ele tem dados que não
+ são estruturados que são mais semânticos tá então o que seria isso eu
+ vou até pegar esse comentário do artur aqui até me assustado isso mas quem
+ dominar os fundamentos com certeza se aumenta vai lá na frente nunca vivemos
+ um tempo em que a informação estivesse tão à disposição de forma tão assertiva e
+ rápida hoje só não faz grana que realmente não quiser com mais de certo
+ meu irmão inclusive eu tinha falado né a gente já tinha falado que iria nascer
+ uma empresa de um trilhão de um bilhão de dólares com uma pessoa só né
+ isso já infelizmente já aconteceu falaram que é ser no final de 2026 já
+ aconteceu um animalzinho de teta fazendo bilhão tá vamos seguir agora então eu
+ perguntei para ele sobre dados então ele me deu que é seguinte olha dados que a
+ gente tem no post bus que tá dentro do docker aqui eu tenho clientes produtos e
+ pedidos e eu tenho pedidos de revisão por exemplo aquele reviu para aquele
+ pedido ele recebeu quatro e olha só que legal comentário produto chegou antes do
+ prazo estou muito satisfeito com a compra com o sentimento positivo com a
+ distribuição com o sentimento que nós temos com o ranking disso
+ entendam que muitas pessoas e eu já fiz isso em enterprise e eu morri
+ você também você você não é muito exemplo mas você se lascou também porque
+ a gente não sabia muito disso no início né de ledger e memória você passou por
+ isso você quer falar só um minutinho sobre isso rapidinho que aconteceu na
+ vida real aí desculpa te colocar no spot aí mas é porque você passou isso antes
+ de mim claro na verdade eu estava desenvolvendo o sistema que um dos
+ requisitos que não sei que se a parte convencional conversa tradicional do
+ agente aquele não alucinasse ele tinha 100% de probabilidade de não alucinação
+ então eu acabei pesquisando bastante e peguei um pattern bem antigo inclusive
+ experimental da minha pessoal que chamava chamada o magnético uma gente que
+ chama dessa forma que ele faz investigação ele chama ele dispara um
+ número x de agentes em paralelo e vai querendo um leão um livro razão onde
+ ele tem informações é informações que elas são específicas do processo então
+ as informações uma vez uma vez que elas são escritas elas não podem ser
+ alteradas elas podem ser deletadas ou ou utilizadas em um sub processo então
+ elas são incrementadas então se uma se você fez uma pesquisa via reg ele
+ trouxe uma informação falando que a igual a 10 isso fica dentro do ledger
+ sempre enquanto o contexto de vervalido então foi assim que parte
+ principalmente eu resolvi o problema de alucinação no projeto porque a memória
+ você tem uma série de problemas como você no processo de sistema agente você
+ tem que imputar a memória para criar contexto é contexto de episódio que a
+ gente o ledger ele mata esse problema de alucinação então você tem o episódio
+ que ele incrementa a história que os usuários está falando e que o ledger que
+ suas informações que são validadas e realmente utilizadas pelo pelo sistema
+ a gente está assim caralho que tanto de palavra top essa que ele falou vou
+ traduzir o cara é um gênio deu pra entender né mas o que a gente quer
+ dizer aqui só pra explodir a cabeça um pouco
+ o que a galera faz hoje no nível enterprise pega os dados e soca dentro do
+ reg só que deixa eu te perguntar uma coisa quando você faz a pesquisa
+ seguinte quanto que a gente vendeu no último mês
+ eu quero contar coisa pra vocês como que o regue vai conseguir pegar esse
+ dado exato de 804 e 27 mil 329 reais você acha que ele vai conseguir fazer
+ isso toda vez calma ele não tem um score ele não tem configuração ele não é um
+ modelo que tenta saber pro bario de probabilístico só que você soco uma
+ informação exata lá dentro não funciona me na vida real você tá
+ cozinhado não funciona assim na vida real se tem que ter um ledger como o
+ rafael falou eu não vou nem deixar o rafael falar de uma camada que ele tem
+ criou em cima disso isso a gente deixa pra sexta-feira ele criou ele criou um
+ sistema que existem poucos poucas pesquisas científicas ele criou uma
+ camada em cima dos dois que que o unilégia de memória mas a gente deixa
+ pra sexta-feira para ele falar mas na vida real aqui antes dos seres humanos
+ que nem a gente que a gente tem um ledger que é um cara que tem os dados
+ exatos determinísticos então você vai gravar valor do produto você vai gravar
+ valor exato vai gravar as vendas enfim isso vai ser a sua base exata
+ determinística do que eu sou esse que ele serve que o seu oro foi vindo seu
+ dado realmente é perfeito e do outro lado você tem a memória que é
+ literalmente os dados que você recebe do que de texto então quando a gente
+ volta aqui e você começa a entrar no projeto a partir de amanhã você sabe
+ que já vai mandar essa essa essa tatana na cabeça se ela falar vamos botar as
+ coisas que a gente vai botar a data exata venda coisas de prioridade é se
+ aliar de duas três horas coisas que são numéricas exatas as caras a gente vai
+ colocar tudo no reggae você vai falar tá errado a galera vai falar assim porque
+ tá errado aí você vai levantar e falar assim deixa eu explicar pra vocês aí vocês
+ explicam o conceito de ledger ou seja isso aqui é real é vida real então
+ quando você vai construir um sistema que literalmente precisa de exatidão por
+ exemplo o ui que falou tipo gene data do brics exatamente se acha que o dia me
+ estoura a armazena aqueles dados exatos as suas tabelas exatidões dentro
+ literalmente de um reggae porque você acha que eles têm postgres dentro da
+ engine deles bom né porque eles precisam dos nores
+ eles precisam de dados exatos e precisam de dados reggae você não tem um size fit
+ você não tem uma tecnologia que cabe para tudo você tem técnicas e
+ percepções diferentes para cada um deles e isso é muito forte se vocês estão
+ entendendo onde estou querendo chegar essa ideia alô eu não tô entendendo essa
+ sopa de letrinhas não tem problema no final da aula eu fico com vocês aqui
+ tirando as dúvidas tá não tem problema vocês vão sair daqui com as dúvidas
+ tirados é só acreditar no processo um bocado de coisa fica tranquilo não
+ desistam tá então quando você tá querendo algo determinístico você vai
+ criar um led quando você vai querer um dado literalmente textual aí um sistema
+ de vetor é cara perfeito ele vai conseguir saber semântica ele vai
+ conseguir fazer pesquisa por proximidade por peso ele pode agora fazer por
+ sentimento você viu que a que antrópica acabou de
+ lançar o modelo que entende sentimento quem viu isso aí fala eu
+ Fizeirões!
+ f割罌
+
+
+
+---
+
+📁 **Arquivo: Apr 13, 10.36 PM​.mp3**
+
+
+ E aí galera a gente tá entrando no mundo meio obscuro tá Emotion Concepts and their
+ Functioning and Large Language Model eles criaram uma forma de entender o que
+ significa calma o que significa desespero quais são os pesos para entender
+ geração de emoção porque o animal do Luan falou um tempo lembrei que eu falei
+ que vai chegar um ponto que a máquina vai conseguir entender a emoção é isso
+ aqui ó a gente já tá vendo isso acontecer mano a gente tá no futuro eu
+ tô falando e a galera não tá acreditando a parada é crazy shit total eu tô falando
+ sério a gente tá chegando aqui o negócio é muito sério tá é como que
+ você representa emoção o modelo de avel e agora a gente sabe que a gente tem
+ agora uma empresa que está vinculando ele é mesmo com fatores químicos né então
+ na verdade ele entende a intenção e solta um fator químico para poder dar
+ uma reação no robô e a gente está começando a chegar naquela coisa louca
+ que a gente viu em filme do de literalmente as máquinas terem emoções é
+ entender uma tradução de uma emoção que significa tá é quero entender a piada do
+ então esse é o conceito do led e da memória então vamos ver um pouquinho
+ como seria isso que a gente vai criar nessas quatro noites comigo aqui hoje a
+ gente vai ver os dados ser ingeridos a gente vai contextualizar amanhã colocar
+ isso num reggae colocar isso no vetor realmente ver essas informações em dois
+ status for diferentes a gente vai ter um agente que vai conectar essa base de
+ dados e depois muito agentes fazendo múltiplas coisas então você entendeu a
+ ideia primeiro dia a gente ingere o dado que tá sendo gerado em tempo real do
+ emcomence um os dados determinísticos um postgres os dados que são textuais num
+ vector database amanhã a gente contextualiza usando
+ ferramentas para fazer isso depois que mario do Alex Alex irmão da Inês e
+ bom do José é e aí a gente tem o agente com esse contexto que vai consultar essa
+ base fazendo tarefas específicas depois a gente vai pro modelo mais complexo que
+ é um agente sendo o que está então a gente vai ver em quatro dias caras a gente
+ vai ver interface a gente vai ver e ama index a gente vai ver quadrante a gente
+ vai ver uma cacetada a gente só tá começando agora tá então a gente vai
+ literalmente passar pelo processo de construir lembra que eu falei pra vocês a
+ gente vai construir isso fim a fim então qual dever de casa que quando vocês saírem
+ aqui acessar o repositório pagar o cloud code ou qualquer outra ferramenta que
+ vocês queiram antigravity windows open code escolhe codex não tem problema
+ tudo certo e vocês começarem a explorar literalmente é tudo isso tá
+ E aí
+ e se baixar perguntou uma coisa por uma pergunta de adeim como isso foi só 97
+ reais tá mais que de graça caraca
+ E aí
+ e continuar aqui e tem gente que reclama de 97 reais acredite é mas vamos seguir
+ aqui é vamos lá shadow trafic quem é o shadow trafic vamos entender então as
+ stacks que a gente está utilizando para esse dia tá shadow trafic é um gerador de dados que
+ simulam um package de produção eu adoro esse cara esse cara ele é open source ele
+ é gratuito então se eu vier aqui em get started ele te dá uma pessoa uma instância
+ de geração de dados 600 eventos por minuto e 200 gigas por mês para você
+ gerar dado velho então você tem um gerador de dados infinito pode gerar e
+ como você pode gerar dados no que testa para sua empresa pode fazer teste nas
+ suas aplicações é tipo um faker do pai tem só que você para criar isso é só
+ declarar um jason você não precisa acordar absolutamente nada então é
+ literalmente por exemplo pegar aqui um ou de exemplos aqui para vocês ver o que
+ é legal vamos pegar aqui por exemplo calcentro então o que ele faz na verdade
+ ele gera um arquivo jason e esse aqui o dia de exon gera os dados para vocês só
+ tem umas coisas muito legais aqui você pode trabalhar com peso distribuição
+ você pode trabalhar com id que é gerado uma tabela tem referência com a outra você
+ tem cara o gerador de dados real de produção mesmo tanto é para você ter
+ é que todos os clientes que eu passo eu tava lá em o raio fazendo isso eu fui
+ cara como que eu vou testar o arquivo de vocês ele cara é um arquivo
+ criptografado de cartão de crédito de sua e que a gente recebe na sfdp e tal
+ tal eu falei beleza me dá o esquema desses arquivos os caras me deram
+ esquema dos arquivos eu gerei um gerador de dados com o cloud que gera exatamente
+ os mesmos dados os caras foram caras como vocês como você que isso a gente
+ sempre tem que progredir tem um gerador de dados aqui que a gente demorou três
+ meses para fazer foi não tá aqui é o tom e a partir de agora tem um gerador
+ os caras estão usando isso hoje para desenvolver que a gente tem um gerador de
+ dados então cara que é gerar dado dado real de produção utiliza o shadow
+ traffic tá então é exatamente esse carinho aqui é o nosso shadow traffic
+ então ele é um gerador de dados de docker então você pode botar em docker ele vai
+ gerar as informações para você no nosso caso ele vai gerar o que as entidades
+ aqui cliente produto pedido e review lembra que cliente produto e pedido é
+ determinístico e reviu é não teoricamente aberto né
+ revios a eu tô insatisfeito é você é texto então você não amazena esse tipo
+ de informação pessoal em banco de dados relacionado quer dizer a gente
+ evita pode armazenar mas a gente evita fazer isso vai servir muito bem se você
+ quiser fazer pesquisa textual em cima disso um vector database por isso que
+ nós temos dois tipos de datas sós diferentes o led que é um banco de dados
+ de precisão de perfeição e o reggae um quadrante que é um banco de dados
+ vetor para isso tá então são dois literalmente destinos o primeiro
+ estrangeiro estruturado não são tabelas com colunas chipadas cada campo é exato
+ relacionado e literalmente utilizando perfeição de entrega relacionado do
+ outro lado é um streaming com dado não estruturado texto livre em português
+ sentimento tem umas sinais que traga que tabelas não capturam reviews de mil
+ comentários em português de sentimento formato em jason xeito tráfico gerem
+ reviews jason para ingestão ao dia 2 então vamos ver aqui ó se a gente vê
+ aqui dentro de jane ver vier dentro de data a gente tem um arquivo de jason
+ olha só que legal a gente pode fazer uma coisa muito legal pode fazer que é o
+ seguinte você vem aqui e digita jason 2 diagram dot com se vem editor e daqui
+ você copia esse cara você consegue ver então você tem um review id que está
+ lá vinculado com o português você tem um order id que está vinculado lá com
+ postgres você tem o rating 4 e você tem um comentário
+ produtos de gostos do prazo estou muito satisfeito com a compra o sentimento
+ positivo então você tem essa informação agora imagina cara vou mostrar
+ para vocês agora nossa não vai matar da empresa
+ tá bom lua muito legal tudo está falando não sei que mas e a vida real
+ vou mostrar pra vocês a vida real tá eu vou entrar no crm da empresa
+ eles são crm da engenharia de dados a cada estão vendo no caso do real
+ mostrar pra vocês o caso real gravado veja isso aqui a gente tem um crm que tem
+ todos os vídeos vocês felizes xingando a gente dá de casa me falando cadê meu
+ acesso odeio vocês eu amo vocês os treinamentos são legais eu quero
+ emboço não estou feliz eu tô triste eu não amo vocês eu amo agora de novo eu
+ quero renovar é muito caro não gosto de plumber não sei quem sei o que eu tenho
+ todas as conversas que aconteceram do fábio da bruna enfim aqui certo eu tenho
+ todas essas informações beleza então o que o animal de teta fez aqui
+ o animal de teta criou um fluxo de inteligência e daí que esse cara fez
+ ele plugou o cloudinho
+ entrasse na verdade errado deixa entrar no contexto do meu projeto agora se
+ for dentro do projeto cloud no amor tudo bem como você vai estou com 500 pessoas
+ online e eu gostaria de saber como que estão as minhas coisas estão trabalhando
+ nesse exato momento eu gostaria que você dividisse pra mim o relatório agora
+ vasculhando todo o nosso crm que é a cliente e buscando para entender um
+ pouquinho do sentimento essas pessoas estão felizes ou não estão felizes em
+ relação ao treinamento da semana e a de engenhar se consegue puxar um relatório
+ sobre o preço as pessoas estão satisfeitas ou não me dá um site
+ realmente para que eu possa entender o comportamento dessas pessoas
+ e aí
+ beleza isso é magia negra que ele vai fazer aqui agora ele tem o contexto do
+ meu projeto foi tudo ótimo com 500 pessoas online agora vão nessa deixa eu
+ vasculhar o crm completo você em tempo real ele vai no meu crm ele vai ler todas
+ as informações só que não vai fazer isso agora porque eu já indexei isso no
+ banco de dácio ele vai no super base ele vai achar essas informações ele vai
+ ler toda essa informação ele vai entender o contexto de cada conversa de
+ cada pessoa e ele vai me trazer um relatório em relação a isso os
+ insites comportamentais vocês têm noção do que eu tô mostrando pra vocês aqui
+ direitinho se vocês têm noção aqui deixa eu ver se tem noção disso do
+ quão valioso isso é para um empresário por exemplo vocês têm noção disso
+ realmente
+ então galera o que eu tô ensinando aqui pra vocês não é coisa solta é como
+ você e aí hoje também eu sim por tudo espalhar fica tranquilo a gente vai
+ juntar todos esses pedaços para no final você vai ler sobranada pro beta
+ cara olha isso então vamos lá oito do ótimo vou vasculhar o crm com o piloto
+ de conversa query eu tenho várias conversas agora a que cara o fim que
+ dele puta que pariu desculpa conversa dos últimos 48 horas leu interessado no
+ que é que veio do youtube perguntando sobre valores e cursos interessados no
+ fundamento fábio consultando sobre o valor da
+ formação agora eu tenho dado ai meu deus do seu
+ cláudio assim você me mata né bicho porque assim closes em ação dia 13 do
+ 4 vulgur novas entradas hoje 17 conversas ativadas em 48 horas 14
+ folóps feito 80 total vencido whatsapp maiara
+ última mensagem enviada quase por destrabalhado a tatiana quantos feitos
+ termômetro de sentimento cori dois cento interesse ativo comprou de 5%
+ pesquisando dúvida de preço é não entendi aqui quantos por cento
+ frustração com oito é objeção de certificado
+ principais objeções detectadas preço alto pedido desconto 5 milhares e
+ 226 cento geram resistência vários lindos negociando antes de fechar
+ acesso não chegou para as pós-compro dúvidas sobre certificado meck produtos
+ mais buscados até agora esparque bootcamp fundamentos comunidade formação
+ pipeline de funil 7 mil 649 pessoas em base 4 mil 800 em proteção
+ você tem noção que você entregar isso por seu nível c vocês não tem noção
+ que você entregar isso você entregar uma parada dessa você nível
+ cara eu tô falando tipo tony stark eu mandei um super flow aqui e a parada
+ fez isso sem alucinação quer ver
+ o dia em que eu não acredito muito em você eu quero que você me mostre
+ realmente uma conversa para que eu possa fazer o rastreamento lá na clínica
+ entender por favor na isa conversa não trazer nada de fato que seja
+ sigiloso que eu quero mostrar pros alunos que estão assistindo agora
+ pegou um caso de uso me prova realmente que você não está alucinando
+ eu não confio em você então que a gente já fazente vai tentar
+ estrear o que ele está pensando e o racional e vocês estão vendo tipo uma
+ parada total louca tá ligado vamos ao banco de dados buscar então o que que a
+ gente está construindo aqui é algo que vocês vão usar em interprime é como
+ você consegue vantagem competitiva como você de fato entende o processo aqui
+ está dado sempre cento real do banco com a dida conversa para rastrear na clínica
+ conversação tal canal whatsapp mensagens novas duração duração caso
+ real acesso não recebido a pós-pumpro olha resolvido
+ olá comprei a semana da dia e ele não recebia o acesso em meio calma já
+ começou com o médico é isso aqui é muito doido
+ é zanoni arroba ver tal não sei que enviou print da eduça do grupo semana
+ renderizando obrigado tá vamos lá na quinta
+ aí a gente vem aqui em atendimentos digita esse carinho aqui clica aqui
+ vocês não falar nada que vocês acabaram de ver diante dos olhos de
+ vocês eu duvido se você já virou isso é
+ a gente não precisa pular da cadeira não tá eu sei é assim mesmo então a gente
+ está falando de construir algo de arrepiar que se você der esse tipo de
+ acesso para um ser level ele vai matar ele vai ter você como funcionário mais
+ fudido eu sei porque eu sou dono de empresa o que eu tenho na minha mão
+ hoje eu consigo entender qualquer coisa dos meus times eu tenho tudo integrado
+ eu tenho as campanhas quem comprou que comprou se acessou agora o curso educa
+ não a minha cruzação de youtube imagina o que você consegue fazer e você só
+ vai conseguir fazer isso amigão se você prestar atenção na aula e entender o
+ que é um led o que é uma gente o que que é um reggae o que que é de fato uma
+ base como você configura como que você declara como que a gente cria esse
+ sistema então isso aqui que você tá vendo local vai se tornar isso para você
+ entregar em enterprise sacou magia tá a gente pode construir umas paradas muito
+ doidas agora eu vou ensinar para vocês ao longo desses quatro dias tudo isso aqui
+ é muito louco isso aqui é realmente muito doido tá
+ e vamos explorar agora então que a gente vai fazer já usou pronto quatro vamos
+ voltar aqui que eu nem sei se eu consigo voltar agora que eu tava com sono eu nem
+ sei que é só o que é só vamos lá vamos explorar o escape 4
+ o nome é sendo escreve código não é muito 2025 desculpa
+ é se eu força entrega metade de descobrir dois milhões para o cenário
+ onde temos que levantar a regra de negócio que está espelhada com n pessoas
+ e dados realmente normalizados começaria documento muito boa pergunta se baixou
+ se vocês ficarem até até o final da aula quero que vocês me enchem de
+ perguntas porque é aí que vocês vão literalmente desbloquear sebaixão aonde
+ tá o game falar com os animais de tempo agora vai ter que falar com as pessoas
+ oi oi oi oi oi meu celebro eu amo você vamos sentar aqui grava reunião pergunta
+ para ele como é que é como que funciona e eu vou ensinar isso para vocês não na
+ última dia como eu trabalho com os meus sistemas agênicos em produção eu
+ transcrevo a reunião já mando já criou a tarefa já mando para a gente a gente já
+ faz o processo tudo isso tá magias mas a gente vai chegar lá tá amanda você já
+ chorou acho que nesse estágio já né ou tá perto do choro ainda não chegou no
+ choro deve tá perto dele pertinho deve tá perto com certeza eu acredito que você
+ não esteja perto não você deve tá perto do choro de uma coisa dessa não é possível
+ o meu filho eu já desidratei já tomei três corpos eu tô olhando possível quem
+ eu sou eu sou nada eu sou um grão de areia é isso gente eu só tô aceitando aqui só
+ tô aceitando é só também eu eu só aceita eu tô sem palavras é isso eu não posso nem
+ gritar que já são 11 horas da noite eu tô querendo berrar que você correndo com os braços
+ para cima enfim aí cara deixa só uma coisa sobre isso eu posso pra ele rapidinho aí tu já
+ já fez 300 perguntas eu vou te dar mais um teve um cara que eu mostrei isso que ele falou assim
+ só um minutinho disse que ele desapareceu aí ele voltou uma hora depois isso é real então eu não
+ tô mentindo pra vocês aí o bicho volta com a camisa aqui ó toda ensopada porra ele é
+ ser velho eu vou ser mostrado nada e aí eu perguntei para meu dedo que que aconteceu ele falou ele
+ não sei lá o bicho tava correndo no bloco porque foi a única forma dele dissipar energia que o
+ bicho falou velho você tem noção que eu consigo fazer agora que eu vou conectar o negócio vou
+ fazer a base com esse momento que aí eu vou fazer tal e não sei que e não sei que todo cara fica doido
+ foi fazer você correr então basicamente é isso correr no meio do mato pelado é uma opção muito
+ boa também se você tem chácaras e tal é só cuidar que não assustar as pessoas tá é então a onde tá
+ o negócio entender problemas dissipar esses esses problemas em soluções e navegar entre eles porque
+ porque agora você tá vendo que o código é legal é mas cara tem outras coisas que a gente pode
+ acessar agora que a gente nunca tecnicamente poderia usar e a gente consegue acessar agora tá
+ pergunta aí é uma dúvida quando a gente tem por exemplo o markdown ou até o outro que você
+ mostrou é para enriquecer né o nosso conhecimento a gente tem a parte conhecimento de negócio que
+ aí não tem como fugir né a gente vai ter que meio que preencher na mão beleza mas é só uma vez mas
+ quando for questões de tecnologia eu quero será uma expert ali em idêntica aí lançou o date
+ lançou coisa nova uso se usa o cloud para atualizar isso automático é eu faço umas magias então
+ na sexta na quinta-feira vou publicar para vocês vou dar para vocês os mais diferentes 10 sistemas
+ agênticos que eu tenho que são os agênticos por exemplo como atualiza base como que eu
+ automaticamente recebo reuniões se acabaram de acontecer eu já transformo isso em tarefas
+ e mando por sobre a gente como que eu tenho meu overnight agente que meia-noite ele começa a
+ trabalhar então meia-noite aquele dentro do repositório ele decompõe as minhas atividades
+ ele trabalha nos meus repositórios como atualiza o base de conhecimento dinâmica eu vou mostrar
+ tudo isso que eu faço no meu dia a dia nos meus workflows agênticos para vocês copiarem
+ o zé no dia a dia de vocês tudo isso que é replicável para vocês pelo puta preço de 97 reais
+ por favor da próxima vez que fizeram a semana comigo reclama do preço bicho vai lá no cliente
+ reclama que tá caro por favor para eu pegar lá no modelo de sentimento falar cara quem foi as
+ pessoas que falaram que 97 reais é caro vem de por três mil por favor eu tô brincando vamos lá
+ só foi um tete-pif só para eu tirar um pouquinho da energia negativa aqui
+ então que que eu perguntei aqui tá eu fiz um prompt para ele perguntando que eu quero
+ entender o que é docker aluá mas eu não sei o que é um docker tudo bem pergunta pro cloud
+ pois eu não sei que não sei que pergunta pro cloud ou seja vou te dar uma dica minha não se
+ preocupa com tecnologia agora se preocupem entender o mindset nativo dia depois aprenda os
+ fundamentos e gaste muito tempo com isso e tem o sistema e aí sim você vai navegar vou dar um
+ exemplo para vocês quem aqui já ouviu falar de colt lema fala e eu quem conhece colt eu acredito
+ em público né eu entrei num projeto agora que o cara falou duas horas comigo e no final ele
+ falou a base de dados é colt o code base é colt e eu falei cara eu não sei nada de colt e aí como
+ a gente já tá no mesmo nível né de troca lá fora do país ele foi assim o que você tá me perguntando
+ isso foi não só o que eu quero fazer uma diferença se é colt você não vai cotificar nada você vai
+ criar um sub agente para fazer isso você conhece a base de programação orientada ao objeto você
+ entende que uma jvm não sei quem não sei quem não sei que é isso aí então a linguagem de
+ programação é linguagem de programação você tá vendo como que a cabeça tá louca então eu não
+ estou desmerecendo codificar muito pelo contrário estou falando que vocês têm outras estregas para
+ se preocupar porque vocês agora vão virar literalmente arquitetos de soluções de soluções
+ de forma e a nativa é basicamente isso tá é e aí isso muda o paradigma e se você não aceitar
+ isso esse é o problema então a gente vai usar aqui os prompt de 4 a 7 então eu chamei o prompt 4
+ eu já te expliquei o docker com pouso em detalhes desculpa Claudinho você está meio ignorante hoje
+ tá ele tem três serviços no meu docker o postgres que o led o quadrante que a memória o shadow
+ é que é o gerador de dados aquele então eu gero dados coloca esses dados no postgres e coloca
+ esses dados no quadrante então aqui eu tenho startup aqui eu tenho comando você gostaria de
+ mover para o próximo prompt ou gostaria de atuar de iniciar o docker então eles me dão
+ caras e eu sou start to the next prompt a gente vai iniciar o docker e pro próximo prompt para
+ gerar os dados pra gente tá então vamos ver se ele vai gerar esses dados ele vai procurar aqui vai
+ tentar achar e se virar e ele vai executar o quinto prompt tá agora ele vai ler em paralelo
+ prompt eu pedi então eu quero verificar o conecta na base de local e usa o shop agent para fazer
+ uma query para poder entender a base de dados então ele vai lá iniciou o docker aqui ó acabou
+ eu vou iniciar o docker aqui ó eu não fiz nada ele iniciou o doc tá aí o cloud em fez isso não
+ só pedir para ele iniciar o docker para mim tá ele iniciou o docker ele vai buildar essa imagem
+ a pergunta do Thiago foi porque você prefere o quadrante cara só que eu pensou assim foi fácil
+ eu vou te colocar dentro do docker mas assim em relação a qual que eu prefiro é eu não gosto
+ do super base como reg aí a gente pode entrar nessa discussão do por que tá porque ele não tem o
+ hit frivol em bedado você precisa fazer isso por uma function que não funciona escala muito legal
+ então quando você pega um quadrante um milvos ou alguma coisa você já tem o retrieval em bedado
+ então ele é mais interessante por isso que eu não coloquei tudo no post com isso tá causa disso é
+ mas totalmente top utilizar qualquer um tá é ah tá então chegamos na era de você automatizar
+ você automatizar deixa eu perguntar uma coisa a gente tá chegando no final é importante perguntar
+ isso primeiro dia primeiro dia eu quero que vocês falam se vocês realmente acreditam no que eu falo
+ assim ou não tá tudo bem tá não concordar vocês realmente acreditam que você não vai ser
+ substituído por uma máquina mas o calma galera nem perguntei ainda calma e o é o é galera
+ achar que luna aqui é deixa eu falar já tá do já tá aceitando isso mesmo é não sei é isso mesmo
+ né eu gosto assim primeiro dia é isso mesmo sim vai é vocês realmente acreditam que vocês não
+ vão ser substituído por alguém que sabe utilizar é melhor para vocês porque eu acredito que você
+ vai eu não acredito que você vai ser substituído por uma ia mas eu acredito muito você vai se
+ substituir um profissional que entrega seis vezes sete vezes dez vezes cinquenta vezes mais rápido
+ que você cai e eu sei porque eu já vi isso acontecer do meu lado meu funcionário foi demitido por
+ causa disso na pif porque ele mentiu porque ele não fez e porque ele não usa ia eu vi isso acontecer
+ eu tá fora outros layoffs de 17 mil pessoas e assim por diante então isso é verdade por
+ isso que vocês precisam aprender agora onde hoje é uma vantagem você aprendi isso aqui hoje você
+ entende o sistema você entende os quatro dias presta atenção tudo que eu tô falando aqui cara no
+ final você sai com outra mentalidade e aí já era você voa voa só que se você não fizer isso
+ enquanto é luxo ter esse conhecimento que cara realmente eu conquistei muita coisa nos últimos
+ anos assim indescritível tá é cara realmente você vai para um outro nível e aí hoje é uma
+ coisa legal daqui um ano dois anos talvez você comode de talvez o que você já vê né tipo assim
+ porque eu espero que todo mundo sabe isso só que daqui dois anos a gente tá aprendendo exatamente
+ no início tá que isso tá acontecendo no brasil e assim por gente fala aí já
+ eu pedi pra tirar aí
+ a sobre essa questão então você fala sobre a gente o brasileiro ser muito gostar de fazer as
+ coisas assim eu tenho que ficar um cara gostei muito de até a forma como eu aprendo é colocar
+ na massa assim tipo executar é você acha que assim se tiver uma linguagem nova para aprender
+ tem que executar esse código aqui que tá em base parado que colocar em rust ou em escala
+ de carros você acha sempre que dê algum mínimo de conhecimento de linguagem antes
+ daqueles que não vou pensar ele me lascar né já é que você é o que você não gosta do
+ cara
+ tá é o jake me me jantar aqui lá ele mas um lá é o que eu acredito olha só o que eu acredito e o
+ que a galera que já está assistindo isso acredita lembra que eu nunca vou conseguir
+ performar como um cara que sabe cotlin concordo porque eu vou estar na frente do terminal eu vou
+ pedir coisas mas o cara que é um desenvolvedor sênior em cotlin vai simplesmente arrasar ele sabe
+ cotlin e ele sabe cloud code ele sabe ele é diferente de mim que não sei nada de cotlin mas
+ eu não estou falando que eu não tenho que aprender a linguagem de procuração mas sinceramente você
+ abrir um terminal ficar podando eu não farei isso então por exemplo eu tô com esse desafio agora
+ de ter que aprender cotlin para poder fazer um sistema multigráfico a gente eu não sei nada de
+ cotlin mas o que eu vou fazer como é que eu vou fazer o meu processo de aprendizado com isso
+ o cara que é cotlin a cotlin é uma jvm com jvm como funciona memória quais são as arquiteturas
+ quais são os padrões quais são as classes básicas quais são não sei que como se conecta com outro
+ como que é dividido o código quais são as melhores práticas agora como que eu construo tal não sei
+ que quais são as bibliotecas não sei que eu vou explorar todo escopo e daí eu vou entender a
+ linguagem eu vou falar cara vamos escrever exemplos assim vamos fazer tal coisa assim e aí eu vou
+ explorando e aí que eu vou fazer dizer eu vou literalmente criar um agente e a base de conhecimento
+ de cotlin vai ter o sub agente com um processo mental e eu vou começar a explorar o code base
+ e falar cara como isso seria assim eu vou aprender enquanto ele escreve então o valor tá aprender os
+ design patterns aprender o que é linguagem como ela funciona como que você transita com memória
+ jvm e tal tal tal mas não é linguagem se eu tenho que ficar escrevendo porque se não vou eu vou
+ parar um ano da minha vida para poder aprender e eu não vou escrever 1% de exatidão do que um agente
+ vai escrever mas se eu souber muito bem isso eu vou conseguir guiar ele por exemplo acho que eu vou
+ guiar melhor um agente em python com agente cotlin eu te digo tanto faz sabe por que porque a
+ inteligência não tá no seu cérebro a inteligência tá no modelo que você construiu usando seu cérebro
+ você saiu você se tirou do processo é essa a sacada se você entendeu isso amigão já era você
+ se tirou do processo porque tudo é repetitivo se você souber design patterns melhores práticas
+ para escrever é cara é chuga chuga é python cara melhor isso pra gente vai tudo que função
+ isso aqui isso é traduzido para a mesma forma de contato então você precisa aprender linguagem
+ hoje para escrever entretanto se você é um desenvolvedor que escreve isso putz você vai
+ escrever muito melhor que qualquer um que você tem inteligência no final do dia que vai acontecer
+ quanto mais inteligência você tem quanto mais você sabe sobre uma coisa melhor você é
+ é isso basicamente é isso então se eu gastaria tempo aprendendo a linguagem linguagem linguagem
+ não não não não não passaria passaria tempo entendendo design pattern de aplicação como
+ você entendeu toda arquitetura a fundação tudo isso aí sim gastaria muito tempo mas
+ na programação não não gastaria tempo com isso pode falar né
+ é uma pergunta rapidazinha só a gente vai ligar um dos aqui
+ e pronto agora sim agora não tá dando é como é esse que você colocou ele é um
+ guite didático né porque eu comecei a explorar aqui o bicho já tá dizendo onde a gente vai
+ fazer isso dia 2 não é isso aqui isso aqui não é só um projeto não então ele já tá preparado
+ com a base de conhecimento para a didática mesmo né e se ele tem um cláudio de complementar
+ aquela história lá do aprendendo a linguagem a gente primeiro aprende portugal né que é para
+ aprender qualquer linguagem depois que você aprende portugal você tem facilidade de passar
+ para qualquer linguagem agora a vida é tal e você se especializa numa determinada linguagem
+ quando você quer descobrir exatamente o diferencial mas qual é agora que você tem
+ toda essa documentação de forma mais fácil você tem toda facilidade de conseguir se aprofundar
+ e você só não vai ter o trabalho de ficar com ficando detalhe vai codificar sim porque é gostoso
+ mas não obrigatoriamente não porque opa eu preciso codar para aprender eu preciso pegar
+ aquele livrinho lá de lógica de programação e fazer esses 500 exercícios para cair na cabeça
+ eu acho que eu concordo eu acho que um dia eu aprendo mas realmente é uma mudança mesmo
+ e eu vim da área de programação fui para a área de dados até tô indo para um pouquinho
+ mais para infra e talvez eu fique com tudo né talvez a minha juventude explorar tudo do jeito
+ é isso aí onde mais ótimo ótimo feedback Alfredo a vontade fala do joia cara é só mais um é um
+ mais um testemunho né assim eu seguindo você há um tempo já sou aluno já há algumas algumas
+ formações suas e assim só dar uma dica para galera que você foi um cara que deixou bem claro
+ para mim isso que assim eu acho que na tecnologia eu sou da tecnologia 25 anos e na tecnologia eu
+ acho que em algum momento ela entrou num buraco negro onde os profissionais se preocuparam muito
+ mais na ferramenta do que nos conceitos então cara desse eu sou programador java se o java
+ foi embora você vai ser o que né então eu acho que a gente tá num momento e aí quando você fala
+ que a ia aqui a tria que a tecnologia tá gostosa é porque é cara esqueça ferramenta assim
+ ferramenta vai o que fica são os conceitos né e aquela coisa é eu tenho eu tenho assim visto que
+ sistemas que vão que tão é estão desenvolvendo tela esse sistema morrer né você vai morrer porque
+ porque qual é a tela até não gpt igual você colocou aí cara eu vou criar meu seu mcp lá vou
+ conectar pro cara o que eu vou vender pro cara cara eu vou vender um acesso a mais cp onde vai ter
+ minhas regras vai ter tão tão para que desenvolver tela para que perder tempo com tela e aí acho que
+ a grande mensagem que você dá para galera aqui é cara dados ficam sistemas vão se você focar
+ é o que é mais valioso e daqui pra frente é o seu segredo é ser um alquimista de dados não
+ programador não cara não é nada esqueça isso um dia precisou disso agora você não precisa
+ mais disso agora só precisa entender como orquestrar dados e esquece de programação eu sou já porque
+ eu sou docker porque eu sou os zé das couve porque eu sou das pequenas cabocelas se você não for um
+ maestro e o maestro é o cara que mais toca o melhor instrumento não porque eu conheço muito mais que
+ dá um violão pro cara que não sabe tocar o violão mas ele é um maestro ele sabe o momento que entra o
+ violão ele sabe como é que é um instrumento de corda então essa é o texto que eu quero dar
+ para galera aqui da noite
+
+
+
+---
+
+📁 **Arquivo: Apr 13, 11.11 PM​.mp3**
+
+ 100% mais 200 em cima parabéns é isso.
+ E assim, no que eu não acredito, no que eu posso falar pra você,
+ com 100% de certeza.
+ Eu só falo o que eu tenho propriedade pra falar.
+ Se você é o cara que só desenvolve, você vai morrer.
+ Você já morreu na verdade.
+ Então assim, ah, eu sou desenvolvedor? Já.
+ Eu só desenvolvo, dei pessoas, fico no meu computador, dei você, já vai morrer.
+ Se você é o cara que mata, essa pessoa vai morrer.
+ Porque código já foi resolvido, amigão.
+ Agora, se você é um engenheiro de software que resolve problema, arquitetura distribuída,
+ fala com as pessoas, entende as arquiteturas, ai, beleza.
+ Por isso que a diferença de programador pra engenheiro de software.
+ Essa é a diferença.
+ Se você só desenvolve no seu dia a dia, esse cara já morreu, velho.
+ Pega o melhor programador que você conhece.
+ Pega o melhor programador, se você acha que isso é bom.
+ Pega você, escreve um código, usa esse sistema que eu falei pra você.
+ Tab, agente, configuração, cria um hiper agente pro cara,
+ pede pra vocês dois resolverem o mesmo problema.
+ Você nunca vai ser melhor do que ele.
+ Nunca vai ser melhor do que ele.
+ Você nunca vai ganhar, não tem como.
+ Só não tem, então assim, só aceita.
+ É isso.
+ Então assim, se for só codificar, esquece.
+ Você tem que trazer outro valor, realmente.
+ Nilton, espero ter te deixado um pouco menos pior.
+ Ou talvez super pior, não sei.
+ O Alfredo foi muito feliz aí, se eu acho que ele falou.
+ Mas tem um problema sério, eu vejo aí quem se manda ao mercado.
+ Porque a gente aqui que tá se propondo a entrar realmente de forma séria,
+ a utilizar AIA, mas o mercado, pelo que eu tenho visto,
+ principalmente o pessoal de gestão,
+ quando eu falo de gestão, não é aquele gestão o executivo, não.
+ Tô falando de gestão técnica mesmo.
+ Os caras andam perguntando se você sabe Spark, se você sabe Python,
+ se você sabe... cara, eu não vejo assim como a caborda e você falando que...
+ Cara, isso não importa mais.
+ O que importa são os fundamentos.
+ Cara, se o seu processo, se o seu processo de ponta a ponta,
+ o Einstein ia fazer pra mim.
+ Entende?
+ Mas o que eu tenho sentido e visto, entendo até que cuidado.
+ E começar com esse pessoal da parte técnica mais ali, de gestão, é isso.
+ É eles entenderem isso.
+ Entendeu?
+ E assim?
+ E não é você não saber necessariamente, como você já falou,
+ mas os caras se importam muito ainda com a ferramenta, com o que você vai usar.
+ Sim. Não, eu entendo.
+ E assim, essa mentalidade que não vai sair agora,
+ o que vocês estão vendo aqui, pra quem já fez treinamento comigo,
+ é uma coisa que poucos têm privilégio de usar isso aqui realmente.
+ Ah, hoje eu consegui fazer isso, o que você tá me mostrando.
+ Mas hoje não tá muito distante da sua realidade,
+ porque vai acontecer.
+ Por que que vai acontecer?
+ Por que que eu garanto pra você que vai acontecer?
+ Porque não é uma pressão da tecnologia para com uma empresa.
+ É uma pressão da empresa para com a tecnologia.
+ Por quê?
+ Porque lá fora, se você acha que pra gente tá difícil,
+ cara, por nível C, tá muito pior.
+ Acredite, tá muito pior.
+ Porque a galera tem pressão sobre venda,
+ precisa performar, precisa tirar x% da empresa.
+ Por quê?
+ Porque já tem outros caras de uso que fizeram isso.
+ Tem outros caras do mesmo segmento de empresa que fizeram isso.
+ Então, meu irmão, tá uma loucura no mercado.
+ E isso vai transbordar.
+ Não vou longe.
+ Se você tem alguém que você conhece no Nubank,
+ vai conversar com alguém no Nubank.
+ Se você conhece alguém do iFood, vai conversar.
+ Vai ver as empresas grandes no Brasil como que elas estão com relação de métrica de IA,
+ o que elas têm que fazer com IA pra você ver.
+ Você vai ficar surpreso.
+ Já tem tipo coisa assim, 80% do código gerado tem que ser feito por uma IA.
+ No Brasil já tá assim.
+ E a gente tá nem no meio de 2026.
+ Então, isso vai acontecer.
+ Isso já tá acontecendo porque o mercado está pressionando as empresas pra isso.
+ Então, inevitavelmente vai ser uma coisa que vai acontecer.
+ Então, como que eu me posiciono, Newton?
+ Eu vou falar a mesma coisa que eu falo em todas as minhas aulas.
+ Vá pra uma empresa que consiga compactuar com o seu mindset.
+ Seu mindset tá em outro momento.
+ E outra coisa.
+ A tecnologia hoje é commodity.
+ Isso quer dizer que você não tem que aprender?
+ Tem.
+ Isso não quer dizer que você tem que...
+ Porra, tá assim, mas você não precisa mais abrir.
+ Porra, o que é que é crew AI?
+ Você vai ficar lá cinco dias estudando e não dizer que...
+ Você pode entender tudo, navegar e tal.
+ E daí sim pedir pro agente fazer.
+ Entenda que, por exemplo, se eu aprendo uma...
+ Vou dar um exemplo pra você.
+ Vou pegar aqui o Franklin.
+ Franklin é um monstro, senhor.
+ Qual coisa é Franklin?
+ Franklin é tipo o Deus.
+ God of War lá, da Piffin de Oracle.
+ Você acha realmente que se eu der um S que ele serve pro Franklin hoje,
+ com isso aqui que eu acabei de ensinar pra ele,
+ você acha que ele vai ter algum problema de fazer qualquer coisa?
+ Não vai, velho.
+ Porque os conceitos de bancos de dados relacionais são as mesmas coisas.
+ Ah, mas as features são diferentes.
+ Ok, são. Concordo, mas no final das contas é a mesma coisa, bicho.
+ Então, Postgres, Oracle, enfim, não te faz.
+ Entendeu?
+ Tá bom? Então assim...
+ Falei que novo.
+ Então assim, entendam que é o sistema que você cria.
+ É sobre isso. É o sistema que você cria e como você guia.
+ Lembra que eu mostrei aqui pra vocês.
+ Você pode criar um ICP, pode criar a base de conhecimento,
+ pode criar o agente, beleza, mas tá tudo conectado?
+ Tá performando bem? Não, não tá, então...
+ Então, qual o dever de casa?
+ Por que hoje eu não gastei tanto tempo no repositório?
+ Porque eu quero que vocês entendam que esse treinamento não é sobre repositório.
+ Extremamente é sobre mindset, filhada de chave,
+ entendimento do que é as coisas.
+ Então, qual o dever de casa? Já falei.
+ Pra todo mundo que ficou, os guerreiros e guerreiros, que falaram até 11h20,
+ agora eu vou começar as perguntas e respostas.
+ Cara, abre o Gemini.
+ Inclusive o Jaime falou do antigravity e tal, não sei o quê.
+ É porque eu esperava muito mais o antigravity.
+ O problema não é o antigravity, eu adorei o antigravity.
+ Acho que o problema é o Gemini mesmo.
+ A plataforma com tudo...
+ E assim, de novo, o Gemini é muito foda pra umas paradas.
+ Por exemplo, o webdesigner.
+ Ninguém barra os modelos de Gemini pra web, pra front-end, não sei o quê.
+ Mas eu não gosto de como eles se comportam em coding.
+ Eu não tive uma experiência boa, nem com pro, nem com nada.
+ Então, é uma questão de eu experimentar e não ter gostado.
+ Mas eu não tenho nada, tá? Nada a conta.
+ Então, o que eu quero mostrar pra vocês?
+ Cara, abre o repositório. O repositório tá aberto.
+ Justamente, vocês irem lá abrir o cloud, ou abrir o etc.
+ Cara, o que é esse projeto? Sobre o quê?
+ O que a gente vai construir nos dias?
+ Tem aqui o docs, tem agenda, cara.
+ Agenda dos dias, o que a gente vai construir, como que vai ser,
+ quais são as tecnologias que vão usar, o que é um led?
+ Porque ele falou sobre led, o que é um led?
+ O que é isso? Pra que a gente usa tal coisa?
+ Pô, no primeiro dia a gente fez isso, no segundo dia já...
+ Pesquise, explore, usa e a, justamente pra vocês começarem a sentir na pele.
+ Esse é o dever de casa.
+ Não é a gente ficar abrindo aqui e ficar,
+ pô, vou mostrar pra vocês que legal a última atualização da versão 3.17
+ do Lhama Index, que agora tem um getParse, que vai parciar o dado desse jeito.
+ Quem precisa saber desse detalhe técnico é o meu agente.
+ Eu posso entender o que é um Lhama Index, eu posso entender quais são as APIs,
+ eu preciso saber como funciona, como que, o entendimento detalhado de cada...
+ Mas, cara, tecnicamente falando, eu não preciso mais ter essa necessidade
+ de literalmente ter que entender cada fio pavio daquele cara, entendeu?
+ Fala aí, Jaime. Ainda tem perguntas?
+ Uma coisa assim, o que eu pensava nessa praça que você falou de as,
+ você tem que se tirar do processo e, então, assim, isso seria mais assim,
+ se tirar do processo seria você se tirar dessa parte operacional do trabalho
+ e se manter mais na parte, digamos, de orquestração, de arquitetural?
+ Seria exatamente isso, mas eu vou mostrar durante a semana os quatro estágios de IA.
+ Então, o estágio que a gente tem que entender agora é que a gente tem que
+ pensar se tirar da execução. É isso, esse é o primeiro estágio.
+ Pô, eu vou me tirar da execução, eu vou orquestrar, então vai ser,
+ em vez de ser 20, 80, vai ser 80, 20, vai ser 80% pensando, desenhando, entendendo,
+ e daí sim 20% orquestrando, codificando zero.
+ Você não vai codificar, você vai deixar o seu agente codificar.
+ Só que lembre de uma coisa muito importante quando eu falo isso, tá?
+ Quanto mais você for experiente nas tecnologias que você está usando,
+ mais foda vai ser. Então não aprenda a codificar e aprenda ao mesmo tempo.
+ Você pode aprender com o Cloud Code.
+ Cláudio, por que você escolheu uma Async aqui?
+ Por que você escreveu uma Frozen Data Class? O que é uma Frozen Data Class?
+ Por que você fez tal coisa? Por que você tomou essa ação?
+ Por que você optou nisso em vez disso? Vai trabalhando com ele.
+ Agora você tem um cara do seu lado que pode te ajudar.
+ Implementa isso aqui pra eu ver, faz uma modificação pequena no código mostrando a melhoria.
+ Como eu posso melhorar o código nessas características?
+ Se você tem um agente pra fazer esse QI e ele especializar, você vai conseguir ter um puta resultado.
+ Então você vai se tirando do processo de tempos a tempos.
+ Douglas?
+ Eu consegue falar? Eu dei um Asc to a Mut, aí, veja se você consegue.
+ Ah, agora sim, obrigado.
+ Luan, seguinte, eu tenho algumas coisas aqui pra comentar.
+ Prometo que eu vou tentar ser muito rápido.
+ Primeira pergunta, com tudo que eu estou vendo aqui, você diria que o Biai está morto hoje?
+ Eu não gosto muito de matar as paradas, mas tem uma cova sendo feita.
+ Eu não gosto de empurrar, não. A cova está sendo colocada, está sendo aberta.
+ E quem vai empurrar eu não sei.
+ Mas eu acredito muito no que o nosso amigo falou sobre.
+ Cara, obviamente quando a gente fala vai morrer é a mesma coisa falar que um Cobol vai morrer.
+ Cobol está aí durante 300 anos, não vai morrer.
+ Isso não vai deixar de existir.
+ Mas quando a gente pensa nas evoluções, na velocidade e tal,
+ essa é uma área que você concorda comigo que o Biai pode ser de uma forma dinâmica,
+ como eu acabei de ver no Cloud, pediu que ele gerar o Dash, ele gerou do meu jeito.
+ Vai ser muito mais assim. Então eu acredito que o QI vai fazer isso.
+ O que eu quero dizer é que as ferramentas de Biai hoje não vão morrer de fato,
+ mas elas vão começar a perder muita participação do mercado.
+ A um ponto de que as empresas não vão ter mais interesse.
+ Sem dúvida. Inevitavelmente. Inevitavelmente. Isso é inevitável.
+ Que nem, por exemplo, você construir uma aplicação que não tem interface.
+ Isso vai acontecer. Pode ser mesmo, vai acontecer.
+ Por quê? Vamos extrapolar para dois anos daqui para frente.
+ Vai ter todo mundo dentro de sistemas de AI consultando informação.
+ Então os sistemas vão ter que ser agentic first.
+ Vai ter que ser agente.
+ Tem que meter o MCP, consultar essa informação.
+ Ele mostra o relatório para mim que constrói em tempo real,
+ de acordo com as minhas preferências e tal.
+ Ele se adapta aos meus costumes. Então, o futurês.
+ Futurês.
+ Aí você falou alguns pontos aí das grandes empresas tendo metas absurdas de agentes e tal.
+ Eu trabalho na Nestlé.
+ Nestlé é muito grande.
+ Ela tem processos muito robustos e tem um zelo para marca muito grande.
+ Então ela não está liberando para a gente usar cloud, essas coisas.
+ Só ferramentas que são homologadas.
+ E lá a gente só tem uma Microsoft Copa.
+ O time não dá para fazer nada.
+ Mas já tem uma meta muito forte de ter tudo baseado em agente ainda esse ano.
+ Então os times de arquitetura, de AI,
+ a gente está trabalhando muito pesado nisso para validar tudo,
+ como vai funcionar as licenças do cloud e tal.
+ Então essas empresas grandes já estão olhando para isso.
+ E, cara, quando a Nestlé liberar para isso rodar,
+ ela vai movimentar uma grande massa do mercado junto com ela. Entendeu?
+ Então as empresas já estão olhando para isso.
+ É que as startups vão ter essa facilidade de sair na frente por conta das facilidades burocráticas.
+ E eu sou galinha de trabalhar na Nestlé, eu tenho a minha empresa de dados.
+ E uma das dúvidas que eu tenho é como cobrar pelo trabalho daqui para frente?
+ Porque hoje está muito voltado em horas.
+ Porque em minutos a gente vai levantar toda uma arquitetura, desenvolver todo o sistema.
+ Como cobrar por isso daqui para frente?
+ Quando eu aprender eu te dou os toques.
+ Eu não sei.
+ Por enquanto eu só quero brownie points mesmo.
+ Eu só falo que vai demorar 16 semanas, faço um quarto e vou usar as outras 16 para estudar,
+ as outras 12 para estudar para caramba e fazer outras coisas simultaneamente.
+ Mas depois a gente vai entrar numa era e esse ponto, o que você trouxe, é muito foda.
+ Porque ele é real. Aconteceu demissão no meu time por causa disso.
+ É que a gente pegou os projetos, começou a trabalhar, eu terminei a parada antes com menos tempo,
+ outro cara gastou seis vezes o projeto e não entregou o projeto.
+ Eu estava usando o IA de forma correta, ele estava usando 100 IA.
+ E daí a gente entrou no meu chefe, explicamos o processo e eu falei, cara, o que você entregou? Nada.
+ O que você entregou? Isso em dez vezes menos tempo. Não dá.
+ E ele já tinha várias outras reclamações e problemas, enfim, ele não foi demitido só por isso,
+ mas isso é um vetor de demissão.
+ Vai chegar uma hora que você vai botar três pessoas um do lado da outra, meu filho.
+ E aí, cara, se um entregou em dez horas, o outro entregou em, sei lá, 30 horas,
+ o outro entregou em 20 minutos, aí vai ser um problema.
+ Então isso vai acontecer. E aí quem sair na frente vai ganhar dinheiro pra cacete, né?
+ Pouco dinheiro não. É dinheiro, viu? Porque vantagem competitiva. É isso, entendeu?
+ Então está preparado para o milhamento, basicamente. Mas o ponto é muito novo.
+ Obrigado, tudo bom. Nada.
+ Ramon, pode falar.
+ Primeiramente, queria deixar um feedback da aula, que, cara, simplesmente absurdo assim.
+ Nunca vi nada parecido.
+ E segundo ponto, eu estou estudando há algum tempo uma formação do Cláudelia pra virar AI Engineer.
+ Só que qual é o ponto que eu quero chegar?
+ Nessa formação do Cláudelia, ela tem um país internacional e tudo mais,
+ só que ela é muito fundamentalista, né?
+ E o tempo necessário pra você adquirir conhecimento, botar em prática e de fato consolidar esse conhecimento é muito grande.
+ E isso tem me desanimado um pouco.
+ Como que você vê hoje, a velocidade que está evoluindo todo esse cenário de AI?
+ Com preciosismo a gente...
+ Como precioso a gente deve ser com fundamentos e qualquer trade-off entre fundamento e aprender as coisas novas que estão saindo.
+ Porque tem um pitfall muito grande.
+ Alguns meses atrás todo mundo estava falando, aprende AI-8N, isso aqui, tudo mais.
+
+
+
+---
+
+📁 **Arquivo: Apr 13, 9.32 PM​.mp3**
+
+ só que pesquisas agênticas. Então você utiliza ele na verdade com o agente
+ pra ele fazer pesquisas na internet. Só que o EXA é extremamente
+ importante, extremamente eficiente, porque ele tem uma característica muito foda
+ de busca inteligente. Então a gente tem literalmente que
+ ter uma busca inteligente em cima de tudo que você faz.
+ Então se você está aqui, Try Assets, e você tem vários tipos de pesos, de
+ pesquisas, inclusive. Cara, é muito legal esse cara. Então ele faz pesquisas de
+ enriquecimento, ou você for fazer um teste, por exemplo.
+ Ele traz todas essas informações aqui, o EXA é outro que eu uso para
+ todos os projetos. Depois, Firecrawl, outro cara. O Firecrawl é um pouquinho diferente, ele é
+ na verdade um raspador. Ele é literalmente um crawler ali, que vai
+ acessar, por exemplo, um scraper. Então vamos supor que você tem um blog. Ele vai
+ dentro do blog, ele raspa esse blog, e se por exemplo ele tiver links ali, ele
+ consegue entrar dentro desses links e links e raspar essas informações também.
+ Então eu uso o Firecrawl também para poder raspar. Então o meu agente ele
+ escolhe, dependendo, e aí eu vou mostrar pra vocês o que que diferencia um agente
+ de um agente configurado. O agente ele fala, cara, eu vou acessar a internet, daí ele
+ vai entender. É uma pesquisa mais simples, eu uso o EXA. É uma pesquisa que é uma
+ página que eu preciso raspar, ele usa um scraper, por exemplo.
+ Tem coisa que é de gente, tem coisa que é gente, muito bom. Outro que eu uso bastante
+ também é o Ref. Então o Ref é basicamente um adicional para o Context7.
+ Fazem basicamente a mesma coisa, aqui você tenta pegar contexto pro seu agente
+ também, em baseado em code base. Você não precisa ter o Ref e ter o Context7,
+ você pode ter um ou outro. Eu uso os dois, e aí eu dou diferentes formas pra ele
+ pesquisar diferentes características do que ele acha melhor. Eu vou deixar ele
+ decidir o que realmente ele quer fazer. E por último eu uso o Tavly. O Tavly é um
+ outro sistema de busca também. Então, Alon, você tem sistemas de
+ busca repetidos? Teoricamente sim. Então o agente pode escolher o que ele vai fazer
+ de acordo com o entendimento do que ele vai fazer na pesquisa específica.
+ Pode perguntar, Josimar.
+ Alon, mas nesse momento que você define se você vai usar o Context7 ou o Ref, né?
+ Você falou que eles são bem parecidos. No seu caso você tá usando dois, mas se a gente for usar um ou
+ outro, é simplesmente só se conectar? Ou no teu caso que você usa um ou outro, você
+ questiona ele quais são os melhores, ou simplesmente deixa ele seguir e ele vai saber
+ definir quando usar o Context7 e quando usar o Ref? Como que funciona essa interação?
+ Pra ele definir tipo assim, pra esse caso eu vou usar o Ref, pra esse caso eu vou usar o Context7.
+ Você pode deixar ele decidir isso pra você, tá? E aí ele vai internamente decidir o que
+ é melhor baseado no Keywords, no entendimento do prompt que você fez, ou você pode induzir ele
+ baseado em uma matriz que eu vou mostrar. Então você vai meio que instruir o seu agente a ser rodeado
+ de uma lógica de entendimento específico. Vou mostrar aqui. Pode falar, Ayrton.
+ Só perdi só. Você tinha mostrado um referente ao Spark, qual que é, né?
+ Context7.
+ Fala aí, André.
+ É, alguns desses MCPs mostrados são pagos, né?
+ Sim.
+ Ah, só pra... Você tem noção de custo que você está gastando com os MCPs?
+ Tenho, cara. Eu gasto acho que 5 dólares por mês ou 3 dólares por mês, algo desse tipo.
+ O Exa é muito barato.
+ Muito.
+ O Exa, ele te dá, se vocês forem agora no site, se cadastrar no site do Exa, ele te dá 15 dólares
+ iniciais. E ele fala quantos meses vocês vão usar isso todo dia e ele fala quantos vocês vão gastar.
+ Eu usei ele durante 3 meses, assim, todos os dias. O cara esgotou depois de 3 meses usando...
+ São muito bons, são bem efetivos esse cara. Tabli e Exa funcionam muito bem.
+ O Firecrow é um pouquinho mais caro, mas ele é muito bom, eficiente.
+ Mas o Ocrow é um pouquinho mais caro, né?
+ O Firecrow é um pouquinho mais caro. É, ele é.
+ Ele é um pouquinho mais caro.
+ Mas eu gasto em torno de 5 dólares por mês, tá? Nos meus projetos inteiros, assim, de MCPs.
+ Por quê?
+ Vocês não perguntaram por quê, né? Vou mostrar pra vocês, porque já que vocês perguntaram, obrigado por perguntar.
+ Mas por que eu não gasto tanto, né? Porque era pra ser muito mais, né?
+ Vamos ver e entender.
+ Então, vamos voltar aqui.
+ Então, habilitamos o MCP.
+ Então agora ele tá disponível na internet.
+ Beleza? Tá disponível pra acessar outras coisas.
+ Só que agora, amigão, o que separa um bom sistema agêntico de um...
+ De um sistema agêntico caro se chama isso aqui.
+ Cabeça. Memória de longo prazo pro agente.
+ Esse aqui é o pulo do gato.
+ Qual é o pulo do gato?
+ Você ter uma base de conhecimento local no seu repositório.
+ Então, se eu vier aqui em Agentes, a gente já vai ver os agentes, mas a gente falou dos MCPs.
+ Eles estão configurados no nível ali, cloud, como você tá vendo.
+ Se eu abrir aqui o ponto cloud e eu abrir Cabeça, olha só.
+ Eu tenho o KB de testing, eu tenho o KB de super base, eu tenho o KB de shadow traffic,
+ eu tenho o KB de quadrante, eu tenho o KB de python,
+ prompt engineer, lhama index, length fields e length chain,
+ DNI, expoition, deep vol, crew AI, communication, chain lead, architecture, slides, enfim.
+ Caraca, então você tem uma base de conhecimento que suporta o seu agente?
+ Ah, é isso aí.
+ Então eu tenho uma base de conhecimento local que suporta.
+ Então, em vez de toda hora que eu pedir pra ele fazer qualquer coisa,
+ e ele sair e gastar token, gastar tempo e assim por diante,
+ eu tenho uma base que eu gastei, eu atualizo essa base, vamos supor, uma vez por semana.
+ E a primeira vez é o que vai te pesar.
+ Você vai gastar pra criar essa primeira base.
+ Depois disso, fica extremamente barato você atualizar.
+ Você vai atualizar pedaços dessa base só.
+ E essa base vai continuar atualizada.
+ Ou seja, é o primeiro ponto de início do seu agente.
+ Ele não precisa ir na internet toda hora.
+ Ele pode literalmente acessar essa base.
+ Só que agora tem uma outra porém.
+ Não é só criar base por criar base, é criar a base com padrão.
+ Qual é o padrão em que o seu agente consome uma base melhor do que um NCP?
+ Tem como um agente consumir uma base de KB local melhor do que um NCP?
+ Com certeza, depende das instruções que você dá pra ele.
+ Então, dentro da parte de KB que já está disponível pra vocês,
+ vocês vão acessar o repositório,
+ vocês já vão ter acesso a toda essa base aqui que você tem.
+ Toda base de KB.
+ Só que olha só que sexy.
+ Agora as coisas vão começar a ficar sexys.
+ Barra template, olha só.
+ Eu tenho um template de base de criação.
+ Isso aqui é o santo grau.
+ Porque agora todo agente comunica, entende e responde no mesmo padrão.
+ Então, toda vez que eu vou criar uma nova base de conhecimento,
+ ela é criada no padrão em que a máquina, a gente entende da melhor forma possível
+ com menos token de forma eficiente.
+ Então, vou dar um exemplo pra vocês.
+ Primeiro, eu tenho um exemplo, deixa eu fechar aqui.
+ Eu tenho um exemplo de conceito.
+ Quais são os conceitos básicos?
+ Qual é o overview desse produto?
+ O que é certo, o que é errado e assim por diante.
+ Eu tenho o manifesto de domínio.
+ Como que isso aqui é interpolado?
+ E vejam que isso aqui é um YEMON.
+ Porque dependendo de como o seu agente consome,
+ tem coisas que ele vai consumir mais eficientes em AMD.
+ Outras coisas ele vai consumir mais eficientes em JSON.
+ Outras coisas ele vai consumir mais eficientes em YEMON.
+ Depende da característica de acesso que ele vai fazer.
+ Se for point no CAPS, o YEMON vai ser excelente.
+ Se for textos com explicações, o AMD vai ser ótimo.
+ Se for uma estrutura, uma leitura em que ele pode fazer um reasoning detalhado,
+ o JSON vai ser mais interessante.
+ Então isso aqui é literalmente a melhor prática que você tem de criação de KBs.
+ Então na prática, toda vez que eu vou criar uma base de conhecimento,
+ o que eu falo para ele é o seguinte,
+ criei utilizando o Underscore Templates.
+ Então ele já vai fazer isso.
+ Ou você pode fazer melhor, eu sou preguiçoso.
+ Eu tenho um comando que faz,
+ barra create KB e eu dou o nome do que eu quero.
+ E ele cria tudo para mim no padrão.
+ Então a gente começa a automatizar as automações.
+ Você começa a se tirar do loop.
+ Então, por exemplo, eu quero criar uma base de KRAI.
+ Então eu venho aqui, create KB, Underscore create KB,
+ create KRAI,
+ dá pra você não falar nada, você pode colocar só KRAI.
+ E daí ele vai e cria esse cara.
+ E aí o que eu faço?
+ Eu tenho um processo que semanalmente atualiza essa minha base de conhecimento.
+ Então eu tenho um Script Shell que aciona esses cabes,
+ ele revisa esses cabes, atualiza esses caras e deixa eles sempre atualizados.
+ Lembrando que código não muda a toda hora.
+ Tem muitas coisas que são tocadas aqui, que são pequenas coisas,
+ tipo few shot examples e coisas desse tipo.
+ Qual é a grande sacada do gato doido aqui?
+ É que você está dando padrão para o seu agente.
+ O que muita gente erra?
+ Por que ele alucina?
+ Porque você está criando várias bases, vários conteúdos que não seguem padrão.
+ Logo, você nunca dá um pensamento lógico para o seu agente.
+ Você dá um pensamento aberto.
+ Lembra que eu falei pra vocês de quanto mais aberto é, menos ele vai performar bem?
+ É exatamente isso que a gente está vendo aqui.
+ Falei aí.
+ Você deixou a mão levantada, aí?
+ Ou não?
+ Aí, aqui ó.
+ Agora foi.
+ Estava dominado aqui o audio.
+ Minha dúvida é a seguinte.
+ Esses cabes são parecidos, porque assim, por exemplo,
+ lá na empresa o que a gente faz?
+ A gente sempre atualiza o CloudMD raiz,
+ quando tem uma feature nova.
+ E dentro das pastas, a gente coloca como se fosse um outro CloudMD,
+ mas não necessariamente precisa ser um CloudMD.
+ Mas o descriptivo é o Markdown resumido do que ele vai ter ali para encontrar.
+ Por que?
+ Quando a gente for passar o Chrome para fazer uma feature,
+ ou algo do tipo, e ele for navegando entre as pastas,
+ ele primeiro lê esses Markdown para ele ter o contexto do que se trata,
+ por exemplo, aquele controller, usa esse tipo.
+ O Inix.
+ A mesma coisa.
+ Ah, entendi.
+ Ele bate no Inix e depois ele já vai no cabeceleiro da Steam.
+ Isso.
+ Então, o que acontece?
+ Isso aqui, gente, não estou mostrando para vocês
+ algo que eu promptei há uma semana não, tá?
+ Eu gastei horas e horas e dias e múltiplos prompts,
+ múltiplos tokens, para entender qual é a melhor forma
+ em que um agente se comporta numa leitura de dados
+ para gerar resultado integrado com o agente.
+ Então, vou mostrar uma coisa bem legal aqui.
+ Por exemplo, vamos abrir aqui o...
+ sei lá, deixa eu pegar alguma coisa que eu entenda.
+ Cray-Eye.
+ Então, Cray-Eye, o que eu tenho aqui do Cray-Eye?
+ Vamos clicar aqui no índex do Cray-Eye.
+ Então, olha só o que ele mostra.
+ Olha que fantástico isso aqui.
+ Então, ele está mostrando para mim as informações do que ele tem dentro.
+ O que ele tem aqui?
+ Olha só, ele tem uma navegação
+ em que ele mostra basicamente onde está cada coisa,
+ os padrões, os specs, as configurações básicas.
+ Então, ele entra aqui, bate aqui na referência,
+ e daí ele começa a entender baseado na minha pesquisa,
+ baseado do que eu necessito, literalmente,
+ me mostrando como que ele acessa, como que é a instalação,
+ como que são os componentes cores, como que são os tipos,
+ e daí ele vai destrinchando as melhores práticas para isso.
+ O que é um agente, o que é um crew, o que é um memory.
+ Só que veja o nível da entrega.
+ É tudo documentado,
+ seguindo exatamente as melhores práticas,
+ seguindo exatamente as configurações atualizadas,
+ como que ele faz, o que ele faz.
+ Uma das coisas que literalmente...
+ Já passo para você, Frank.
+ Uma das coisas que ele faz muito bem em LLMs é,
+ literalmente, few shot examples,
+ é olhar um exemplo e realmente replicar em cima disso.
+ Mostra quais são os processos que você tem.
+ Então, você está literalmente pegando o conteúdo
+ e organizando de uma forma que o agente vai ser extremamente eficiente
+ em ler essa informação.
+ E daí, qual é, literalmente, o creme de la creme aqui?
+ É o índice.
+ Então, toda vez que entra uma nova base,
+ que alguma coisa acontece, esse índice é atualizado.
+ Então, imagina o quão rápido é,
+ o quão rápido é você, literalmente,
+ perguntar para a gente entender que é Cray-Eye,
+ ele vem no índice, ele entende o que ele é,
+ ele já acessa o dado.
+ Então, a velocidade que você consegue fazer isso
+ é extremamente rápida.
+ E aqui, toda vez que eu passo e atualizo,
+ eu adiciono um score de confiança.
+ Com o confiante que é para ele pesquisar essa informação.
+ Por quê?
+ Lembrem desses scores aqui.
+ Pode perguntar, Franklin.
+ Cara, eu entendo que isso aí foi muito tempo
+ que eu estou fazendo,
+ e criando esses teus test knowledge base.
+ Mas ainda assim, é muita coisa.
+ Da onde isso veio?
+ Eu fiz um prompt para o Claudio,
+ ele entregou algumas coisas,
+ ele leu documentação de cada um desses componentes.
+ Eu venho do mundo que, cara,
+ eu mando de hora.
+ Então, isso aqui é tudo novidade para mim.
+ O máximo que eu estou fazendo ali é o Claudio MD,
+ e o contexto ali, o geral dele,
+ é isso, entendeu?
+ É o mais avançado que já fui, vamos dizer assim.
+ Não, tranquilo.
+ Então, vou te mostrar qual foi o processo de pensamento.
+ Você configura os MCPs,
+ é o primeiro estádio,
+ então você entende, tipo, beleza.
+ Toda vez uma gente vai acessar a internet,
+ só que gasta token,
+ você pode ter várias limitações em relação a throttle,
+ throttle de acesso e assim por diante.
+ Você pode ter esses problemas.
+ Então, eu comecei a promptar com o Claudio,
+ falei, Claudio, é o seguinte, cara, MCPs é o ouro,
+ mas eu preciso,
+ em várias sessões diferentes,
+ porque eu não vou manter na mesma sessão,
+ mas eu falei, cara,
+ eu quero entender uma forma eficiente como você,
+ como você,
+ essa é a questão, Franklin,
+ porque a gente está acostumado a gente,
+ como você lê, entende e performa
+ da melhor forma.
+ É mais interessante eu te entregar os MCPs
+ ou é mais interessante talvez você ter uma base local com isso?
+ E, cara, mais interessante eu tomar uma base local.
+ Ok, por quê?
+ Cara, porque o peso do throttle que eu tenho,
+ o tempo de internet,
+ o recap que eu tenho,
+ eu tenho que passar esse...
+ E aí ele me explica porque que é mais interessante
+ ter a base local.
+ Ok, dito isso, cara, como que eu crio essa estrutura?
+ Aí ele fala,
+ cara, você vai criar essa estrutura baseada nessa forma.
+ Legal, eu criei vários,
+ trabalhei com vários,
+ mas, cara, a gente precisa criar um padrão em cima disso,
+ então eu criei um templetizer,
+ que vai templetizar todos os caras com as melhores práticas
+ para que eles sejam padronizados
+ e sempre sigam os mesmos processos.
+ E daí em vários prontos diferentes,
+ em várias sessões,
+ eu revoguei e perguntei para melhorar aqui,
+ pronto, e aí ele construiu esse cara aqui.
+ Ele falou, cara, essa é a melhor forma de eu pesquisar
+ se assando com os agentes.
+ Só que isso é uma parte do negócio,
+ eu vou mostrar agora como você cola com o agente,
+ porque não é só essa parte,
+ essa parte é foda,
+ mas você precisa fazer uma coisa que ainda é muito mais foda,
+ porque muita gente utiliza o agente para utilizar,
+ mas, na verdade, você tem que fazer o constraint do agente
+ utilizar o KB
+ e você trazer um processo mental padronizado para os agentes.
+ Então, meus agentes pensam da mesma forma todos eles,
+ só que de características diferentes,
+ então eu vou mostrar já já.
+ Deixa eu só acabar aqui,
+ eu abro as questões para todo mundo aqui,
+ para eu acabar o pensamento,
+ porque isso aqui é importante.
+ A base foi criada,
+ então agora eu tenho uma base
+ que em vez de eu gastar 2 mil tokens por conversa,
+ eu gasto 200 tokens.
+ Então, depois disso que eu der o acesso para vocês,
+ façam o exemplo por vocês,
+ fala, Cláudio,
+ eu quero acessar a documentação do CREAI
+ pelo MCPs e tal,
+ faz uma comparação para mim de tokens,
+ na verdade, vamos fazer isso.
+ Vamos fazer isso agora, então.
+ Cláudio, eu gostaria de fazer a comparação
+ de você acessar a documentação do CREAI via MCP
+ versus acessar a documentação do CREAI
+ via o KB que está dentro do ponto Cláudio.
+ Gostaria que você me disse a eficiência
+ do porquê os KB são muito mais eficientes
+ do que de fato os MCPs.
+ Vamos ver aqui enquanto a gente volta
+ porque que isso acontece, tá?
+ Beleza.
+ Já abro as perguntas para vocês,
+ só um minutinho.
+ Então, isso é uma coisa.
+ Então, eu literalmente dei a base
+ de conhecimento para esse cara.
+ Só que agora, tem uma questão.
+ Como que os agentes se comunicam com isso?
+ Agora, essa aqui é a sacada.
+ O pulo do gato é aqui.
+ O KB é muito legal, é a base.
+ Mas o pulo do gato está exatamente aqui.
+ Como que os agentes conseguem entender
+ essa informação?
+ Então, olha só, sem o processo,
+ o que vai acontecer com a gente?
+ Ele ainda vai ter que tentar devinhar.
+ Ele vai ter 40% de acurácia, mano.
+ Você tem noção do que é isso?
+ Então, assim, o agente vai ter a base.
+ Eu vou perguntar para ele, por exemplo, o seguinte.
+ Agente, vamos supor que eu criei
+ um agente Krew.ai.
+ Eu falei assim, criei para mim um agente
+ de Krew.ai que é bom em Krew.ai.
+ E linka esse agente com a minha base
+ de conhecimento do Krew.ai.
+ Então, basicamente eu abri um prompt, falei
+ Cloud, eu tenho uma base de conhecimento
+ de Krew.ai que está configurada com as melhores práticas.
+ Agora, eu quero que você construa
+ um agente para mim que se conecte
+ com essa base e, literalmente,
+ tire as perguntas dele.
+ Quando eu faço isso, eu tenho 40% de acurácia.
+ Caralho, mano, mas calma aí.
+ Você falou para mim que a base de conhecimento
+ com o agente era o santo grau.
+ Sim, mas existe um processo para isso também.
+ Por quê? Porque quando você
+ vincula o agente, você ainda está
+ dando o quê? Espaço.
+ Para o quê? Para ele pensar o que ele vai fazer.
+ Então, quando eu peço alguma coisa
+ de Krew.ai, ele ainda tem que vir
+ no touch end dele, entender com...
+ Não interessa, deixa eu ver aqui.
+ Nem sempre ele vai acessar o local, porque eu não estou
+ pedindo para ele falar explicitamente.
+ Você tem que ser explícito com o que você quer
+ com LLMs. Você tem que falar para eles
+ o que eles têm que fazer e o que eles não têm que fazer.
+ Você tem que, literalmente, ensinar ele como...
+ Vocês não vivem falando que a LLM
+ é uma criança, pois vocês estão corretos.
+ A LLM é uma criança. Você tem que falar para ele
+ olha, faz isso.
+ Não pisa aqui.
+ E mesmo assim, ele pode cometer o erro.
+ Então, você
+ tem que instruir a LLM.
+ Então, nesse caso, o que ele vai fazer?
+ Ele vai tentar ainda adivinhar.
+ Ele vai lá ver se não tem um contexto.
+ Você vai receber o prompt que é vago.
+ Você vai ter um output genérico.
+ Ele vai tentar fazer a validação.
+ Ele vai ver se o que o cabelo, às vezes, não está configurado da melhor forma.
+ E assim por diante.
+ Então, ele ainda vai alucinar.
+ Aí, agora, o que vai acontecer?
+ Se você criar
+ o que vocês vão ter acesso agora, tá?
+ Vamos só ler aqui, rapidinho.
+ Porque o maior tempo de um profissional agora é ler.
+ A diferença entre o KB e o MCP não é sobre quem tem mais informação.
+ É sobre quem, qual entrega a informação
+ certa na forma certa no tempo certo.
+ Latência e número de chamadas.
+ Chamada necessária, um read.
+ MCP, dois mínimos. Resolve ID mais query.
+ Latência, zero.
+ 2.5 segundos.
+ Rate limit, nenhum. Max, três chamadas por pergunta.
+ Disponibilidade, 5%.
+ Aquivo local, depende do contexto.
+ O KB local leu cinco arquivos em paralelo numa única operação.
+ O MCP pesou de duas chamadas sequenciais.
+ Primeiro resolver e o library.
+ Depois fazer o query.
+ A cada um depende de um servidor externo.
+ Precisão.
+ Essa é a diferença mais crítica. O KB.
+ O que recebi?
+ Agents, crews, shop, quick, MCPs.
+ O que recebi?
+ Exemplo genérico, recifro genérico, classe com agente,
+ sequencial e tal.
+ O que vocês não entenderam ainda é que MCP
+ não é a solução da alucinação.
+ Quando você fala que um agente vai fazer uma pesquisa MCP,
+ você também não pode falar o seguinte.
+ Ei, pesquisa lá naquele código que eu quero,
+ que na minha cabeça o DLT, que vai fazer.
+ Não, ele vai pesquisar e isso não quer dizer que ele vai
+ trazer uma qualidade boa da pesquisa.
+ Sacou?
+ E pesquisar MCP não quer garantir,
+ não quer garantir que a qualidade do lado é bom.
+ Quando as vezes você já fez a MCP e o código estava errado.
+ Eu aposto que vários.
+ O meu código erra muito pouco.
+ Quase nunca.
+ Por quê? Porque eu tenho uma estrutura
+ que suporta isso.
+ Análise, contextualização do projeto.
+ Contem um pattern, MCP retorno,
+ formato, não sei o quê.
+ A métrica que importa, tokens úteis.
+ Vamos entender aqui.
+ Tokens recebidos, 2.500,
+ recebidos, 1.800, tokens úteis para o stop.
+ Isso aqui não é de falar foda não?
+ Ninguém vai falar foda não?
+ 2.300 tokens com 92% de acurácia,
+ 400 tokens com 22% de acurácia.
+ E aí?
+ Eu mostrei uma configuração idiota
+ e você acabou de ter
+ literalmente 60, 70% de acurácia mais
+ no seu projeto que você foi implementar isso.
+ Isso é crazy.
+ Isso é de chocar o mundo, né?
+ Parece a galinha lá chocando o mundo.
+ É isso, né?
+ Uma coisa idiota.
+ Tá vendo? Que não é sobre esta B,
+ é como você muda o processo mental.
+ É só isso, é o processo mental.
+ Beleza.
+ Por que o KB é o fundamento mais eficiente?
+ Quando o MCP ainda é útil?
+ Resumo, só que olha só,
+ o MCP não é inútil, ele tem seu lugar.
+ Cenário.
+ Implementar o shop, use KB.
+ Verificar a sintaxe.
+ Talvez você use o MCP.
+ Explorar features.
+ Novo assim.
+ Live coding com mil pessoas, confiáveis.
+ Primeira vez usando uma lab de desconexão
+ em MCP.
+ Então, imagina se você desse para o seu agente
+ um processo mental
+ que ele conseguisse criar uma matriz
+ de esforço em cima do que ele tem que fazer.
+ Cara, isso seria animal, né?
+ É o próximo estádio que vocês vão ver.
+ Tá vendo que a gente está só montando a estrutura, tá?
+ Vou deixar você por último, aí tem que você ir rápido,
+ porque senão a gente não, né?
+ Tem que passar para todo mundo. Vai lá, chega.
+ Rápidinho, pergunte aí.
+ Seis calma. Deixa eu ver se você consegue se desmontar.
+ Tá, eu dei o exemplo. Vai lá.
+ Isso. Bom, é rapidinho.
+ Só uma dúvida mesmo. O KD é a mesma coisa que o RG?
+ Não, desculpa.
+ Eu fiquei com essa dúvida.
+ Desse termo, né? KD e RG.
+ Você conserta, Sheila? Deixa o Hudson.
+ Pergunta aí.
+ Sim. Boa noite, Luan.
+ Uma dúvida aí.
+ A minha eu acho que está vindo do pessoal aí.
+ Qual a diferença entre o cabelo e a skill?
+ Ao meu ver, seria que o cabelo é uma base de conhecimento,
+ onde você vai buscar e entender algo,
+ o que e como...
+ E o que é, né?
+ Seria de algum conceito.
+ E a skill eu vejo mais como a gente deve agir
+ e como ele deve interagir.
+ Seria isso mesmo? Qual que é o seu ponto?
+ É isso aí. Basicamente é isso aí.
+ Show. Obrigado.
+ Isso aí. Danilo.
+ Opa, está me ouvindo?
+ Sim.
+ Eu tenho uma frustração de criar essas governanças,
+ igual que você estava mostrando ali.
+ Eu queria saber o seguinte.
+ Qual que é o seu framework,
+ a sua boa prática de, por exemplo,
+ dentro desse cenário que você fez,
+ a regra do MD você cria uma regra global
+ e depois você cria uma regra por projeto.
+ Por exemplo, dentro do que você está mostrando aqui
+ de Knowledge Beiges, né?
+ Se você cria um KB para stacks,
+ aí depois dentro de cada projeto,
+ aí você cria um KB por projetos,
+ e aí como é que você comunica?
+ E como a regra local respeita a regra global,
+ que eu acho que é onde ela gerencia a parte de stack?
+ Como que você diferencia e faz nesse mundo
+ dentro das duas práticas?
+ E o que eu recomendo você fazer?
+ Cria um repositório separado,
+ só de base de conhecimento.
+ Instala um Cloud Plugin
+ em cima dessa base,
+ e toda vez que você for para todos os outros projetos
+ você só chama esse plugin.
+ É isso.
+ Porque aí você gasta token somente em um lugar
+ e mantém o repositório seu atualizado
+ com todas as bases de dados.
+ E daí todo projeto que você entrar,
+ você só dá um Cloud, Instal Danilo Costa,
+ KB Project, que ele instala,
+ em todos os seus projetos você tem um lugar atualizado.
+ Quando ele atualizar o seu projeto,
+ você só dá um update, ele atualiza tudo para você
+ e traz no contexto do projeto.
+ Em vez de você ficar sambando vários projetos diferentes.
+ Eu já tinha tirado, você veio.
+ Agora foi.
+ Eu tinha lido uma vez
+ um artigo do Fábio Aquita,
+ meio polêmico dele,
+ e ele falou lá da que ponto certos projetos
+ era necessário fazer RAG.
+ O que você está mostrando está fazendo muito sentido,
+ porque basicamente a gente tem uma indexação que vai lá,
+ tem a documentação que a gente precisa,
+ e hoje a gente já sabe que as andadas de contexto
+ são enormes, né?
+ Então, para muitos casos,
+ a gente não precisa fazer RAG mais.
+ É basicamente como se fosse
+ um chat lá com o Cláudio,
+ anexar a documentação da empresa,
+ e pronto, e ele prende o converse.
+ Só que agora de uma forma mais estruturada
+ e com eficiência de talk, né, Rix?
+ Basicamente.
+ Enrique.
+ Eu só queria saber o seguinte,
+ você acha que seria interessante montar diversos
+ cabezos em questões diferentes?
+ Ou se eles se embanariam, por exemplo,
+ você tem aí um CreaAI
+ que provavelmente pode ser alguma coisa
+ relacionada a parte de hardware
+ e outro mais voltado a software.
+ É um exemplo assim.
+ Não, eu costumo fazer eles dentro do mesmo domínio.
+ Então, o que significa o mesmo domínio?
+ Literalmente a mesma tecnologia,
+ ou o mesmo conceito,
+ por exemplo, se eu estou falando de artes de turma medalhão,
+ é tudo sobre medalhão.
+ Você está falando sobre CreaAI,
+ que é um framework, é tudo sobre CreaAI,
+ então, sobre domínios.
+ Só que, você perguntou uma coisa muito foda,
+ por quê?
+ Uma coisa é ter uma base de conhecimento,
+ e o agente pode acessar várias bases de conhecimento,
+ a gente vai ver isso aqui já já.
+ Fale aí, André.
+ Olá, estou com realmente
+ o Cachile, e fiz um questionamento,
+ e vi que o pessoal até respondeu pelo chat aí,
+ mas ficou a dúvida.
+ Eu sei que o KB é base de conhecimento,
+ mas o RG, ele é feito em cima de uma base de conhecimento,
+ para ficar mais veloz.
+ Se eu utilizasse o,
+ pegasse essa base de conhecimento, esse KB,
+ e transformasse ele em RG,
+ não seria mais rápido?
+ Ou, tipo assim,
+ qual a vantagem de ter o RG,
+ ou ter essa base de conhecimento textual?
+ Porque eu vi que na base de conhecimento textual,
+ você também vai colocar os pesos e tudo mais,
+ e no RG ele já estaria calculado esses pesos.
+ Eu fiquei assim, tipo assim,
+ no Super Base, com o RG lá,
+ ele se performaria melhor do que com o texto,
+ com o texto em cabeça,
+ ele seria melhor,
+ e se,
+ se eu chamasse a parte do outro de KB,
+ é um ciclo que passa para me dar um RG,
+ isso que eu me perdi.
+ Ela fez um questionamento que me bugou a minha cabeça.
+ Quando for demorar assim, a gente entra no final da aula,
+ mas basicamente depende,
+ você está querendo talvez matar uma mosca com a bazuca,
+ eu não preciso matar uma mosca com a bazuca,
+ isso aqui é uma coisa que estou dando um contexto,
+ para uma coisa muito simples,
+ então sem precisar criar um RG para uma coisa dessa aqui,
+ principalmente pelo que o Ayrton falou,
+ que você tem um contexto de um milhão.
+ Então na verdade vai ser muito mais eficiente isso aqui,
+ muito mais rápido,
+ vai te economizar milhões a menos,
+ você não vai precisar fazer chamadas,
+ você não vai precisar indexar,
+ você não vai precisar trabalhar atualizações do jeito que é em RG,
+ você não vai precisar calcular probabilística,
+ você não vai ter que escolher qual o índice de retrieval
+ que você vai fazer, milhões de coisas.
+ Ou seja, a gente está usando uma complexidade
+ que não precisa para uma coisa simples,
+ comparado à complexidade de retrieval,
+ você não precisa fazer.
+ Agora, quando você tem um projeto
+ em que você tem uma corporação
+ com base de conhecimento distinta,
+ aí o RG realmente se paga.
+ Mas para uma coisa simples
+ dessa comparada característica de retrieval,
+ você não precisa fazer.
+ Se você quiser fazer, você pode,
+ mas não vai ser mais eficiente,
+ vai ser mais lento inclusive,
+ porque você vai precisar acessar,
+ ou a gente vai ter que acessar o NCP,
+ que vai ter que se conectar com o Vector,
+ vai ter que fazer a pesquisa semântica,
+ vai ter que entender qual a intenção,
+ vai ter que calcular o score,
+ vai ter que entender como que você vai retornar isso,
+ qual tipo de retrieval technique você está fazendo,
+ para depois passar para cá.
+ E outra coisa,
+ se você mandar diferentes queries ao mesmo tempo,
+ você tem outro problema de juntar esses caras.
+ Então, a complexidade não paga
+ pelo nível de simplicidade que a gente vai fazer.
+ Isso é só por causa disso.
+ Flávio.
