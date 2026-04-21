@@ -35,7 +35,7 @@ import fitz  # PyMuPDF
 # ─────────────────────────────────────────────
 CONFIG = {
     # Pasta raiz dos seus PDFs
-    "pdf_root": r"C:\Users\lineg\OneDrive\Documentos\CURSOS\CursosGabriel\DSA",
+    "pdf_root": r"C:\Users\lineg\OneDrive\Documentos\CURSOS\CursosGabriel\DSA\LIVROS\04_data_modeling_dbt",
 
     # Vault Obsidian
     "vault_root": r"C:\Users\lineg\OneDrive\Documentos\ObsidianVault",
