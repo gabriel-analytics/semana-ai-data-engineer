@@ -70,6 +70,7 @@ CONFIG = {
         "machine learning": "books/05_machine_learning",
         "deep learning": "books/05_machine_learning",
         "sql": "books/01_sql_analytics",
+        "sql with dbt": "books/01_sql_analytics/AnalyticsEngineeringWithSQLAndDBT",
         "airflow": "books/03_orquestracao",
         "airbyte": "books/05_engenharia_dbt",
         "dbt": "books/05_engenharia_dbt",
