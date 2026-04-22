@@ -18,18 +18,34 @@ env/
 .env.local
 .env.*.local
 !.env.example
-!gen/license.env.example
 
 # Dados grandes (ignorar binários e DBs locais)
 *.db
 *.duckdb
-gen/data/doordash_raw.csv
-gen/data/doordash_clean.csv
 
-# dbt
+# dbt (gerado — nunca commitar)
 dbt_doordash/target/
 dbt_doordash/logs/
 dbt_doordash/dbt_packages/
+dbt_doordash/.user.yml
+
+# Curso (não pertencem ao case DoorDash)
+.claude/
+.chainlit/
+chainlit.md
+presentation/
+prompts/
+spec/
+src/
+pdf_to_obsidian.py
+
+# Gen (scripts do ShadowTraffic/ShopAgent)
+gen/docker-compose.yml
+gen/init.sql
+gen/license.env.example
+gen/shadowtraffic.json
+gen/.env.example
+gen/data/reviews/
 
 # macOS
 .DS_Store
@@ -49,10 +65,6 @@ Desktop.ini
 
 # Streamlit
 .streamlit/secrets.toml
-
-# Data (generated at runtime)
-*.jsonl
-!gen/data/reviews/reviews.jsonl
 
 # Projeto específico
 obsidian_progress.json
