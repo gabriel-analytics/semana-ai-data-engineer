@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: int_pedidos_com_etapas
+    description: "Pedidos entregues com duração calculada por etapa. Apenas status=delivered. Cada linha = 1 pedido com as 6 durações de etapa."
+    columns:
+      - name: order_id
+        description: "PK do pedido entregue"
+        tests:
+          - not_null
+          - unique
+      - name: duracao_aceite_min
+        description: "Minutos entre pedido feito e restaurante confirmar"
+        tests:
+          - not_null
+      - name: duracao_preparo_min
+        description: "Minutos entre confirmação do restaurante e dasher chegar no restaurante"
+        tests:
+          - not_null
+      - name: duracao_atribuicao_min
+        description: "Minutos entre pedido feito e dasher ser atribuído"
+        tests:
+          - not_null
+      - name: duracao_coleta_min
+        description: "Minutos entre dasher chegar no restaurante e fazer o pickup"
+        tests:
+          - not_null
+      - name: duracao_rota_min
+        description: "Minutos entre pickup e entrega ao cliente"
+        tests:
+          - not_null
+      - name: duracao_proximidade_min
+        description: "Minutos entre aviso de proximidade e entrega"
+        tests:
+          - not_null
+      - name: ab_group
+        description: "Grupo A/B do pedido"
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['A', 'B']

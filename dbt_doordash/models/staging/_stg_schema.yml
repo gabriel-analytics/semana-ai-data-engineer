@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: stg_pedidos
+    description: "Pedidos DoorDash padronizados e tipados. Base para todos os modelos downstream."
+    columns:
+      - name: order_id
+        description: "PK do pedido"
+        tests:
+          - not_null
+          - unique
+      - name: ab_group
+        description: "Grupo A/B (A=controle, B=tratamento novo algoritmo de atribuição)"
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['A', 'B']
+      - name: status
+        description: "Status final do pedido"
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['delivered', 'cancelled', 'in_progress']
+      - name: customer_city
+        description: "Cidade do cliente"
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['São Paulo', 'Rio de Janeiro', 'Belo Horizonte', 'Curitiba', 'Porto Alegre', 'Brasília']
+      - name: delivery_duration_minutes
+        description: "Duração total da entrega em minutos. NULL para pedidos cancelados ou em andamento."
+      - name: created_at
+        description: "Timestamp de criação do pedido"
+        tests:
+          - not_null
+      - name: is_delivered
+        description: "True quando status = delivered"
+      - name: is_cancelled
+        description: "True quando status = cancelled"

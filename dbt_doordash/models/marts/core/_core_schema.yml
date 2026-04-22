@@ -1,0 +1,53 @@
+version: 2
+
+models:
+  - name: fct_entregas
+    description: "Fato principal de entregas concluídas com duração por etapa e classificação de velocidade. Granularidade: 1 linha por pedido entregue."
+    columns:
+      - name: order_id
+        description: "PK do pedido"
+        tests:
+          - not_null
+          - unique
+      - name: ab_group
+        description: "Grupo A/B do pedido"
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['A', 'B']
+      - name: tempo_total_min
+        description: "Duração total da entrega em minutos (da criação do pedido à entrega)"
+        tests:
+          - not_null
+      - name: classificacao_entrega
+        description: "Classificação da velocidade: rapida (<30min), normal (30-45min), lenta (>45min)"
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['rapida', 'normal', 'lenta']
+      - name: month
+        description: "Mês abreviado do pedido"
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['Jan', 'Feb', 'Mar']
+      - name: is_horario_pico
+        description: "True se o pedido foi criado no horário de pico (11-14h ou 18-22h)"
+
+  - name: fct_ab_resultados
+    description: "Métricas agregadas por grupo A/B com delta de performance. Granularidade: 1 linha por grupo (A e B)."
+    columns:
+      - name: ab_group
+        description: "Grupo A/B"
+        tests:
+          - not_null
+          - unique
+      - name: media_tempo_total_min
+        description: "Média do tempo total de entrega em minutos"
+        tests:
+          - not_null
+      - name: delta_vs_controle_min
+        description: "Diferença em minutos vs grupo A (controle). Negativo = mais rápido."
+      - name: delta_vs_controle_pct
+        description: "Diferença percentual vs grupo A (controle). Negativo = mais rápido."

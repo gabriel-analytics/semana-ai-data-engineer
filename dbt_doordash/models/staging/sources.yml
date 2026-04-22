@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: doordash_raw
+    description: "Dataset bruto DoorDash após limpeza do EDA"
+    meta:
+      external_location: "read_csv_auto('{{ env_var('DOORDASH_CSV_PATH', '../gen/data/doordash_clean.csv') }}')"
+    tables:
+      - name: doordash_clean
+        description: "9.7k pedidos DoorDash com 7 estágios de entrega, grupos A/B e flags de qualidade"
+        columns:
+          - name: order_id
+            description: "Identificador único do pedido"
+          - name: created_at
+            description: "Timestamp de criação do pedido"
+          - name: ab_group
+            description: "Grupo do teste A/B (A=controle, B=tratamento)"
+          - name: status
+            description: "Status final do pedido"
+          - name: delivery_duration_minutes
+            description: "Duração total da entrega em minutos"
