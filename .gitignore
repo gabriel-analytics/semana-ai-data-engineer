@@ -1,26 +1,58 @@
-# Environment and secrets
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+
+# Ambiente
 .env
-*.env
+.env.local
+.env.*.local
 !.env.example
 !gen/license.env.example
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
-.venv/
-venv/
+# Dados grandes (ignorar binários e DBs locais)
+*.db
+*.duckdb
+gen/data/doordash_raw.csv
+gen/data/doordash_clean.csv
 
-# IDE
+# dbt
+dbt_doordash/target/
+dbt_doordash/logs/
+dbt_doordash/dbt_packages/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS
-.DS_Store
-Thumbs.db
+# Streamlit
+.streamlit/secrets.toml
 
 # Data (generated at runtime)
 *.jsonl
 !gen/data/reviews/reviews.jsonl
+
+# Projeto específico
+obsidian_progress.json

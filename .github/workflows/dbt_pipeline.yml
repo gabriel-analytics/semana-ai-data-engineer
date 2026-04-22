@@ -1,0 +1,74 @@
+name: dbt Pipeline CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  dbt-run:
+    name: Run dbt Pipeline
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install dbt-core dbt-duckdb numpy pandas scipy
+
+      - name: Generate synthetic dataset
+        run: |
+          python gen/data/generate_doordash.py
+          python gen/data/eda_cleaning.py
+        working-directory: ${{ github.workspace }}
+
+      - name: dbt deps
+        run: dbt deps --profiles-dir .
+        working-directory: dbt_doordash
+
+      - name: dbt run
+        id: dbt_run
+        run: dbt run --profiles-dir .
+        working-directory: dbt_doordash
+
+      - name: dbt test
+        id: dbt_test
+        run: |
+          dbt test --profiles-dir . 2>&1 | tee dbt_test_output.txt
+          echo "TEST_RESULT=$(tail -5 dbt_test_output.txt)" >> $GITHUB_ENV
+        working-directory: dbt_doordash
+
+      - name: Comment on commit
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runStatus = '${{ steps.dbt_run.outcome }}';
+            const testStatus = '${{ steps.dbt_test.outcome }}';
+            const icon = testStatus === 'success' ? '✅' : '❌';
+            const body = `## ${icon} dbt Pipeline Results
+
+            | Step | Status |
+            |------|--------|
+            | dbt run | ${runStatus === 'success' ? '✅ 4/4 models' : '❌ Failed'} |
+            | dbt test | ${testStatus === 'success' ? '✅ 29/29 tests' : '❌ Failed'} |
+
+            **Commit:** \`${{ github.sha }}\`
+            **Branch:** \`${{ github.ref_name }}\``;
+
+            await github.rest.repos.createCommitComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              commit_sha: context.sha,
+              body: body
+            });

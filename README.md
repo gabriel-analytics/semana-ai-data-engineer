@@ -1,100 +1,150 @@
-# ShopAgent -- Semana AI Data Engineer 2026
+# DoorDash Delivery Analytics — End-to-End Analytics Engineering Case
 
-> Build a multi-agent AI system that queries structured and semantic e-commerce data -- live, in 4 nights.
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![dbt](https://img.shields.io/badge/dbt-Core-orange?logo=dbt&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-0.10-yellow)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red?logo=streamlit&logoColor=white)
+![Tests](https://img.shields.io/badge/dbt_tests-29%2F29_passing-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## What is ShopAgent?
+> Case de Analytics Engineering simulando operacao real de delivery, cobrindo os **4 niveis de analise** — ingestao, modelagem, teste estatistico e impacto financeiro — com **pipeline completo de dados end-to-end**.
 
-ShopAgent is an autonomous agent crew built on real e-commerce data. It answers business questions
-by routing to the right data store: SQL for exact numbers, vectors for customer sentiment.
-Days 1-3 run 100% locally with Docker. Day 4 migrates the same architecture to the cloud.
+## Resultado do A/B Test — O Algoritmo B Venceu
 
-*Central question: O que eu consigo fazer agora que nao conseguia antes?*
+| Metrica | Grupo A (Controle) | Grupo B (Tratamento) | Delta |
+|---|---|---|---|
+| Tempo Medio de Entrega | 38.14 min | 35.70 min | **-6.4%** |
+| p-value (Welch t-test) | — | — | **< 0.001** |
+| Tamanho da Amostra | ~4.800 | ~4.900 | 50/50 split |
+| ROI Estimado | — | — | **274%** |
 
-## Architecture
+**Grupo B vence em todas as 6 cidades e todos os horarios testados.**
 
-```text
-+------------------+     +------------------+     +------------------+
-|  DATA GENERATION |     |   AI / LLM       |     |   INTERFACE      |
-|  ShadowTraffic   |     |   Claude         |     |   Chainlit       |
-+--------+---------+     |   LlamaIndex     |     +--------+---------+
-         |               |   LangChain      |              |
-         v               |   CrewAI         |              v
-+------------------+     +--------+---------+     +------------------+
-|  STORAGE         |              |               |   QUALITY        |
-|  Postgres        |              v               |   DeepEval       |
-|  (The Ledger)    |     +------------------+     |   LangFuse       |
-|  Qdrant          |<--->|   MCP Protocol   |     +------------------+
-|  (The Memory)    |     +------------------+
-+------------------+
+## Arquitetura do Pipeline
+
+```
++-----------------------------------------------------------------------+
+|                    DOORDASH ANALYTICS PIPELINE                        |
++-----------------------------------------------------------------------+
+
+  Geracao              Staging              Intermediate
+ +--------------+     +-------------+      +------------------+
+ | generate_    |---> | stg_pedidos |----> | int_pedidos_com  |
+ | doordash.py  |     | type casts  |      |   _etapas        |
+ | 10k pedidos  |     | quality     |      | duration calcs   |
+ | seed=42      |     | flags       |      +--------+---------+
+ +--------------+     +-------------+               |
+                                                     v
+  Dashboard              Marts               DuckDB
+ +--------------+     +------------------+  +----------+
+ | Streamlit    |<--- | fct_entregas     |<-| local    |
+ | 4 paginas    |     | fct_ab_resultados|  | engine   |
+ | Plotly       |     | 29 testes        |  +----------+
+ +--------------+     +------------------+
 ```
 
-**The Ledger (Postgres):** Exact data -- revenue, counts, averages, JOINs
+## Stack Tecnica
 
-**The Memory (Qdrant):** Meaning -- complaints, sentiment, review themes via RAG
+| Categoria | Tecnologia | Proposito |
+|---|---|---|
+| Linguagem | Python 3.11 | Geracao de dados, EDA, limpeza |
+| Modelagem | dbt Core + dbt-duckdb | Transformacao, testes, documentacao |
+| Storage | DuckDB | Banco analitico local, zero config |
+| Dashboard | Streamlit + Plotly | Visualizacao interativa |
+| Estatistica | scipy.stats | Welch t-test, IC 95% |
+| Dados | pandas, numpy | Manipulacao e analise |
+| CI/CD | GitHub Actions | `dbt run` + `dbt test` em todo push |
 
-## Quickstart
+## Qualidade dos Dados — Problemas Intencionais
 
-Prerequisites: Docker, an Anthropic API key, and a ShadowTraffic license
-(free trial at <https://shadowtraffic.io>).
+| Problema | Volume | Flag | Solucao |
+|---|---|---|---|
+| Duplicatas (webhook reentry) | 200 pedidos (2%) | `has_duplicate_flag` | Drop + dedup |
+| Timestamps fora de ordem | 97 pedidos (1%) | `has_timestamp_issue_flag` | np.sort por stage |
+| Dasher nao atribuido | 97 pedidos (1%) | `has_missing_dasher_flag` | Imputacao "UNASSIGNED" |
+| Outliers > 2h | 97 pedidos (1%) | `has_outlier_flag` | Removidos da analise |
+
+## Estrutura do Projeto
+
+```
+doordash-analytics-case/
++-- gen/data/
+|   +-- generate_doordash.py    # Geracao sintetica (seed=42, reprodutivel)
+|   +-- eda_cleaning.py         # EDA + pipeline de limpeza
+|   +-- eda_report.md           # Relatorio de qualidade de dados
++-- dbt_doordash/
+|   +-- dbt_project.yml
+|   +-- profiles.yml
+|   +-- models/
+|       +-- staging/            # stg_pedidos — padronizacao e tipos
+|       +-- intermediate/       # int_pedidos_com_etapas — duracao por etapa
+|       +-- marts/core/         # fct_entregas + fct_ab_resultados
++-- streamlit_app.py            # Dashboard interativo (4 paginas)
++-- .github/workflows/          # CI/CD — dbt run + test em todo push
++-- requirements.txt
++-- README.md
+```
+
+## Como Rodar Localmente
 
 ```bash
-cd gen
-cp .env.example .env
-cp license.env.example license.env
-# Set ANTHROPIC_API_KEY in .env
-# Set your ShadowTraffic license fields in license.env
-# Get a free trial at https://shadowtraffic.io
-docker compose up
+# 1. Clone o repositorio
+git clone https://github.com/gabriel-analytics/doordash-analytics-case
+cd doordash-analytics-case
+
+# 2. Crie o ambiente virtual
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# 3. Instale as dependencias
+pip install -r requirements.txt
+
+# 4. Gere os dados sinteticos e execute a limpeza
+python gen/data/generate_doordash.py
+python gen/data/eda_cleaning.py
+
+# 5. Execute o pipeline dbt
+cd dbt_doordash
+dbt deps --profiles-dir .
+dbt run --profiles-dir .
+dbt test --profiles-dir .
+cd ..
+
+# 6. Inicie o dashboard
+streamlit run streamlit_app.py
 ```
 
-Services started: Postgres on 5432, Qdrant on 6333, ShadowTraffic (data generator).
+## Testes dbt
 
-## Stack by Day
+```bash
+# Rodar todos os 29 testes
+dbt test --profiles-dir .
 
-| Day | Theme | Stack |
-|-----|-------|-------|
-| 1 Mon | INGERIR | ShadowTraffic, Pydantic, Claude Code, Docker |
-| 2 Tue | CONTEXTUALIZAR | LlamaIndex, Qdrant, Postgres, MCP |
-| 3 Wed | AGENTE | LangChain, Chainlit, AgentSpec |
-| 4 Thu | MULTI-AGENT | CrewAI, DeepEval, LangFuse, Cloud |
+# Teste customizado A/B
+dbt test --select assert_grupo_b_mais_rapido --profiles-dir .
 
-## Data Model
-
-| Entity | Store | Fields |
-|--------|-------|--------|
-| customers | Postgres | customer_id, name, email, city, state, segment |
-| products | Postgres | product_id, name, category, price, brand |
-| orders | Postgres | order_id, customer_id (FK), product_id (FK), qty, total, status, payment, created_at |
-| reviews | JSONL -> Qdrant | review_id, order_id (FK), rating, comment, sentiment |
-
-## 3-Agent Crew (Day 4)
-
-| Agent | Role | Store |
-|-------|------|-------|
-| AnalystAgent | SQL data analyst | The Ledger (Postgres) |
-| ResearchAgent | Customer experience researcher | The Memory (Qdrant) |
-| ReporterAgent | Executive report writer | Both via context |
-
-## Project Structure
-
-```text
-gen/                    # Docker infrastructure + data generation
-  docker-compose.yml    # Postgres + Qdrant + ShadowTraffic
-  shadowtraffic.json    # E-commerce data generators
-  init.sql              # Postgres schema
-  .env.example          # Environment template
-  license.env.example   # ShadowTraffic license template
-  data/reviews/         # Pre-generated review data for RAG
-docs/                   # Curriculum spec and 4-day agenda
-prompts/                # Sequenced live-coding prompts per day
-  d1-ingest/            # Day 1: ShadowTraffic + Pydantic (11 prompts)
-src/                    # Python requirements per day
-presentation/           # HTML slide decks
-  d1-ingest.html        # Day 1 slides (143 slides)
-.claude/kb/             # 18 knowledge base domains
-.claude/agents/         # SubAgents (ai-ml, code-quality, communication, domain, exploration)
+# Documentacao
+dbt docs generate --profiles-dir . && dbt docs serve --profiles-dir .
 ```
 
----
+| Tipo de Teste | Qtd | Exemplos |
+|---|---|---|
+| `not_null` | 8 | order_id, ab_group, tempo_total_min |
+| `unique` | 4 | order_id por camada |
+| `accepted_values` | 16 | ab_group em {A,B}, status, cities |
+| Singular (custom) | 1 | Grupo B mais rapido que A |
+| **Total** | **29** | **29/29** |
 
-AIDE Brasil | Formacao AI Data Engineer 2026 | Luan Moreno | April 13-16, 2026
+## Dashboard Interativo
+
+4 paginas analiticas:
+- **Visao Geral** — KPIs, tendencia mensal, distribuicao por cidade/horario
+- **Resultado A/B** — Boxplot, delta por cidade, Welch t-test interativo
+- **Analise por Etapa** — Waterfall de composicao, destaque do maior ganho
+- **Impacto Financeiro** — ROI interativo, breakeven, recomendacao de rollout
+
+## Autor
+
+**Gabriel** — Analytics Engineer
+
+[![GitHub](https://img.shields.io/badge/GitHub-gabriel--analytics-181717?logo=github)](https://github.com/gabriel-analytics)
