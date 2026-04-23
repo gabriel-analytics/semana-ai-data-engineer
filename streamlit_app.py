@@ -12,6 +12,8 @@ import plotly.graph_objects as go
 from scipy import stats
 import os
 
+from docs.translations import TRANSLATIONS
+
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
@@ -37,6 +39,15 @@ ETAPAS = {
     "Atribuicao": "duracao_atribuicao_min",
     "Coleta": "duracao_coleta_min",
     "Rota": "duracao_rota_min",
+}
+
+# Map internal ETAPAS keys to translation keys
+ETAPA_KEY_MAP = {
+    "Aceite": "etapa_aceite",
+    "Preparo": "etapa_preparo",
+    "Atribuicao": "etapa_atribuicao",
+    "Coleta": "etapa_coleta",
+    "Rota": "etapa_rota",
 }
 
 STAGE_COLS = [
@@ -125,9 +136,9 @@ def color_delta(val):
 # ---------------------------------------------------------------------------
 # PAGINA 1 — Visao Geral
 # ---------------------------------------------------------------------------
-def page_visao_geral(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, periodos: list):
-    st.title("Visao Geral")
-    st.markdown("Panorama operacional do periodo Jan–Mar 2025.")
+def page_visao_geral(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, periodos: list, t: dict):
+    st.title(t["pg1_title"])
+    st.markdown(t["pg1_subtitle"])
 
     # Filtrar df_raw para KPIs
     mask = pd.Series(True, index=df_raw.index)
@@ -148,15 +159,15 @@ def page_visao_geral(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, peri
 
     # KPIs
     col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Total Pedidos", f"{total_pedidos:,}")
-    col2.metric("Tempo Medio Entrega", f"{tempo_medio:.1f} min")
-    col3.metric("Taxa de Cancelamento", f"{taxa_cancel:.1f}%")
-    col4.metric("Ticket Medio", f"R$ {ticket_medio:.2f}")
+    col1.metric(t["kpi_total_pedidos"], f"{total_pedidos:,}")
+    col2.metric(t["kpi_tempo_medio"], f"{tempo_medio:.1f} min")
+    col3.metric(t["kpi_taxa_cancel"], f"{taxa_cancel:.1f}%")
+    col4.metric(t["kpi_ticket_medio"], f"R$ {ticket_medio:.2f}")
 
     st.divider()
 
     # --- Tendencia mensal ---
-    st.subheader("Tendencia Mensal de Pedidos e Cancelamentos")
+    st.subheader(t["pg1_mensal_header"])
 
     monthly = (
         dr.groupby("month")
@@ -177,7 +188,7 @@ def page_visao_geral(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, peri
         go.Scatter(
             x=monthly["month"],
             y=monthly["total"],
-            name="Total Pedidos",
+            name=t["pg1_mensal_total"],
             line=dict(color="#636EFA", width=2),
             mode="lines+markers",
         )
@@ -186,7 +197,7 @@ def page_visao_geral(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, peri
         go.Scatter(
             x=monthly["month"],
             y=monthly["cancelados"],
-            name="Cancelados",
+            name=t["pg1_mensal_cancelados"],
             line=dict(color=COLOR_B, width=2, dash="dash"),
             mode="lines+markers",
             yaxis="y",
@@ -196,17 +207,17 @@ def page_visao_geral(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, peri
         go.Scatter(
             x=monthly["month"],
             y=monthly["pct_cancel"],
-            name="% Cancelamento",
+            name=t["pg1_mensal_pct"],
             line=dict(color="#FF7F0E", width=2),
             mode="lines+markers",
             yaxis="y2",
         )
     )
     fig_monthly.update_layout(
-        title="Tendencia Mensal de Pedidos e Cancelamentos",
-        yaxis=dict(title="Quantidade de Pedidos"),
+        title=t["pg1_mensal_title"],
+        yaxis=dict(title=t["pg1_mensal_yaxis"]),
         yaxis2=dict(
-            title="% Cancelamento",
+            title=t["pg1_mensal_y2axis"],
             overlaying="y",
             side="right",
             tickformat=".1f",
@@ -221,7 +232,7 @@ def page_visao_geral(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, peri
 
     # --- Distribuicao por cidade ---
     with col_left:
-        st.subheader("Pedidos Entregues por Cidade")
+        st.subheader(t["pg1_cidade_header"])
         cidade_counts = (
             delivered.groupby("customer_city")
             .size()
@@ -234,15 +245,15 @@ def page_visao_geral(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, peri
             y="customer_city",
             orientation="h",
             color="customer_city",
-            title="Distribuicao por Cidade",
-            labels={"pedidos": "Pedidos Entregues", "customer_city": "Cidade"},
+            title=t["pg1_cidade_title"],
+            labels={"pedidos": t["pg1_cidade_x"], "customer_city": t["pg1_cidade_y"]},
         )
         fig_city.update_layout(showlegend=False, height=380)
         st.plotly_chart(fig_city, use_container_width=True)
 
     # --- Distribuicao por horario ---
     with col_right:
-        st.subheader("Pedidos por Hora do Dia")
+        st.subheader(t["pg1_hora_header"])
         hour_counts = (
             dr.groupby("hour_of_day")
             .size()
@@ -258,8 +269,8 @@ def page_visao_geral(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, peri
             y="pedidos",
             color="pedidos",
             color_continuous_scale=["#636EFA", "#FF7F0E"],
-            title="Distribuicao de Pedidos por Hora",
-            labels={"hour_of_day": "Hora do Dia", "pedidos": "Pedidos"},
+            title=t["pg1_hora_title"],
+            labels={"hour_of_day": t["pg1_hora_x"], "pedidos": t["pg1_hora_y"]},
         )
         fig_hour.update_layout(coloraxis_showscale=False, height=380)
         st.plotly_chart(fig_hour, use_container_width=True)
@@ -268,9 +279,9 @@ def page_visao_geral(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, peri
 # ---------------------------------------------------------------------------
 # PAGINA 2 — Resultado A/B Test
 # ---------------------------------------------------------------------------
-def page_ab_test(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, periodos: list):
-    st.title("Resultado A/B Test")
-    st.markdown("Analise estatistica completa do experimento de algoritmo de atribuicao.")
+def page_ab_test(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, periodos: list, t: dict):
+    st.title(t["pg2_title"])
+    st.markdown(t["pg2_subtitle"])
 
     # Filtrar delivered
     mask = df_raw["status"] == "delivered"
@@ -305,13 +316,11 @@ def page_ab_test(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, periodos
     # Banner
     if significativo:
         st.success(
-            f"Grupo B e {abs(delta_pct):.1f}% mais rapido — resultado estatisticamente significativo "
-            f"(p={p_one:.6f}, IC 95%: [{ic_lower:.2f}, {ic_upper:.2f}] min)"
+            t["pg2_banner_sig"].format(pct=abs(delta_pct), p=p_one, lo=ic_lower, hi=ic_upper)
         )
     else:
         st.warning(
-            f"Diferenca nao significativa ao nivel alpha=0.05 "
-            f"(p={p_one:.4f})"
+            t["pg2_banner_nosig"].format(p=p_one)
         )
 
     st.divider()
@@ -322,8 +331,8 @@ def page_ab_test(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, periodos
         # Box plot
         box_df = pd.concat(
             [
-                grupo_a.rename("tempo").to_frame().assign(grupo="Grupo A"),
-                grupo_b.rename("tempo").to_frame().assign(grupo="Grupo B"),
+                grupo_a.rename("tempo").to_frame().assign(grupo=t["pg2_grupo_a"]),
+                grupo_b.rename("tempo").to_frame().assign(grupo=t["pg2_grupo_b"]),
             ]
         )
         fig_box = px.box(
@@ -331,31 +340,31 @@ def page_ab_test(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, periodos
             x="grupo",
             y="tempo",
             color="grupo",
-            color_discrete_map={"Grupo A": COLOR_A, "Grupo B": COLOR_B},
+            color_discrete_map={t["pg2_grupo_a"]: COLOR_A, t["pg2_grupo_b"]: COLOR_B},
             points="outliers",
-            title="Distribuicao do Tempo de Entrega — Grupo A vs Grupo B",
-            labels={"tempo": "Tempo de Entrega (min)", "grupo": ""},
+            title=t["pg2_box_title"],
+            labels={"tempo": t["pg2_box_y"], "grupo": t["pg2_box_x"]},
         )
         fig_box.update_layout(showlegend=False, height=450)
         st.plotly_chart(fig_box, use_container_width=True)
 
     with col_stats:
-        st.markdown("#### Resumo Estatistico")
+        st.markdown(t["pg2_stats_header"])
         st.markdown(f"""
-| Metrica | Grupo A | Grupo B |
+| {t["pg2_stats_metrica"]} | {t["pg2_grupo_a"]} | {t["pg2_grupo_b"]} |
 |---------|---------|---------|
-| N | {len(grupo_a):,} | {len(grupo_b):,} |
-| Media | {media_a:.2f} min | {media_b:.2f} min |
-| Mediana | {grupo_a.median():.2f} min | {grupo_b.median():.2f} min |
-| Desvio Padrao | {grupo_a.std():.2f} | {grupo_b.std():.2f} |
-| Delta Absoluto | — | {delta_abs:+.2f} min |
-| Delta Relativo | — | {delta_pct:+.1f}% |
+| {t["pg2_stats_n"]} | {len(grupo_a):,} | {len(grupo_b):,} |
+| {t["pg2_stats_media"]} | {media_a:.2f} min | {media_b:.2f} min |
+| {t["pg2_stats_mediana"]} | {grupo_a.median():.2f} min | {grupo_b.median():.2f} min |
+| {t["pg2_stats_std"]} | {grupo_a.std():.2f} | {grupo_b.std():.2f} |
+| {t["pg2_stats_delta_abs"]} | — | {delta_abs:+.2f} min |
+| {t["pg2_stats_delta_rel"]} | — | {delta_pct:+.1f}% |
 """)
 
     st.divider()
 
     # --- Delta por cidade ---
-    st.subheader("Delta por Cidade")
+    st.subheader(t["pg2_cidade_header"])
 
     city_ab = (
         dr.groupby(["customer_city", "ab_group"])["delivery_duration_minutes"]
@@ -363,27 +372,27 @@ def page_ab_test(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, periodos
         .unstack()
         .reset_index()
     )
-    city_ab.columns = ["Cidade", "Media A (min)", "Media B (min)"]
-    city_ab["Delta (min)"] = city_ab["Media B (min)"] - city_ab["Media A (min)"]
-    city_ab["Delta (%)"] = city_ab["Delta (min)"] / city_ab["Media A (min)"] * 100
-    city_ab["Vencedor"] = city_ab["Delta (min)"].apply(
+    city_ab.columns = [t["tbl_cidade"], t["tbl_media_a"], t["tbl_media_b"]]
+    city_ab[t["tbl_delta_min"]] = city_ab[t["tbl_media_b"]] - city_ab[t["tbl_media_a"]]
+    city_ab[t["tbl_delta_pct"]] = city_ab[t["tbl_delta_min"]] / city_ab[t["tbl_media_a"]] * 100
+    city_ab[t["tbl_vencedor"]] = city_ab[t["tbl_delta_min"]].apply(
         lambda x: "B" if x < 0 else "A"
     )
 
     st.dataframe(
         city_ab,
         column_config={
-            "Media A (min)": st.column_config.NumberColumn(format="%.2f"),
-            "Media B (min)": st.column_config.NumberColumn(format="%.2f"),
-            "Delta (min)": st.column_config.NumberColumn(format="%.2f"),
-            "Delta (%)": st.column_config.NumberColumn(format="%.1f%%"),
+            t["tbl_media_a"]: st.column_config.NumberColumn(format="%.2f"),
+            t["tbl_media_b"]: st.column_config.NumberColumn(format="%.2f"),
+            t["tbl_delta_min"]: st.column_config.NumberColumn(format="%.2f"),
+            t["tbl_delta_pct"]: st.column_config.NumberColumn(format="%.1f%%"),
         },
         use_container_width=True,
         hide_index=True,
     )
 
     # --- Delta por periodo do dia ---
-    st.subheader("Delta por Periodo do Dia")
+    st.subheader(t["pg2_periodo_header"])
 
     period_ab = (
         dr.groupby(["delivery_stage_bucket", "ab_group"])["delivery_duration_minutes"]
@@ -391,28 +400,28 @@ def page_ab_test(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, periodos
         .unstack()
         .reset_index()
     )
-    period_ab.columns = ["Periodo", "Media A (min)", "Media B (min)"]
-    period_ab["Delta (min)"] = period_ab["Media B (min)"] - period_ab["Media A (min)"]
-    period_ab["Delta (%)"] = period_ab["Delta (min)"] / period_ab["Media A (min)"] * 100
-    period_ab["Vencedor"] = period_ab["Delta (min)"].apply(
+    period_ab.columns = [t["tbl_periodo"], t["tbl_media_a"], t["tbl_media_b"]]
+    period_ab[t["tbl_delta_min"]] = period_ab[t["tbl_media_b"]] - period_ab[t["tbl_media_a"]]
+    period_ab[t["tbl_delta_pct"]] = period_ab[t["tbl_delta_min"]] / period_ab[t["tbl_media_a"]] * 100
+    period_ab[t["tbl_vencedor"]] = period_ab[t["tbl_delta_min"]].apply(
         lambda x: "B" if x < 0 else "A"
     )
 
     st.dataframe(
         period_ab,
         column_config={
-            "Media A (min)": st.column_config.NumberColumn(format="%.2f"),
-            "Media B (min)": st.column_config.NumberColumn(format="%.2f"),
-            "Delta (min)": st.column_config.NumberColumn(format="%.2f"),
-            "Delta (%)": st.column_config.NumberColumn(format="%.1f%%"),
+            t["tbl_media_a"]: st.column_config.NumberColumn(format="%.2f"),
+            t["tbl_media_b"]: st.column_config.NumberColumn(format="%.2f"),
+            t["tbl_delta_min"]: st.column_config.NumberColumn(format="%.2f"),
+            t["tbl_delta_pct"]: st.column_config.NumberColumn(format="%.1f%%"),
         },
         use_container_width=True,
         hide_index=True,
     )
 
     # --- Expander com teste estatistico ---
-    with st.expander("Detalhes do Teste Estatistico"):
-        conclusao = "REJEITAR H0 — diferenca estatisticamente significativa" if significativo else "NAO REJEITAR H0 — diferenca nao significativa"
+    with st.expander(t["pg2_expander"]):
+        conclusao = t["pg2_conclusao_sig"] if significativo else t["pg2_conclusao_nosig"]
         st.markdown(f"""
 ```
 Teste: Welch t-test (variancias desiguais)
@@ -430,9 +439,9 @@ Conclusao: {conclusao}
 # ---------------------------------------------------------------------------
 # PAGINA 3 — Analise por Etapa
 # ---------------------------------------------------------------------------
-def page_etapas(df: pd.DataFrame, cidades: list, periodos: list):
-    st.title("Analise por Etapa")
-    st.markdown("Decomposicao do tempo de entrega em suas etapas operacionais.")
+def page_etapas(df: pd.DataFrame, cidades: list, periodos: list, t: dict):
+    st.title(t["pg3_title"])
+    st.markdown(t["pg3_subtitle"])
 
     # Filtrar df (fct_entregas do DuckDB ou CSV processado)
     mask = pd.Series(True, index=df.index)
@@ -452,39 +461,39 @@ def page_etapas(df: pd.DataFrame, cidades: list, periodos: list):
     }
 
     if not etapas_disponiveis:
-        st.warning("Colunas de etapas nao encontradas no dataset. Use o DuckDB para acesso completo.")
+        st.warning(t["pg3_no_cols"])
         return
 
-    # Calcular media por etapa e grupo
+    # Calcular media por etapa e grupo — use translated stage names
     rows = []
-    for nome_etapa, col in etapas_disponiveis.items():
+    for nome_etapa_interno, col in etapas_disponiveis.items():
+        nome_etapa = t[ETAPA_KEY_MAP[nome_etapa_interno]]
         media_a = dfm[dfm["ab_group"] == "A"][col].mean()
         media_b = dfm[dfm["ab_group"] == "B"][col].mean()
         delta_min = media_b - media_a
         delta_pct = delta_min / media_a * 100 if media_a != 0 else 0
         rows.append(
             {
-                "Etapa": nome_etapa,
-                "Media A (min)": media_a,
-                "Media B (min)": media_b,
-                "Delta (min)": delta_min,
-                "Delta (%)": delta_pct,
+                t["pg3_tbl_etapa"]: nome_etapa,
+                t["tbl_media_a"]: media_a,
+                t["tbl_media_b"]: media_b,
+                t["tbl_delta_min"]: delta_min,
+                t["tbl_delta_pct"]: delta_pct,
             }
         )
 
     etapas_df = pd.DataFrame(rows)
 
     # Identificar maior delta
-    maior_ganho_idx = etapas_df["Delta (min)"].abs().idxmax()
-    etapa_destaque = etapas_df.loc[maior_ganho_idx, "Etapa"]
+    maior_ganho_idx = etapas_df[t["tbl_delta_min"]].abs().idxmax()
+    etapa_destaque = etapas_df.loc[maior_ganho_idx, t["pg3_tbl_etapa"]]
 
     # --- Barras agrupadas por etapa ---
-    st.subheader("Tempo Medio por Etapa — Grupo A vs Grupo B")
+    st.subheader(t["pg3_bar_header"])
 
-    colors_a = [COLOR_A] * len(etapas_df)
     colors_b = []
     for _, row in etapas_df.iterrows():
-        if row["Etapa"] == etapa_destaque:
+        if row[t["pg3_tbl_etapa"]] == etapa_destaque:
             colors_b.append("#FFA500")  # destaque: laranja
         else:
             colors_b.append(COLOR_B)
@@ -492,25 +501,25 @@ def page_etapas(df: pd.DataFrame, cidades: list, periodos: list):
     fig_etapas = go.Figure()
     fig_etapas.add_trace(
         go.Bar(
-            name="Grupo A",
-            x=etapas_df["Etapa"],
-            y=etapas_df["Media A (min)"],
+            name=t["pg3_grupo_a"],
+            x=etapas_df[t["pg3_tbl_etapa"]],
+            y=etapas_df[t["tbl_media_a"]],
             marker_color=COLOR_A,
         )
     )
     fig_etapas.add_trace(
         go.Bar(
-            name="Grupo B",
-            x=etapas_df["Etapa"],
-            y=etapas_df["Media B (min)"],
+            name=t["pg3_grupo_b"],
+            x=etapas_df[t["pg3_tbl_etapa"]],
+            y=etapas_df[t["tbl_media_b"]],
             marker_color=colors_b,
         )
     )
     fig_etapas.update_layout(
         barmode="group",
-        title="Tempo Medio por Etapa — Grupo A vs Grupo B",
-        xaxis_title="Etapa",
-        yaxis_title="Tempo Medio (min)",
+        title=t["pg3_bar_title"],
+        xaxis_title=t["pg3_bar_xaxis"],
+        yaxis_title=t["pg3_bar_yaxis"],
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
         height=420,
     )
@@ -520,16 +529,16 @@ def page_etapas(df: pd.DataFrame, cidades: list, periodos: list):
 
     with col_wf:
         # --- Waterfall: composicao grupo A ---
-        st.subheader("Composicao do Tempo Total — Grupo A")
+        st.subheader(t["pg3_wf_header"])
 
-        media_a_vals = etapas_df["Media A (min)"].tolist()
-        etapa_nomes = etapas_df["Etapa"].tolist()
+        media_a_vals = etapas_df[t["tbl_media_a"]].tolist()
+        etapa_nomes = etapas_df[t["pg3_tbl_etapa"]].tolist()
 
         fig_wf = go.Figure(
             go.Waterfall(
-                name="Grupo A",
+                name=t["pg3_grupo_a"],
                 orientation="v",
-                x=etapa_nomes + ["Total"],
+                x=etapa_nomes + [t["pg3_wf_total"]],
                 measure=["relative"] * len(etapa_nomes) + ["total"],
                 y=media_a_vals + [sum(media_a_vals)],
                 connector={"line": {"color": "rgb(63,63,63)"}},
@@ -540,8 +549,8 @@ def page_etapas(df: pd.DataFrame, cidades: list, periodos: list):
             )
         )
         fig_wf.update_layout(
-            title="Composicao do Tempo (Grupo A)",
-            yaxis_title="Minutos",
+            title=t["pg3_wf_title"],
+            yaxis_title=t["pg3_wf_yaxis"],
             height=420,
             showlegend=False,
         )
@@ -549,20 +558,20 @@ def page_etapas(df: pd.DataFrame, cidades: list, periodos: list):
 
     with col_tbl:
         # --- Tabela detalhada ---
-        st.subheader("Tabela Detalhada por Etapa")
+        st.subheader(t["pg3_tbl_header"])
 
         etapas_display = etapas_df.copy()
-        etapas_display["Maior Ganho?"] = etapas_display["Etapa"].apply(
-            lambda x: "Sim" if x == etapa_destaque else ""
+        etapas_display[t["pg3_tbl_maior_ganho"]] = etapas_display[t["pg3_tbl_etapa"]].apply(
+            lambda x: t["pg3_tbl_sim"] if x == etapa_destaque else ""
         )
 
         st.dataframe(
             etapas_display,
             column_config={
-                "Media A (min)": st.column_config.NumberColumn(format="%.2f"),
-                "Media B (min)": st.column_config.NumberColumn(format="%.2f"),
-                "Delta (min)": st.column_config.NumberColumn(format="%.2f"),
-                "Delta (%)": st.column_config.NumberColumn(format="%.1f%%"),
+                t["tbl_media_a"]: st.column_config.NumberColumn(format="%.2f"),
+                t["tbl_media_b"]: st.column_config.NumberColumn(format="%.2f"),
+                t["tbl_delta_min"]: st.column_config.NumberColumn(format="%.2f"),
+                t["tbl_delta_pct"]: st.column_config.NumberColumn(format="%.1f%%"),
             },
             use_container_width=True,
             hide_index=True,
@@ -572,18 +581,20 @@ def page_etapas(df: pd.DataFrame, cidades: list, periodos: list):
     # --- Insight card ---
     maior_row = etapas_df.loc[maior_ganho_idx]
     st.info(
-        f"Maior Ganho: A etapa \"{etapa_destaque}\" apresentou a maior reducao de tempo no Grupo B "
-        f"({maior_row['Delta (min)']:.2f} min, {maior_row['Delta (%)']:.1f}%), sugerindo que o novo "
-        f"algoritmo de atribuicao de dasher otimiza principalmente esta etapa do fluxo de entrega."
+        t["pg3_insight"].format(
+            etapa=etapa_destaque,
+            delta_min=maior_row[t["tbl_delta_min"]],
+            delta_pct=maior_row[t["tbl_delta_pct"]],
+        )
     )
 
 
 # ---------------------------------------------------------------------------
 # PAGINA 4 — Impacto Financeiro
 # ---------------------------------------------------------------------------
-def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, periodos: list):
-    st.title("Impacto Financeiro")
-    st.markdown("Projecao de economia operacional e receita incremental com o rollout do Grupo B.")
+def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, periodos: list, t: dict):
+    st.title(t["pg4_title"])
+    st.markdown(t["pg4_subtitle"])
 
     # Calcular valores base do dataset
     delivered = df_raw[df_raw["status"] == "delivered"].copy()
@@ -607,20 +618,20 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
     ticket_base = df_raw["total_amount_usd"].mean()
 
     # --- Inputs na sidebar (ou em colunas) ---
-    st.subheader("Parametros do Cenario")
+    st.subheader(t["pg4_params_header"])
 
     col_p1, col_p2, col_p3 = st.columns(3)
 
     with col_p1:
         pedidos_dia = st.number_input(
-            "Pedidos por dia",
+            t["pg4_pedidos_dia"],
             min_value=100,
             max_value=10000,
             value=int(pedidos_dia_base),
             step=50,
         )
         pct_rollout = st.slider(
-            "% Rollout Grupo B",
+            t["pg4_pct_rollout"],
             min_value=0,
             max_value=100,
             value=100,
@@ -629,14 +640,14 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
 
     with col_p2:
         ticket_medio = st.number_input(
-            "Valor medio do pedido (R$)",
+            t["pg4_ticket_medio"],
             min_value=10.0,
             max_value=500.0,
             value=float(round(ticket_base, 2)),
             step=1.0,
         )
         custo_por_min = st.number_input(
-            "Custo por minuto de entregador (R$)",
+            t["pg4_custo_min"],
             min_value=0.10,
             max_value=5.0,
             value=0.50,
@@ -645,7 +656,7 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
 
     with col_p3:
         conversao_por_min = st.number_input(
-            "Aumento na conversao por min ganho (%)",
+            t["pg4_conversao"],
             min_value=0.01,
             max_value=1.0,
             value=0.10,
@@ -653,7 +664,7 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
             format="%.2f",
         )
         custo_implementacao = st.number_input(
-            "Custo de implementacao (R$)",
+            t["pg4_custo_impl"],
             min_value=0,
             max_value=500000,
             value=50000,
@@ -673,12 +684,12 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
     total_beneficio_mes = economia_op_mensal + receita_incr_mensal
 
     # KPIs
-    st.subheader("Impacto Estimado (Mensal)")
+    st.subheader(t["pg4_impacto_header"])
     kc1, kc2, kc3, kc4 = st.columns(4)
-    kc1.metric("Minutos Economizados/Pedido", f"{minutos_economizados:.2f} min")
-    kc2.metric("Pedidos Adicionais/Mes", f"{pedidos_adicionais_mes:,.0f}")
-    kc3.metric("Economia Operacional/Mes", f"R$ {economia_op_mensal:,.0f}")
-    kc4.metric("Receita Incremental/Mes", f"R$ {receita_incr_mensal:,.0f}")
+    kc1.metric(t["pg4_kpi_minutos"], f"{minutos_economizados:.2f} min")
+    kc2.metric(t["pg4_kpi_pedidos_adic"], f"{pedidos_adicionais_mes:,.0f}")
+    kc3.metric(t["pg4_kpi_economia_op"], f"R$ {economia_op_mensal:,.0f}")
+    kc4.metric(t["pg4_kpi_receita_incr"], f"R$ {receita_incr_mensal:,.0f}")
 
     st.divider()
 
@@ -686,7 +697,7 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
 
     with col_area:
         # --- Economia acumulada no tempo ---
-        st.subheader("Economia Acumulada em 12 Meses")
+        st.subheader(t["pg4_area_header"])
 
         meses = list(range(1, 13))
         eco_op_acum = [economia_op_mensal * m - custo_implementacao for m in meses]
@@ -698,7 +709,7 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
             go.Scatter(
                 x=meses,
                 y=eco_op_acum,
-                name="Economia Operacional",
+                name=t["pg4_area_eco_op"],
                 mode="lines",
                 line=dict(color=COLOR_A),
                 fill="tozeroy",
@@ -709,7 +720,7 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
             go.Scatter(
                 x=meses,
                 y=rec_incr_acum,
-                name="Receita Incremental",
+                name=t["pg4_area_rec_incr"],
                 mode="lines",
                 line=dict(color=COLOR_B),
                 fill="tozeroy",
@@ -720,17 +731,17 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
             go.Scatter(
                 x=meses,
                 y=total_acum,
-                name="Total",
+                name=t["pg4_area_total"],
                 mode="lines",
                 line=dict(color=COLOR_TOTAL, width=3),
                 fill="tozeroy",
                 fillcolor="rgba(0,204,150,0.10)",
             )
         )
-        fig_area.add_hline(y=0, line_dash="dash", line_color="gray", annotation_text="Breakeven")
+        fig_area.add_hline(y=0, line_dash="dash", line_color="gray", annotation_text=t["pg4_area_breakeven"])
         fig_area.update_layout(
-            xaxis_title="Mes",
-            yaxis_title="R$ Acumulado",
+            xaxis_title=t["pg4_area_xaxis"],
+            yaxis_title=t["pg4_area_yaxis"],
             height=380,
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )
@@ -738,7 +749,7 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
 
     with col_breakeven:
         # --- Economia por % rollout ---
-        st.subheader("Economia Mensal por % de Rollout")
+        st.subheader(t["pg4_rollout_header"])
 
         rollout_range = list(range(10, 105, 5))
         eco_rollout = [
@@ -756,7 +767,7 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
                 line=dict(color=COLOR_TOTAL, width=2),
                 fill="tozeroy",
                 fillcolor="rgba(0,204,150,0.15)",
-                name="Beneficio Total/Mes",
+                name=t["pg4_rollout_trace"],
             )
         )
         # Linha de custo de implementacao (mensal amortizado em 12 meses)
@@ -765,7 +776,7 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
             y=custo_mensal,
             line_dash="dash",
             line_color="orange",
-            annotation_text=f"Custo Impl. Amortizado: R${custo_mensal:,.0f}/mes",
+            annotation_text=t["pg4_rollout_custo_label"].format(v=custo_mensal),
         )
         # Ponto de rollout atual
         atual_eco = (
@@ -778,12 +789,12 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
                 y=[atual_eco],
                 mode="markers",
                 marker=dict(color=COLOR_B, size=12, symbol="star"),
-                name=f"Cenario atual ({pct_rollout}%)",
+                name=t["pg4_rollout_cenario"].format(pct=pct_rollout),
             )
         )
         fig_rollout.update_layout(
-            xaxis_title="% Rollout",
-            yaxis_title="Beneficio Mensal (R$)",
+            xaxis_title=t["pg4_rollout_xaxis"],
+            yaxis_title=t["pg4_rollout_yaxis"],
             xaxis=dict(ticksuffix="%"),
             height=380,
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
@@ -793,61 +804,62 @@ def page_financeiro(df: pd.DataFrame, df_raw: pd.DataFrame, cidades: list, perio
     st.divider()
 
     # --- Recomendacao final ---
-    st.success("Recomendacao de Rollout")
-    st.markdown(f"""
-### Decisao: Fazer rollout completo (100%) do algoritmo B
-
-**Justificativa:**
-- Reducao de {minutos_economizados:.1f}% no tempo de entrega ({minutos_economizados:.2f} min/pedido)
-- Resultado estatisticamente significativo (p < 0.001)
-- Consistente em todas as 6 cidades testadas
-- Maior ganho no horario de pico (Tarde -7.55%)
-- Economia estimada: **R$ {economia_op_mensal:,.0f}/mes** em custos operacionais
-- Receita incremental estimada: **R$ {receita_incr_mensal:,.0f}/mes**
-- ROI em 12 meses: **{((total_beneficio_mes * 12 - custo_implementacao) / max(custo_implementacao, 1)) * 100:.0f}%**
-
-**Proximos Passos:**
-1. Rollout gradual: 25% — 50% — 100% em 3 semanas
-2. Monitorar taxa de cancelamento (alerta: >12%)
-3. Avaliar satisfacao do dasher com o novo algoritmo
-4. Revisar metricas apos 2 semanas de rollout completo
-""")
+    roi = ((total_beneficio_mes * 12 - custo_implementacao) / max(custo_implementacao, 1)) * 100
+    st.success(t["pg4_recomendacao_label"])
+    st.markdown(
+        t["pg4_recomendacao_md"].format(
+            min_econ=minutos_economizados,
+            eco_op=economia_op_mensal,
+            rec_incr=receita_incr_mensal,
+            roi=roi,
+        )
+    )
 
 
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 def main():
-    with st.spinner("Carregando dados..."):
+    with st.spinner("Loading..."):
         df = load_data()
         df_raw = load_raw_csv()
 
+    # --- Language selector (first thing in sidebar) ---
+    lang = st.sidebar.radio(
+        "🌐 Language / Idioma",
+        options=["🇧🇷 Português", "🇺🇸 English"],
+        horizontal=True,
+        key="language",
+    )
+    lang_code = "pt" if "Português" in lang else "en"
+    t = TRANSLATIONS[lang_code]
+
     # --- Sidebar ---
-    st.sidebar.markdown("## DoorDash Analytics")
-    st.sidebar.markdown("Case Study — Algoritmo de Atribuicao")
+    st.sidebar.markdown(f"## {t['sidebar_title']}")
+    st.sidebar.markdown(t["sidebar_subtitle"])
     st.sidebar.divider()
 
     pagina = st.sidebar.radio(
-        "Navegacao",
+        t["nav_label"],
         [
-            "Visao Geral",
-            "Resultado A/B Test",
-            "Analise por Etapa",
-            "Impacto Financeiro",
+            t["nav_visao_geral"],
+            t["nav_ab_test"],
+            t["nav_etapas"],
+            t["nav_financeiro"],
         ],
         index=0,
     )
 
     st.sidebar.divider()
-    st.sidebar.markdown("### Filtros Globais")
+    st.sidebar.markdown(f"### {t['filtros_globais']}")
 
     # Filtro de cidade
     cidades_disponiveis = sorted(df_raw["customer_city"].dropna().unique().tolist())
     cidades_sel = st.sidebar.multiselect(
-        "Cidades",
+        t["filtro_cidades"],
         options=cidades_disponiveis,
         default=[],
-        placeholder="Todas as cidades",
+        placeholder=t["filtro_cidades_placeholder"],
     )
 
     # Filtro de periodo
@@ -855,27 +867,25 @@ def main():
     data_min = df_raw["created_at"].min().date()
     data_max = df_raw["created_at"].max().date()
     periodo_sel = st.sidebar.date_input(
-        "Periodo",
+        t["filtro_periodo"],
         value=(data_min, data_max),
         min_value=data_min,
         max_value=data_max,
     )
 
     # Roteamento
-    if pagina == "Visao Geral":
-        page_visao_geral(df, df_raw, cidades_sel, list(periodo_sel))
-    elif pagina == "Resultado A/B Test":
-        page_ab_test(df, df_raw, cidades_sel, list(periodo_sel))
-    elif pagina == "Analise por Etapa":
-        page_etapas(df, cidades_sel, list(periodo_sel))
-    elif pagina == "Impacto Financeiro":
-        page_financeiro(df, df_raw, cidades_sel, list(periodo_sel))
+    if pagina == t["nav_visao_geral"]:
+        page_visao_geral(df, df_raw, cidades_sel, list(periodo_sel), t)
+    elif pagina == t["nav_ab_test"]:
+        page_ab_test(df, df_raw, cidades_sel, list(periodo_sel), t)
+    elif pagina == t["nav_etapas"]:
+        page_etapas(df, cidades_sel, list(periodo_sel), t)
+    elif pagina == t["nav_financeiro"]:
+        page_financeiro(df, df_raw, cidades_sel, list(periodo_sel), t)
 
     # Rodape
     st.divider()
-    st.caption(
-        "Dados: DoorDash Case Study | Periodo: Jan-Mar 2025 | n=9.703 pedidos"
-    )
+    st.caption(t["footer"])
 
 
 if __name__ == "__main__":
